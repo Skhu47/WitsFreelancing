@@ -8,6 +8,9 @@
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/login.css">
     <!--===============================================================================================-->
+    <script>
+        src="/Javascript/login.js";
+    </script>
 </head>
 <body>
 
@@ -18,21 +21,21 @@
             <!--form starts here-->
             <!--Login form-->
 
-            <form class="login100-form validate-form flex-sb flex-w" action="//1627982.ms.wits.ac.za/~student/auth.php" method="post">
+            <form class="login100-form validate-form flex-sb flex-w" id="Login_form" action="//1627982.ms.wits.ac.za/~student/auth.php" method="post">
 					<span class="login100-form-title p-b-51">
 						Login
 					</span>
 
                 <div class="wrap-input100 validate-input m-b-16" data-validate = "Username is required">
                     <!--USername is entered here-->
-                    <input class="input100" type="text" name="USERNAME" placeholder="Username">
+                    <input class="input100" type="text" id="Username" name="USERNAME" placeholder="Username">
                     <span class="focus-input100"></span>
                 </div>
 
 
                 <div class="wrap-input100 validate-input m-b-16" data-validate = "Password is required">
                     <!--Password is entered here-->
-                    <input class="input100" type="password" name="PASSWORD" placeholder="Password">
+                    <input class="input100" type="password" id="Password" name="PASSWORD" placeholder="Password">
                     <span class="focus-input100"></span>
                 </div>
 
@@ -40,7 +43,7 @@
 
                 <div class="container-login100-form-btn m-t-17">
                     <!--Todo: when user clicks on login, credentials must be validated and user must be take to mainpage.html -->
-                    <button class="login100-form-btn"  >
+                    <button class="login100-form-btn" onclick="Login()"  >
                         Login
 
                     </button>
