@@ -11,10 +11,13 @@
 
   <!-- Bootstrap core CSS -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="../Javascript/jquery-3.4.1.min.js"></script>
 
   <!-- Custom styles for sidebar -->
   <link href="../css/simple-sidebar.css" rel="stylesheet">
-
+<script src="../Javascript/mainpage.js"></script>
+  <script src="../Javascript/Post_project.js"></script>
+<script>hid()</script>
 </head>
 
 <body>
@@ -27,7 +30,7 @@
       <div class="list-group list-group-flush">
 
         <!--Todo: Mbuso check out how to implement a dynamic page when we click on these options bellow:-->
-        <a href="postJob.html" class="list-group-item list-group-item-action bg-light">Post Project</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light" onclick="postProject()">Post Project</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Browse Projects</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Browse Freelancers</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">My Profile</a>
@@ -52,16 +55,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" id="home" onclick="home()" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
 
           </ul>
         </div>
       </nav>
 
-      <div class="container-fluid">
-        <div class="homepage-container">
-          <div class="jumbotron text-center bg-light">
+      <div class="container-fluid" >
+        <div class="homepage-container" id="header">
+          <div class="jumbotron text-center bg-light" >
           <h1 class="mt-4" >Wits Freelancers</h1>
           </div>
           <p>Hire witsies to do jobs for you! All you have to do is post a project with the requirements and wait for free lancers to respond</p>
@@ -71,7 +74,7 @@
 
         <!--Show this container when job is selected-->
 
-        <div class="post-job-container">
+        <div class="post-job-container" id="post_job_cont" >
           <form  action="//1627982.ms.wits.ac.za/~student/Job.php?ACTION=0" class="was-validated">
 
             <div class="jumbotron text-center">
@@ -97,19 +100,19 @@
 
 
             <div class="form-group">
-            Minimum range: <input type="number" class="form-control" name="JOB_AMOUNT_RANGE_LOW" required placeholder="Minimum amount for project">
+            Minimum range: <input type="number" id="min_range" class="form-control" name="JOB_AMOUNT_RANGE_LOW" required placeholder="Minimum amount for project">
               <div class="valid-feedback"></div>
-              <div class="invalid-feedback">Please enter the minimum amount for your project</div>
+              <div class="invalid-feedback" id="minLabel">Please enter the correct minimum amount for your project</div>
             </div>
             <div class="form-group">
-            Maximum range: <input type="number" class="form-control" name="JOB_AMOUNT_RANGE_HIGH" required placeholder="Maximum amount for project">
+            Maximum range: <input type="number" id="max_range" class="form-control" name="JOB_AMOUNT_RANGE_HIGH" required placeholder="Maximum amount for project">
               <div class="valid-feedback"></div>
-              <div class="invalid-feedback">Please enter the maximum amount for your project</div>
+              <div class="invalid-feedback" id="maxLabel">Please enter the correct maximum amount for your project</div>
             </div>
             <div class="form-group">
-              End date: <br><input type="date" class="form-control" placeholder="Select due date" name="JOB_DUE_DATE_TIME" required>
+              End date: <br><input type="date" id="date" class="form-control" placeholder="Select due date" name="JOB_DUE_DATE_TIME" required>
               <div class="valid-feedback"></div>
-              <div class="invalid-feedback">Please enter the date</div>
+              <div class="invalid-feedback" id="dateLabel">Please enter the correct date</div>
             </div>
             <div class="form-group">
             Job location: <br><input type="text" class="form-control" name="JOB_LOCATION" required placeholder="Enter job location">
@@ -130,9 +133,9 @@
             </div>
 
             <!--Todo: Mbuso check validation then post it to the php scrip-->
-            <button type="button" class="btn btn-primary btn-block" value="Post Job" >Post Job</button><br>
+            <button type="button" class="btn btn-primary btn-block" id="post_job_btn" value="Post Job" >Post Job</button><br>
             <!--Do we need reset button-->
-            <button type="button" class="btn btn-primary btn-block">Reset</button><br>
+            <button type="button" id="resetBtn" class="btn btn-primary btn-block">Reset</button><br>
 
           </form>
         </div>

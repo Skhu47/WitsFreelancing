@@ -16,9 +16,12 @@ $(document).ready(function(){
         res.done(function (msg) {
             console.log(msg);
         });
+
         res.fail(function (jqXHR, status) {
             console.log(status);
         });
+        //$("#div1").load("html/mainpage.html");
+        //window.location.href="www/html/mainpage.html"; // upon validation we need to go to the home page
         /*$.post(
             "1627982.ms.wits.ac.za/~student/auth.php",
             {USERNAME: stud_id,PASSWORD :stud_pass},function (data) {
