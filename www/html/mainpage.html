@@ -60,7 +60,9 @@
 
       <div class="container-fluid">
         <div class="homepage-container">
+          <div class="jumbotron text-center">
           <h1 class="mt-4">Wits Freelancers</h1>
+          </div>
           <p>Hire witsies to do jobs for you! All you have to do is post a project with the requirements and wait for free lancers to respond</p>
         <p></p>
 
@@ -68,8 +70,11 @@
 
         <div class="post-job-container">
           <form action="//1627982.ms.wits.ac.za/~student/Job.php?ACTION=0">
+
+            <div class="jumbotron text-center">
             <h1 class="mt-4">Post Project</h1>
-            Student number:<input type="text" name="JOB_EMPLOYER_ID" required>
+            </div>
+            Student number:<input type="text" name="JOB_EMPLOYER_ID" required><br>
             Title: <input type="text" name="JOB_TITLE" required><br>
             Decription: <input type="text"  name="JOB_DESCRIPTION"required><br>
             Minimum range: <input type="number" name="JOB_AMOUNT_RANGE_LOW" required><br>
@@ -85,8 +90,9 @@
             </select><br>
 
 
-            <input type="submit" value="Post Job">
-            <input type=reset>
+            <!--Todo: Mbuso check validation then post it to the php scrip-->
+            <button type="button" class="btn btn-primary" value="Post Job" >Post Job</button>
+            <button type="button" class="btn btn-primary">Reset</button>
 
           </form>
         </div>

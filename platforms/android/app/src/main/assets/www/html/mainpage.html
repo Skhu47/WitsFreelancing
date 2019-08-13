@@ -59,9 +59,46 @@
       </nav>
 
       <div class="container-fluid">
-        <h1 class="mt-4">Wits freelancers</h1>
-        <p>Hire witsies to do jobs for you! All you have to do is post a project with the requirements and wait for free lancers to respond</p>
+        <div class="homepage-container">
+          <div class="jumbotron text-center">
+          <h1 class="mt-4">Wits Freelancers</h1>
+          </div>
+          <p>Hire witsies to do jobs for you! All you have to do is post a project with the requirements and wait for free lancers to respond</p>
         <p></p>
+
+        </div>
+
+        <div class="post-job-container">
+          <form action="//1627982.ms.wits.ac.za/~student/Job.php?ACTION=0">
+
+            <div class="jumbotron text-center">
+            <h1 class="mt-4">Post Project</h1>
+            </div>
+            Student number:<input type="text" name="JOB_EMPLOYER_ID" required><br>
+            Title: <input type="text" name="JOB_TITLE" required><br>
+            Decription: <input type="text"  name="JOB_DESCRIPTION"required><br>
+            Minimum range: <input type="number" name="JOB_AMOUNT_RANGE_LOW" required><br>
+            Maximum range: <input type="number" name="JOB_AMOUNT_RANGE_HIGH" required><br>
+            End date: <input type="date" name="JOB_DUE_DATE_TIME" required><br>
+            Job location: <input type="text" name="JOB_LOCATION"><br>
+            CATEGORY:
+            <select name="JOB_CATEGORY">
+              <option value=1>School</option>
+              <option value=2>Finance</option>
+              <option value=3>Programming</option>
+              <option value=4>Assignments</option>
+            </select><br>
+
+
+            <input type="submit" value="Post Job">
+            <input type=reset>
+            <input type="button" class="btn btn-primary" value="Post Job">Post Job</input>
+            <button type="button" class="btn btn-primary">Reset</button>
+
+          </form>
+        </div>
+
+
       </div>
     </div>
     <!-- /#page-content-wrapper -->
