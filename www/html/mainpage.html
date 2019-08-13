@@ -69,26 +69,64 @@
         </div>
 
         <div class="post-job-container">
-          <form action="//1627982.ms.wits.ac.za/~student/Job.php?ACTION=0">
+          <form  action="//1627982.ms.wits.ac.za/~student/Job.php?ACTION=0" class="was-validated">
 
             <div class="jumbotron text-center">
             <h1 class="mt-4">Post Project</h1>
             </div>
-            Student number:<input type="text" name="JOB_EMPLOYER_ID" required><br>
-            Title: <input type="text" name="JOB_TITLE" required><br>
-            Decription: <input type="text"  name="JOB_DESCRIPTION"required><br>
-            Minimum range: <input type="number" name="JOB_AMOUNT_RANGE_LOW" required><br>
-            Maximum range: <input type="number" name="JOB_AMOUNT_RANGE_HIGH" required><br>
-            End date: <input type="date" name="JOB_DUE_DATE_TIME" required><br>
-            Job location: <input type="text" name="JOB_LOCATION"><br>
-            CATEGORY:
-            <select name="JOB_CATEGORY">
+            <div class="form-group">
+            Student number: <input type="text" class="form-control" name="JOB_EMPLOYER_ID" required placeholder="Enter Student number"><br>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">Please enter your student number.</div>
+            </div>
+
+            <div class="form-group">
+            Title: <br><input type="text"  class="form-control" name="JOB_TITLE" required placeholder="Title of the project"><br>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">Please enter the title of your project</div>
+            </div>
+
+            <div class="form-group">
+            Decription: <br><input type="text" class="form-control" name="JOB_DESCRIPTION" required placeholder="Description of the project"><br>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">Please enter project's description</div>
+            </div>
+
+            <!--Todo:Mbuso Check if min amount < max amount-->
+
+
+            <div class="form-group">
+            Minimum range: <input type="number" class="form-control" name="JOB_AMOUNT_RANGE_LOW" required placeholder="Minimum amount for project"><br>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">Please enter the minimum amount for your project</div>
+            </div>
+            <div class="form-group">
+            Maximum range: <input type="number" class="form-control" name="JOB_AMOUNT_RANGE_HIGH" required placeholder="Maximum amount for project"><br>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">Please enter the maximum amount for your project</div>
+            </div>
+            <div class="form-group">
+              End date: <br><input type="date" class="form-control" placeholder="Select due date" name="JOB_DUE_DATE_TIME" required><br>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">Please enter the date</div>
+            </div>
+            <div class="form-group">
+            Job location: <br><input type="text" class="form-control" name="JOB_LOCATION" required placeholder="Enter job location"><br>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">Please enter location </div>
+            </div>
+
+            <div class="form-group">
+              CATEGORY:<br>
+            <select class="form-control" name="JOB_CATEGORY">
               <option value=1>School</option>
               <option value=2>Finance</option>
               <option value=3>Programming</option>
               <option value=4>Assignments</option>
             </select><br>
-
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">Please select category</div>
+            </div>
 
             <!--Todo: Mbuso check validation then post it to the php scrip-->
             <button type="button" class="btn btn-primary" value="Post Job" >Post Job</button>
