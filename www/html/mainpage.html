@@ -4,13 +4,13 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
   <title>Simple Sidebar - Start Bootstrap Template</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for sidebar -->
   <link href="../css/simple-sidebar.css" rel="stylesheet">
@@ -59,9 +59,39 @@
       </nav>
 
       <div class="container-fluid">
-        <h1 class="mt-4">Wits freelancers</h1>
-        <p>Hire witsies to do jobs for you! All you have to do is post a project with the requirements and wait for free lancers to respond</p>
+        <div class="homepage-container">
+          <h1 class="mt-4">Wits Freelancers</h1>
+          <p>Hire witsies to do jobs for you! All you have to do is post a project with the requirements and wait for free lancers to respond</p>
         <p></p>
+
+        </div>
+
+        <div class="post-job-container">
+          <form action="//1627982.ms.wits.ac.za/~student/Job.php?ACTION=0">
+            <h1 class="mt-4">Post Project</h1>
+            Student number:<input type="text" name="JOB_EMPLOYER_ID" required>
+            Title: <input type="text" name="JOB_TITLE" required><br>
+            Decription: <input type="text"  name="JOB_DESCRIPTION"required><br>
+            Minimum range: <input type="number" name="JOB_AMOUNT_RANGE_LOW" required><br>
+            Maximum range: <input type="number" name="JOB_AMOUNT_RANGE_HIGH" required><br>
+            End date: <input type="date" name="JOB_DUE_DATE_TIME" required><br>
+            Job location: <input type="text" name="JOB_LOCATION"><br>
+            CATEGORY:
+            <select name="JOB_CATEGORY">
+              <option value=1>School</option>
+              <option value=2>Finance</option>
+              <option value=3>Programming</option>
+              <option value=4>Assignments</option>
+            </select><br>
+
+
+            <input type="submit" value="Post Job">
+            <input type=reset>
+
+          </form>
+        </div>
+
+
       </div>
     </div>
     <!-- /#page-content-wrapper -->
@@ -71,8 +101,8 @@
 
   <!--Todo:Mbuso check how this works-->
   <!-- Bootstrap core JavaScript -->
-  <script src="../../vendor/jquery/jquery.min.js"></script>
-  <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Menu Toggle Script -->
   <!--Todo:Mbuso check how this works-->

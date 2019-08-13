@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <title>Post job</title>
 
 </head>
@@ -10,18 +12,24 @@
 JOB_AMOUNT_RANGE_LOW=0&JOB_AMOUNT_RANGE_HIGH=100&JOB_DUE_DATE_TIME=10/12/2012_19:20&JOB_LOCATION=location&JOB_CATEGORY=0-->
 <form action="//1627982.ms.wits.ac.za/~student/Job.php?ACTION=0">
 
+    Student number:<input type="text" name="JOB_EMPLOYER_ID" required>
     Title: <input type="text" name="JOB_TITLE" required><br>
     Decription: <input type="text"  name="JOB_DESCRIPTION"required><br>
     Minimum range: <input type="number" name="JOB_AMOUNT_RANGE_LOW" required><br>
     Maximum range: <input type="number" name="JOB_AMOUNT_RANGE_HIGH" required><br>
     End date: <input type="date" name="JOB_DUE_DATE_TIME" required><br>
     Job location: <input type="text" name="JOB_LOCATION"><br>
-
-
+    CATEGORY:
+    <select name="JOB_CATEGORY">
+        <option value=1>School</option>
+        <option value=2>Finance</option>
+        <option value=3>Programming</option>
+        <option value=4>Assignments</option>
+    </select><br>
 
 
     <input type="submit" value="Post Job">
-    <input type=reset><br>
+    <input type=reset>
 
 </form>
 
