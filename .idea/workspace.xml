@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dbc59da2-6e1f-4e14-99d9-9f9f3b765795" name="Default Changelist" comment="Added more css">
+    <list default="true" id="dbc59da2-6e1f-4e14-99d9-9f9f3b765795" name="Default Changelist" comment="Fixed button layout">
       <change afterPath="$PROJECT_DIR$/www/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/www/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/www/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
@@ -29,6 +29,7 @@
       <change afterPath="$PROJECT_DIR$/www/vendor/jquery/jquery.slim.min.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/www/vendor/jquery/jquery.slim.min.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/html/mainpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/mainpage.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -45,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/html/mainpage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="100" column="102" selection-start-line="100" selection-start-column="102" selection-end-line="100" selection-end-column="102" />
+            <state relative-caret-position="1258">
+              <caret line="89" column="36" lean-forward="true" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -144,8 +145,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="422" />
-    <option name="y" value="-10" />
+    <option name="x" value="496" />
+    <option name="y" value="-23" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
@@ -270,7 +271,7 @@
       <workItem from="1565520165136" duration="1971000" />
       <workItem from="1565679433468" duration="500000" />
       <workItem from="1565682570004" duration="5414000" />
-      <workItem from="1565693134759" duration="803000" />
+      <workItem from="1565693134759" duration="3057000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1565184567235</created>
@@ -356,11 +357,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565688821140</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fixed button layout">
+      <created>1565694158185</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1565694158186</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fixed button layout">
+      <created>1565694474033</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1565694474033</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67903000" />
+    <option name="totallyTimeSpent" value="70157000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -375,8 +390,8 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.75738394" visible="true" weight="0.084600136" />
-      <window_info id="Structure" order="1" sideWeight="0.24261603" side_tool="true" visible="true" weight="0.084600136" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.75738394" visible="true" weight="0.12888302" />
+      <window_info id="Structure" order="1" sideWeight="0.24261603" side_tool="true" visible="true" weight="0.12888302" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -458,7 +473,8 @@
     <MESSAGE value="added job div to home page" />
     <MESSAGE value="Fixed button and some layouts. Mbuso check comments" />
     <MESSAGE value="Added more css" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more css" />
+    <MESSAGE value="Fixed button layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed button layout" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hooks/README.md">
@@ -498,13 +514,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/platforms/android/app/src/main/assets/www/index.html" />
-    <entry file="file://$PROJECT_DIR$/www/html/mainpage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="100" column="102" selection-start-line="100" selection-start-column="102" selection-end-line="100" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/css/simple-sidebar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
@@ -516,13 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -540,6 +542,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="75" column="46" selection-start-line="75" selection-start-column="46" selection-end-line="75" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/html/mainpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="89" column="36" lean-forward="true" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
         </state>
       </provider>
     </entry>
