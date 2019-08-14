@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dbc59da2-6e1f-4e14-99d9-9f9f3b765795" name="Default Changelist" comment="Mbuso need a link to my account">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/untitled1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/untitled1.iml" afterDir="false" />
+    <list default="true" id="dbc59da2-6e1f-4e14-99d9-9f9f3b765795" name="Default Changelist" comment="Mbuso conect to php">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/html/mainpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/res/xml/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/res/xml/config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
@@ -33,9 +27,6 @@
       <change beforePath="$PROJECT_DIR$/vendor/jquery/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/jquery/jquery.slim.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/jquery/jquery.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/jquery/jquery.slim.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/jquery/jquery.slim.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/jquery/jquery.slim.min.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/css/floating button.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/css/floating button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/html/Account.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/Account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/mainpage.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -310,7 +301,7 @@
       <workItem from="1565693134759" duration="3057000" />
       <workItem from="1565714511142" duration="16600000" />
       <workItem from="1565770076257" duration="701000" />
-      <workItem from="1565772375133" duration="9303000" />
+      <workItem from="1565772375133" duration="9662000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1565184567235</created>
@@ -431,11 +422,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565773401815</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Mbuso conect to php">
+      <created>1565786445581</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1565786445581</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96761000" />
+    <option name="totallyTimeSpent" value="97120000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -537,7 +535,8 @@
     <MESSAGE value="loggin in update 1" />
     <MESSAGE value="mainpage functionality, post_project handled." />
     <MESSAGE value="floating button" />
-    <option name="LAST_COMMIT_MESSAGE" value="floating button" />
+    <MESSAGE value="Mbuso conect to php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mbuso conect to php" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hooks/README.md">
