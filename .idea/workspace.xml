@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dbc59da2-6e1f-4e14-99d9-9f9f3b765795" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/www/Javascript/Post_project.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/Javascript/mainpage.js" afterDir="false" />
+    <list default="true" id="dbc59da2-6e1f-4e14-99d9-9f9f3b765795" name="Default Changelist" comment="mainpage functionality, post_project handled.">
+      <change afterPath="$PROJECT_DIR$/www/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
@@ -19,11 +19,11 @@
       <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/jquery/jquery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/jquery/jquery.min.js" afterDir="false" />
@@ -31,9 +31,6 @@
       <change beforePath="$PROJECT_DIR$/vendor/jquery/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/jquery/jquery.slim.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/jquery/jquery.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/jquery/jquery.slim.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/jquery/jquery.slim.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/jquery/jquery.slim.min.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/Javascript/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/mainpage.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,32 +41,22 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/www/html/mainpage.html">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="247">
-                    <caret line="102" column="82" selection-start-line="102" selection-start-column="70" selection-end-line="102" selection-end-column="82" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/html/mainpage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="32" column="98" selection-start-line="32" selection-start-column="98" selection-end-line="32" selection-end-column="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/Javascript/Post_project.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
+            <state relative-caret-position="24">
+              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -79,15 +66,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="48">
               <caret line="2" column="81" selection-start-line="2" selection-start-column="81" selection-end-line="2" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/css/simple-sidebar.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -185,8 +163,8 @@
         <option value="$PROJECT_DIR$/www/Javascript/homepage.js" />
         <option value="$PROJECT_DIR$/www/Javascript/Post project.js" />
         <option value="$PROJECT_DIR$/www/Javascript/mainpage.js" />
-        <option value="$PROJECT_DIR$/www/html/mainpage.html" />
         <option value="$PROJECT_DIR$/www/Javascript/Post_project.js" />
+        <option value="$PROJECT_DIR$/www/html/mainpage.html" />
       </list>
     </option>
   </component>
@@ -331,7 +309,7 @@
       <workItem from="1565679433468" duration="500000" />
       <workItem from="1565682570004" duration="5414000" />
       <workItem from="1565693134759" duration="3057000" />
-      <workItem from="1565714511142" duration="15256000" />
+      <workItem from="1565714511142" duration="16600000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1565184567235</created>
@@ -438,11 +416,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565715075560</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="mainpage functionality, post_project handled.">
+      <created>1565731609926</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1565731609926</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85413000" />
+    <option name="totallyTimeSpent" value="86757000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -454,11 +439,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="781" height="870" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.75488454" visible="true" weight="0.26209676" />
-      <window_info id="Structure" order="1" sideWeight="0.24511546" side_tool="true" visible="true" weight="0.26209676" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7548161" visible="true" weight="0.12888302" />
+      <window_info id="Structure" order="1" sideWeight="0.24518389" side_tool="true" visible="true" weight="0.12888302" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -467,7 +452,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.20926966" />
+      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.20694445" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.33144477" />
@@ -542,7 +527,8 @@
     <MESSAGE value="Added more css" />
     <MESSAGE value="Fixed button layout" />
     <MESSAGE value="loggin in update 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="loggin in update 1" />
+    <MESSAGE value="mainpage functionality, post_project handled." />
+    <option name="LAST_COMMIT_MESSAGE" value="mainpage functionality, post_project handled." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hooks/README.md">
@@ -625,17 +611,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/html/mainpage.html">
+    <entry file="file://$PROJECT_DIR$/www/Javascript/Post_project.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="102" column="82" selection-start-line="102" selection-start-column="70" selection-end-line="102" selection-end-column="82" />
+        <state relative-caret-position="24">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/Javascript/Post_project.js">
+    <entry file="file://$PROJECT_DIR$/www/html/mainpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
+        <state relative-caret-position="48">
+          <caret line="32" column="98" selection-start-line="32" selection-start-column="98" selection-end-line="32" selection-end-column="98" />
         </state>
       </provider>
     </entry>
