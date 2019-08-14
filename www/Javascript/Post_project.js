@@ -25,12 +25,16 @@ function  postProject() {
         let minRange = $('#min_range').val();
         let maxRange = $('#max_range').val();
         let endDate = $('#date').val();
-        if(minRange > maxRange || minRange==="" || maxRange === ""){
+        //there is a bug in the code below
+        if(minRange > maxRange){
             $("#minLabel").show();
             $("#maxLabel").show();
-        }else if(minRange < maxRange){
+        }else if(maxRange > minRange){
             $("#minLabel").hide();
             $("#maxLabel").hide();
+        }else if(minRange==="" || maxRange === ""){ //if the input boxes are empty
+            $("#minLabel").show();
+            $("#maxLabel").show();
         }
         if(new Date(endDate) < (new Date($.now())) || endDate===""){
             $("#dateLabel").show();
