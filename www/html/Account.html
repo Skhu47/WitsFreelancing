@@ -4,28 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <title>Account</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <script src="../Javascript/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <link href="../css/floating%20button.css" rel="stylesheet">
+    <title>Account</title>
+
+
 
 </head>
 <body>
 
-<a href="#" class="float">
-    <i class="fa fa-plus my-float"></i>
-</a>
+
+
 
 <div class="container">
 
+    <div class="jumbotron text-left bg-light" >
+        <h1 class="mt-4" >My account</h1>
+    </div>
 
     <div class="amount">
-
+    <!--Displays how much the user has-->
     </div>
-    <div class="transactions"></div>
+    <div class="transactions">
+    <!--Lists all transactions-->
+    </div>
 
 
 </div>
 
+<div class="container mt-3">
 
+    <!-- Button to Open the Modal -->
+
+
+        <i class='fas fa-plus' id="but" style='font-size:36px' data-toggle="modal" data-target="#myModal"></i>
+
+    <!-- The Modal -->
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Add credit</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form class="was-validated">
+                    <div class="form-group">
+                       <input type="number" id="min_range" class="form-control" name="FUND_AMOUNT" required placeholder="Enter credit amount">
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback" id="minLabel"></div>
+                    </div>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <!--Todo: Mbuso->When add is clicked post to php-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Add</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
 
 </body>
 </html>
