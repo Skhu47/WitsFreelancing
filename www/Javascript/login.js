@@ -11,6 +11,7 @@ $(document).ready(function(){
             data:{USERNAME: stud_id,PASSWORD :stud_pass},
             dataType: "text",
             /*success: function (res) {
+
                 alert(res);}*/
         });
         res.done(function (msg) {

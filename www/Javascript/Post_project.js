@@ -7,6 +7,7 @@ function  postProject() {
         $("#dateLabel").hide();
         $("#post_job_cont").show(function () {
             $("#post_job_cont").slideDown(1000);
+
         });
         //$("#sidebar-wrapper").toggle(); //we need the toggling button here too
     });
