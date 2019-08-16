@@ -33,12 +33,12 @@
 
         <!--Todo: Mbuso check out how to implement a dynamic page when we click on these options bellow:-->
         <a href="#" class="list-group-item list-group-item-action bg-light" onclick="postProject()">Post Project</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Browse Projects</a>
+        <a href="#" id="jobs" class="list-group-item list-group-item-action bg-light">Browse Projects</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Browse Freelancers</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">My Profile</a>
 
         <!--Todo: Mbuso, need an onclick here to my account page-->
-        <a href="#" class="list-group-item list-group-item-action bg-light">My Account</a>
+        <a href="#" id="account" class="list-group-item list-group-item-action bg-light">My Account</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Support</a>
 
       </div>
@@ -86,17 +86,17 @@
             <h1 class="mt-4">Post Project</h1>
             </div>
             <div class="form-group">
-            Student number: <input type="text" class="form-control" name="JOB_EMPLOYER_ID" required placeholder="Enter Student number">
+            Student number: <input type="text" id="Employer_id" class="form-control" name="JOB_EMPLOYER_ID" required placeholder="Enter Student number">
               <div class="invalid-feedback">Please enter your student number.</div>
             </div>
 
             <div class="form-group">
-            Title: <br><input type="text"  class="form-control" name="JOB_TITLE" required placeholder="Title of the project">
+            Title: <br><input type="text" id="Job_title"  class="form-control" name="JOB_TITLE" required placeholder="Title of the project">
               <div class="invalid-feedback">Please enter the title of your project</div>
             </div>
 
             <div class="form-group">
-            Description: <br><input type="text" class="form-control" name="JOB_DESCRIPTION" required placeholder="Description of the project">
+            Description: <br><input type="text" id="Job_desc" class="form-control" name="JOB_DESCRIPTION" required placeholder="Description of the project">
               <div class="valid-feedback"></div>
               <div class="invalid-feedback">Please enter project's description</div>
             </div>
@@ -120,14 +120,14 @@
               <div class="invalid-feedback" id="dateLabel">Please enter the correct date</div>
             </div>
             <div class="form-group">
-            Job location: <br><input type="text" class="form-control" name="JOB_LOCATION" required placeholder="Enter job location">
+            Job location: <br><input type="text" id="location" class="form-control" name="JOB_LOCATION" required placeholder="Enter job location">
               <div class="valid-feedback"></div>
               <div class="invalid-feedback">Please enter location </div>
             </div>
 
             <div class="form-group">
               CATEGORY:<br>
-            <select class="form-control" name="JOB_CATEGORY">
+            <select class="form-control" id="category" name="JOB_CATEGORY">
               <option value=1>School</option>
               <option value=2>Finance</option>
               <option value=3>Programming</option>

@@ -10,3 +10,10 @@ function tog(){
         //$("#sidebar-wrapper").show();
     });
 }
+
+$(document).ready(function (){
+    $("#account").click(function () {
+        $("#wrapper").load("Account.html");
+    }); // find a way to make this seem invisible. OR
+    //$("#sidebar-wrapper").toggle(); //we need the toggling button here too
+});

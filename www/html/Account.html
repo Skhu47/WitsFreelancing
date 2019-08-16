@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- ALWAYS HAVE THIS -->
     <meta charset="UTF-8">
+
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script src="../Javascript/jquery-3.4.1.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <!--------------------------------------------------------------------------------------------------------------->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -12,6 +24,7 @@
     <script src="../Javascript/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../Javascript/Account.js"></script>
 
     <link href="../css/floating%20button.css" rel="stylesheet">
     <title>Account</title>
@@ -82,7 +95,7 @@
                 <div class="modal-body">
                     <form class="was-validated">
                     <div class="form-group">
-                       <input type="number" id="min_range" class="form-control" name="FUND_AMOUNT" required placeholder="Enter credit amount">
+                       <input type="number" id="fund" class="form-control" name="FUND_AMOUNT" required placeholder="Enter credit amount">
                         <div class="valid-feedback"></div>
                         <div class="invalid-feedback" id="minLabel"></div>
                     </div>
@@ -92,7 +105,7 @@
                 <!-- Modal footer -->
                 <!--Todo: Mbuso->When add is clicked post to funds php-->
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success" >Add</button>
+                    <button type="button" id="postFundbtn" class="btn btn-success" >Add</button>
                 </div>
 
             </div>

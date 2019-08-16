@@ -18,45 +18,31 @@ $(document).ready(function(){
                 //success
                 let results = response.data; //data from server, it's a string, must be converted to an appropriate format
                 //e.g. json
-                alert(results);
+                //alert(results.toString().length);
+                //alert(results.toString()[0]);
+                if(results.toString().length <= 2){
+                    alert("empty");
+                }
+                else if(results.toString().length > 2){
+                    let res = results.toString().split('"');
+                    for(let i=0; i < results.toString().length; i++){
+                        console.log(res[i]);
+                    }
+                    localStorage.setItem("Name",res[3] );
+                    localStorage.setItem("Surname", res[7]);
+                    localStorage.setItem("Stud_No", $("#Username").val());
+                    //alert(res[3]); //- name
+                    //alert(res[7]); //- surname
+                    $("#div1").load("mainpage.html");
+                }
             },
             function (response) {
                 //fail
+
             },
             function (response) {
                 //permission denied
-            })
+            }
+            )
     });
-
-    // $('#login_btn').click(function(){
-    //     let stud_id = $('#Username').val(); //student_id
-    //     console.log(stud_id);
-    //     let stud_pass = $('#Password').val(); //student password
-    //     console.log(stud_pass);
-    //     let res = $.ajax({
-    //         type: 'POST',
-    //         url: 'http://1627982.ms.wits.ac.za/~student/auth.php',
-    //         data:{USERNAME: stud_id,PASSWORD :stud_pass},
-    //         dataType: "text",
-    //         /*success: function (res) {
-    //
-    //             alert(res);}*/
-    //     });
-    //     res.done(function (msg) {
-    //         console.log(msg);
-    //     });
-    //
-    //     res.fail(function (jqXHR, status) {
-    //         console.log(status);
-    //     });
-    //     //$("#div1").load("html/mainpage.html");
-    //     //window.location.href="www/html/mainpage.html"; // upon validation we need to go to the home page
-    //     /*$.post(
-    //         "1627982.ms.wits.ac.za/~student/auth.php",
-    //         {USERNAME: stud_id,PASSWORD :stud_pass},function (data) {
-    //             alert(data);
-    //         }
-    //     );*/
-    //     console.log("after the cond");
-    // });
 });
