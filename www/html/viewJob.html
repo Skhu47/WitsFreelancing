@@ -74,6 +74,7 @@
 <!--                            <div class="valid-feedback"></div>-->
 <!--                            <div class="invalid-feedback" id="minLabel"></div>-->
                     <!--Todo: Add information about the task-->
+                        <!--See Job_php documentation-->
 <!--                    JOB_AMOUNT_RANGE_LOW-->
 <!--                    JOB_DESCRIPTION-->
 <!--                    JOB_AMOUNT_RANGE_LOW-->
@@ -81,7 +82,28 @@
 <!--                    JOB_DUE_DATE_TIME-->
 <!--                    JOB_LOCATION-->
 <!--                    JOB_CATEGORY-->
-                </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <h4 class="text-center">Bid</h4>
+
+                    <div class="form-group">
+                        Bid amount: <input type="number" id="min_range" class="form-control" name="BID_SUGGESTED_AMOUNT" required placeholder="Enter bid amount">
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback" id="minLabel">Enter suggested amount</div>
+                    </div>
+
+                    <div class="form-group">
+                        Bid message: <br><input type="text" class="form-control" name="BID_MESSAGE" required placeholder="Bid message">
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">Enter bid message</div>
+                    </div>
+
+                    </div>
                 <button type="button" class="btn btn-primary btn-block" id="post_job_btn" value="Post Job" >Bid</button><br>
             </div>
         </div>
