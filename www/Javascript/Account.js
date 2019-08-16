@@ -70,7 +70,6 @@
                     //permission denied
                     // alert("3");
                     let results = response.data;
-                    //alert("2");
                     alert(results);
                 }
             )
