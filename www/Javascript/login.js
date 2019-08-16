@@ -18,7 +18,7 @@ $(document).ready(function(){
                 //success
                 let results = response.data; //data from server, it's a string, must be converted to an appropriate format
                 //e.g. json
-                alert("Mojo is awesome, here are the results from server " + results);
+                alert(results);
             },
             function (response) {
                 //fail
