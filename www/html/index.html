@@ -5,9 +5,11 @@
 
     <!-- ALWAYS HAVE THIS -->
     <meta charset="UTF-8">
+
+    <script type="text/javascript" src="../cordova.js"></script>
     <script src="../Javascript/jquery-3.4.1.min.js"></script>
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
@@ -24,51 +26,48 @@
 </head>
 <body>
 
-<script
-        src="../Javascript/login.js"
-></script>
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100 p-t-50 p-b-90">
 
-<div class="limiter">
-    <div class="container-login100">
-        <div class="wrap-login100 p-t-50 p-b-90">
+                <!--form starts here-->
+                <!--Login form--> <!--action="//1627982.ms.wits.ac.za/~student/auth.php"--onsubmit="Login()"-->
 
-            <!--form starts here-->
-            <!--Login form--> <!--action="//1627982.ms.wits.ac.za/~student/auth.php"--onsubmit="Login()"-->
+                <form class="login100-form validate-form flex-sb flex-w" id="Login_form">
+                        <span class="login100-form-title p-b-51">
+                            Login
+                        </span>
 
-            <form class="login100-form validate-form flex-sb flex-w" id="Login_form"  method="post">
-					<span class="login100-form-title p-b-51">
-						Login
-					</span>
-
-                <div class="wrap-input100 validate-input m-b-16" data-validate = "Username is required">
-                    <!--USername is entered here-->
-                    <input class="input100" type="text" id="Username" name="USERNAME" placeholder="Username">
-                    <span class="focus-input100"></span>
-                </div>
+                    <div class="wrap-input100 validate-input m-b-16" data-validate = "Username is required">
+                        <!--USername is entered here-->
+                        <input class="input100" type="text" id="Username" name="USERNAME" placeholder="Username" required>
+                        <span class="focus-input100"></span>
+                    </div>
 
 
-                <div class="wrap-input100 validate-input m-b-16" data-validate = "Password is required">
-                    <!--Password is entered here-->
-                    <input class="input100" type="password" id="Password" name="PASSWORD" placeholder="Password">
-                    <span class="focus-input100"></span>
-                </div>
+                    <div class="wrap-input100 validate-input m-b-16" data-validate = "Password is required">
+                        <!--Password is entered here-->
+                        <input class="input100" type="password" id="Password" name="PASSWORD" placeholder="Password" required>
+                        <span class="focus-input100"></span>
+                    </div>
 
-                <div class="container-login100-form-btn m-t-17">
-                    <!--Todo: when user clicks on login, credentials must be validated and user must be take to mainpage.html -->
-                    <button class="login100-form-btn" id="login_btn" >
-                        Login
+                    <div class="container-login100-form-btn m-t-17">
+                        <!--Todo: when user clicks on login, credentials must be validated and user must be take to mainpage.html -->
+                        <button class="login100-form-btn" id="login_btn" >
+                            Login
 
-                    </button>
-                </div>
+                        </button>
+                    </div>
 
-            </form>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 
 
-<div id="dropDownSelect1"></div>
+    <div id="dropDownSelect1"></div>
 
+    <script src="../Javascript/login.js"></script>
 
 </body>
 </html>
