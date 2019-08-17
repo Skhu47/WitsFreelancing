@@ -16,7 +16,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="../Javascript/Account.js"></script>
-  <script src="../Javascript/Account.js"></script>
 
   <title>Simple Sidebar - Start Bootstrap Template</title>
 
@@ -28,6 +27,7 @@
   <!-- Custom styles for sidebar -->
   <link href="../css/simple-sidebar.css" rel="stylesheet">
 <script src="../Javascript/mainpage.js"></script>
+  <script src="../Javascript/bid.js"></script>
   <script src="../Javascript/Post_project.js"></script>
 <script>hid()</script>
 </head>
@@ -42,13 +42,13 @@
       <div class="list-group list-group-flush">
 
         <!--Todo: Mbuso check out how to implement a dynamic page when we click on these options bellow:-->
-        <a href="#" class="list-group-item list-group-item-action bg-light" onclick="postProject()">Post Project</a>
-        <a href="#" id="jobs" class="list-group-item list-group-item-action bg-light">Browse Projects</a>
+        <a href="#" id="postProject" class="list-group-item list-group-item-action bg-light" onclick="postProject()">Post Project</a>
+        <a href="#" id="seeJobs" class="list-group-item list-group-item-action bg-light" onclick="browseProj()">Browse Projects</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Browse Freelancers</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">My Profile</a>
 
         <!--Todo: Mbuso, need an onclick here to my account page-->
-        <a href="#" id="account" class="list-group-item list-group-item-action bg-light">My Account</a>
+        <a href="#" id="account" class="list-group-item list-group-item-action bg-light" onclick="openAccount()">My Account</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Support</a>
 
       </div>
@@ -160,7 +160,7 @@
 
       <!--Todo: Mbuso-->
       <!--Dis play this when view project is selected-->
-      <div class="jumbotron">
+      <div class="jumbotron1">
         <div class="card pmd-card">
           <div class="table-fixed-head">
             <div class="table-responsive scrollable-table">
@@ -258,7 +258,7 @@
     </div>
 <!--Account-->
 
-    <div class="container account">
+    <div class="container_account">
 
       <div class="jumbotron text-center bg-light" >
         <h1 class="mt-4" >My account</h1>
