@@ -35,8 +35,6 @@ $(document).ready(function(){
                     }
                     else{
                         let jsonResults = JSON.parse(results);
-                        console.log(jsonResults["name"]);
-                        console.log(jsonResults["surname"]);
 
                         localStorage.setItem("Name", jsonResults["name"]);
                         localStorage.setItem("Surname", jsonResults["surname"]);
@@ -44,19 +42,6 @@ $(document).ready(function(){
 
                         $("#div1").load("mainpage.html");
                     }
-
-                    /*else if(results.toString().length > 2){
-                        let res = results.toString().split('"');
-                        for(let i=0; i < results.toString().length; i++){
-                            console.log(res[i]);
-                        }
-                        localStorage.setItem("Name",res[3] );
-                        localStorage.setItem("Surname", res[7]);
-                        localStorage.setItem("Stud_No", $("#Username").val());
-                        //alert(res[3]); //- name
-                        //alert(res[7]); //- surname
-
-                    }*/
                 },
                 function (response) {
                     alert("Login Failed due to Incorrect credentials");
