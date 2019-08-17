@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $("#login_btn").on("click", (e) =>{
 
-        e.preventDefault();
+
 
         let userNameInput = $('#Username');
         let userPassInput = $('#Password');
@@ -13,12 +13,13 @@ $(document).ready(function(){
 
 
         if (everythingOkay){
+            e.preventDefault();
             const options = {
                 method: "post",
                 timeout: 10000,
                 data: {
-                    USERNAME: $("#Username").val(),
-                    PASSWORD: $("#Password").val()
+                    USERNAME: userNameInput.val(),
+                    PASSWORD: userPassInput.val()
                 }
             };
             const url = "http://1627982.ms.wits.ac.za/~student/auth.php";
@@ -30,7 +31,7 @@ $(document).ready(function(){
                     //e.g. json
                     //alert(results.toString().length);
                     //alert(results.toString()[0]);
-                    if(results === null || results.toString().length <= 2){
+                    if(results === null || results.length <= 2){
                         alert("Login Failed due to Incorrect credentials");
                     }
                     else{
@@ -48,6 +49,7 @@ $(document).ready(function(){
                 },
                 function (response) {
                     //permission denied
+                    alert("Login Failed due to permission denied");
                 }
             );
         }
