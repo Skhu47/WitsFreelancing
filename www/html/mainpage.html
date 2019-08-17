@@ -10,6 +10,12 @@
   <script src="../Javascript/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="../cordova.js"></script>
+  <script src="../Javascript/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="../Javascript/Account.js"></script>
   <script src="../Javascript/Account.js"></script>
 
   <title>Simple Sidebar - Start Bootstrap Template</title>
@@ -250,107 +256,86 @@
 
 
     </div>
+<!--Account-->
 
-    <!--Todo: Mbuso -->
-    <!--Todo: Should appear like post project on the main page: View project-->
+    <div class="container account">
 
-    <!-- Table with Fixed Header-->
-    <div class="jumbotron">
-      <div class="card pmd-card">
-        <div class="table-fixed-head">
-          <div class="table-responsive scrollable-table">
-            <table cellspacing="0" cellpadding="0" class="table table-striped">
-              <thead class="header">
-              <tr>
-                <th>Title</th>
-                <th>Category</th>
-                <!--                    <th>Description</th>-->
-                <!--                    <th>End Date for project</th>-->
-                <!--                    <th>No. bids</th>-->
+      <div class="jumbotron text-center bg-light" >
+        <h1 class="mt-4" >My account</h1>
+      </div>
 
-                <th></th>
-              </tr>
-              </thead>
-              <tbody>
+      <style>
+        .mt-4 {
+          top: 615px;
+        }
 
-              <tr>
-              <tr>
-                <td data-title="JOB_TITLE">Skhumbuzo</td>
-                <td data-title="JOB_CATEGORY">School</td>
+      </style>
+      <div class="amount">
+        <!--Displays how much the user has-->
 
-
-                <td data-title=""><a href="javascript:void(0);"><i class="material-icons md-dark pmd-sm" data-toggle="modal" data-target="#myModal">View more</i></a></td>
-              </tr>
-
-              </tbody>
-            </table>
-          </div>
+        <div class="jumbotron text-center" >
+          <!--Lists all transactions-->
+          <h4 class="mt-4" ><!--Todo: show balance here--></h4>
         </div>
       </div>
 
 
+      <div class="transactions">
+        <!--Empty for now-->
 
-      <!-- The Modal -->
+        <!--        <div class="jumbotron text-left">-->
+        <!--            &lt;!&ndash;Lists all transactions&ndash;&gt;-->
+        <!--            <h3 class="mt-4" >My transactions:</h3>-->
 
-      <div class="modal fade" id="myModal1">
-        <div class="modal-dialog modal-dialog-scrollable">
-          <div class="modal-content">
-
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Title of project</h4>
-              <button type="button" class="close" data-dismiss="modal">×</button>
-            </div>
-
-            <!-- Modal body -->
-            <div class="modal-body">
-              <!--                            <input type="number" id="min_range" class="form-control" name="FUND_AMOUNT" required placeholder="Enter credit amount">-->
-              <!--                            <div class="valid-feedback"></div>-->
-              <!--                            <div class="invalid-feedback" id="minLabel"></div>-->
-              <!--Todo: Add information about the task-->
-              <!--See Job_php documentation-->
-              <!--                    JOB_AMOUNT_RANGE_LOW-->
-              <!--                    JOB_DESCRIPTION-->
-              <!--                    JOB_AMOUNT_RANGE_LOW-->
-              <!--                    JOB_AMOUNT_RANGE_HIGH-->
-              <!--                    JOB_DUE_DATE_TIME-->
-              <!--                    JOB_LOCATION-->
-              <!--                    JOB_CATEGORY-->
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-
-              <h4 class="text-center">Bid</h4>
-
-              <div class="form-group">
-                Bid amount: <input type="number" id="min_range2" class="form-control" name="BID_SUGGESTED_AMOUNT" required placeholder="Enter bid amount">
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback" id="minLabel2">Enter suggested amount</div>
-              </div>
-
-              <div class="form-group">
-                Bid message: <br><input type="text" class="form-control" name="BID_MESSAGE" required placeholder="Bid message">
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback">Enter bid message</div>
-              </div>
-
-            </div>
-            <!--Todo: Mbuso-->
-            <!--Todo: Should be sent to the database-->
-            <button type="button" class="btn btn-primary btn-block" id="bid_btn" value="Bid" >Bid</button><br>
-          </div>
-        </div>
+        <!--        </div>-->
       </div>
 
 
+
+
+      <div class="container mt-3">
+
+        <!-- Button to Open the Modal -->
+
+
+        <i class='fas fa-plus' id="but" style='font-size:36px' data-toggle="modal" data-target="#myModal"></i>
+
+        <!-- The Modal -->
+
+        <div class="modal fade" id="myModal2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Add credit</h4>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <form class="was-validated">
+                  <div class="form-group">
+                    <input type="number" id="fund" class="form-control" name="FUND_AMOUNT" required placeholder="Enter credit amount">
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback" id="minLabel3"></div>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Modal footer -->
+              <!--Todo: Mbuso->When add is clicked post to funds php-->
+              <div class="modal-footer">
+                <button type="button" id="postFundbtn" class="btn btn-success" >Add</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
 
-
-
-  </div>
 
 
 

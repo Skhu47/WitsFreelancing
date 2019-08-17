@@ -33,15 +33,19 @@
                 <!--form starts here-->
                 <!--Login form--> <!--action="//1627982.ms.wits.ac.za/~student/auth.php"--onsubmit="Login()"-->
 
-                <form class="login100-form validate-form flex-sb flex-w" id="Login_form">
+                <form class="login100-form validate-form flex-sb flex-w was-validated" id="Login_form" >
                         <span class="login100-form-title p-b-51">
                             Login
                         </span>
 
-                    <div class="wrap-input100 validate-input m-b-16" data-validate = "Username is required">
-                        <!--USername is entered here-->
+                    <div class="wrap-input100 validate-input m-b-16 " data-validate = "Username is required">
+                        <div class="form-group">
+                        <!--Username is entered here-->
                         <input class="input100" type="text" id="Username" name="USERNAME" placeholder="Username" required>
                         <span class="focus-input100"></span>
+                            <div class="valid-feedback"></div>
+                            <div class="invalid-feedback" id="minLabel"></div>
+                        </div>
                     </div>
 
 
