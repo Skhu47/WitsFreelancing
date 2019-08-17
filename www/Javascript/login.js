@@ -1,6 +1,8 @@
 $(document).ready(function(){
     $("#login_btn").on("click", (e) =>{
 
+        e.preventDefault();
+
         let userNameInput = $('#Username');
         let userPassInput = $('#Password');
         let everythingOkay = true;
@@ -25,14 +27,25 @@ $(document).ready(function(){
                 function (response) {
                     //success
                     let results = response.data; //data from server, it's a string, must be converted to an appropriate format
-                    console.log("results = "+results);
                     //e.g. json
                     //alert(results.toString().length);
                     //alert(results.toString()[0]);
                     if(results === null || results.toString().length <= 2){
                         alert("Login Failed due to Incorrect credentials");
                     }
-                    else if(results.toString().length > 2){
+                    else{
+                        let jsonResults = JSON.parse(results);
+                        console.log(jsonResults["name"]);
+                        console.log(jsonResults["surname"]);
+
+                        localStorage.setItem("Name", jsonResults["name"]);
+                        localStorage.setItem("Surname", jsonResults["surname"]);
+                        localStorage.setItem("Stud_No", userNameInput.val());
+
+                        $("#div1").load("mainpage.html");
+                    }
+
+                    /*else if(results.toString().length > 2){
                         let res = results.toString().split('"');
                         for(let i=0; i < results.toString().length; i++){
                             console.log(res[i]);
@@ -42,8 +55,8 @@ $(document).ready(function(){
                         localStorage.setItem("Stud_No", $("#Username").val());
                         //alert(res[3]); //- name
                         //alert(res[7]); //- surname
-                        $("#div1").load("mainpage.html");
-                    }
+
+                    }*/
                 },
                 function (response) {
                     alert("Login Failed due to Incorrect credentials");
