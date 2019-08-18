@@ -11,11 +11,26 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
   <script type="text/javascript" src="../cordova.js"></script>
   <script src="../Javascript/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="../Javascript/Account.js"></script>
+
+  <link href="../css/floating%20button.css" rel="stylesheet">
+
+  <script type="text/javascript" src="../cordova.js"></script>
+  <script src="../Javascript/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="../Javascript/Account.js"></script>
+  <link href="../css/floating%20button.css" rel="stylesheet">
 
   <title>Simple Sidebar - Start Bootstrap Template</title>
 
@@ -111,7 +126,7 @@
               <div class="invalid-feedback">Please enter project's description</div>
             </div>
 
-            <!--Todo:Mbuso Check if min amount < max amount-->
+            <!--Todo:Mbuso Check if min amount <  max amount-->
 
 
             <div class="form-group">
@@ -169,6 +184,7 @@
                 <tr>
                   <th>Title</th>
                   <th>Category</th>
+                  <th>Price range</th>
                   <!--                    <th>Description</th>-->
                   <!--                    <th>End Date for project</th>-->
                   <!--                    <th>No. bids</th>-->
@@ -182,7 +198,7 @@
                 <tr>
                   <td data-title="JOB_TITLE">Skhumbuzo</td>
                   <td data-title="JOB_CATEGORY">School</td>
-
+                  <td data-title="NUM_OF_BIDS"> xxx</td>
 
                   <td data-title=""><a href="javascript:void(0);"><i class="material-icons md-dark pmd-sm" data-toggle="modal" data-target="#myModal">View more</i></a></td>
                 </tr>
@@ -253,91 +269,92 @@
 
       </div>
 
+      <!--Account-->
 
 
-    </div>
-<!--Account-->
 
-    <div class="container_account">
+      <div class="container_account">
 
-      <div class="jumbotron text-center bg-light" >
-        <h1 class="mt-4" >My account</h1>
-      </div>
-
-      <style>
-        .mt-4 {
-          top: 615px;
-        }
-
-      </style>
-      <div class="amount">
-        <!--Displays how much the user has-->
-
-        <div class="jumbotron text-center" >
-          <!--Lists all transactions-->
-          <h4 class="mt-4" ><!--Todo: show balance here--></h4>
+        <div class="jumbotron text-center bg-light" >
+          <h1 class="mt-4" >My account</h1>
         </div>
-      </div>
 
+        <style>
+          .mt-4 {
+            top: 615px;
+          }
 
-      <div class="transactions">
-        <!--Empty for now-->
+        </style>
 
-        <!--        <div class="jumbotron text-left">-->
-        <!--            &lt;!&ndash;Lists all transactions&ndash;&gt;-->
-        <!--            <h3 class="mt-4" >My transactions:</h3>-->
+        <div class="amount">
+          <!--Displays how much the user has-->
 
-        <!--        </div>-->
-      </div>
-
-
-
-
-      <div class="container mt-3">
-
-        <!-- Button to Open the Modal -->
-
-
-        <i class='fas fa-plus' id="but" style='font-size:36px' data-toggle="modal" data-target="#myModal"></i>
-
-        <!-- The Modal -->
-
-        <div class="modal fade" id="myModal2">
-          <div class="modal-dialog">
-            <div class="modal-content">
-
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <h4 class="modal-title">Add credit</h4>
-                <button type="button" class="close" data-dismiss="modal">×</button>
-              </div>
-
-              <!-- Modal body -->
-              <div class="modal-body">
-                <form class="was-validated">
-                  <div class="form-group">
-                    <input type="number" id="fund" class="form-control" name="FUND_AMOUNT" required placeholder="Enter credit amount">
-                    <div class="valid-feedback"></div>
-                    <div class="invalid-feedback" id="minLabel3"></div>
-                  </div>
-                </form>
-              </div>
-
-              <!-- Modal footer -->
-              <!--Todo: Mbuso->When add is clicked post to funds php-->
-              <div class="modal-footer">
-                <button type="button" id="postFundbtn" class="btn btn-success" >Add</button>
-              </div>
-
-            </div>
+          <div class="jumbotron text-center" >
+            <!--Lists all transactions-->
+            <h4 class="mt-4" ><!--Todo: show balance here--></h4>
           </div>
         </div>
 
+
+        <div class="transactions">
+          <!--Empty for now-->
+
+          <!--        <div class="jumbotron text-left">-->
+          <!--            &lt;!&ndash;Lists all transactions&ndash;&gt;-->
+          <!--            <h3 class="mt-4" >My transactions:</h3>-->
+
+          <!--        </div>-->
+        </div>
+
+
+
+
+        <div class="container mt-3">
+
+          <!-- Button to Open the Modal -->
+
+
+          <i class='fas fa-plus' id="but" style='font-size:36px' data-toggle="modal" data-target="#myModal"></i>
+
+          <!-- The Modal -->
+
+          <div class="modal fade" id="myModal2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Add credit</h4>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <form class="was-validated">
+                    <div class="form-group">
+                      <input type="number" id="fund" class="form-control" name="FUND_AMOUNT" required placeholder="Enter credit amount">
+                      <div class="valid-feedback"></div>
+                      <div class="invalid-feedback" id="minLabel3"></div>
+                    </div>
+                  </form>
+                </div>
+
+                <!-- Modal footer -->
+                <!--Todo: Mbuso->When add is clicked post to funds php-->
+                <div class="modal-footer">
+                  <button type="button" id="postFundbtn" class="btn btn-success" >Add</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
+
+
+
     </div>
-
-
-
 
     </div>
     <!-- /#page-content-wrapper -->
