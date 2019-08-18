@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+    <title>View Job</title>
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../Javascript/jquery-3.4.1.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <script src="../Javascript/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../cordova.js"></script>
+
+    <link href="../css/floating%20button.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!--Todo: Mbuso -->
+<!--Todo: Should appear like post project on the main page: View project-->
+
+<!-- Table with Fixed Header-->
+<div class="jumbotron">
+<div class="card pmd-card">
+    <div class="table-fixed-head">
+        <div class="table-responsive scrollable-table">
+            <table cellspacing="0" cellpadding="0" class="table table-striped">
+                <thead class="header">
+                <tr>
+                    <th>Title</th>
+                    <th>Category</th>
+<!--                    <th>Description</th>-->
+<!--                    <th>End Date for project</th>-->
+<!--                    <th>No. bids</th>-->
+
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                <tr>
+                    <td data-title="JOB_TITLE">Skhumbuzo</td>
+                    <td data-title="JOB_CATEGORY">School</td>
+
+
+                    <td data-title=""><a href="javascript:void(0);"><i class="material-icons md-dark pmd-sm" data-toggle="modal" data-target="#myModal">View more</i></a></td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- The Modal -->
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Title of project</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+<!--                            <input type="number" id="min_range" class="form-control" name="FUND_AMOUNT" required placeholder="Enter credit amount">-->
+<!--                            <div class="valid-feedback"></div>-->
+<!--                            <div class="invalid-feedback" id="minLabel"></div>-->
+                    <!--Todo: Add information about the task-->
+                        <!--See Job_php documentation-->
+<!--                    JOB_AMOUNT_RANGE_LOW-->
+<!--                    JOB_DESCRIPTION-->
+<!--                    JOB_AMOUNT_RANGE_LOW-->
+<!--                    JOB_AMOUNT_RANGE_HIGH-->
+<!--                    JOB_DUE_DATE_TIME-->
+<!--                    JOB_LOCATION-->
+<!--                    JOB_CATEGORY-->
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <h4 class="text-center">Bid</h4>
+
+                    <div class="form-group">
+                        Bid amount: <input type="number" id="min_range" class="form-control" name="BID_SUGGESTED_AMOUNT" required placeholder="Enter bid amount">
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback" id="minLabel">Enter suggested amount</div>
+                    </div>
+
+                    <div class="form-group">
+                        Bid message: <br><input type="text" class="form-control" name="BID_MESSAGE" required placeholder="Bid message">
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">Enter bid message</div>
+                    </div>
+
+                    </div>
+                <!--Todo: Mbuso-->
+                <!--Todo: Should be sent to the database-->
+                <button type="button" class="btn btn-primary btn-block" id="bid_btn" value="Bid" >Bid</button><br>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+</div>
+</body>
+</html>
+

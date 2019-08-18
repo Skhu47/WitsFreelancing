@@ -1,0 +1,23 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-advanced-http": {
+      "OKHTTP_VERSION": "3.10.0",
+      "PACKAGE_NAME": "com.qubit.WitsFreelancing"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.qubit.WitsFreelancing"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.qubit.WitsFreelancing"
+    }
+  }
+}

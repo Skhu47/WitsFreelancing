@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+  <script type="text/javascript" src="../cordova.js"></script>
+  <script src="../Javascript/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="../cordova.js"></script>
+  <script src="../Javascript/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="../Javascript/Account.js"></script>
+  <link href="../css/floating%20button.css" rel="stylesheet">
+
+  <title>Simple Sidebar - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script type="text/javascript" src="../cordova.js"></script>
+  <script src="../Javascript/jquery-3.4.1.min.js"></script>
+
+  <!-- Custom styles for sidebar -->
+  <link href="../css/simple-sidebar.css" rel="stylesheet">
+<script src="../Javascript/mainpage.js"></script>
+  <script src="../Javascript/bid.js"></script>
+  <script src="../Javascript/Post_project.js"></script>
+<script>hid()</script>
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Menu </div>
+      <div class="list-group list-group-flush">
+
+        <!--Todo: Mbuso check out how to implement a dynamic page when we click on these options bellow:-->
+        <a href="#" id="postProject" class="list-group-item list-group-item-action bg-light" onclick="postProject()">Post Project</a>
+        <a href="#" id="seeJobs" class="list-group-item list-group-item-action bg-light" onclick="browseProj()">Browse Projects</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Browse Freelancers</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">My Profile</a>
+
+        <!--Todo: Mbuso, need an onclick here to my account page-->
+        <a href="#" id="account" class="list-group-item list-group-item-action bg-light" onclick="openAccount()">My Account</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Support</a>
+
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+
+
+  <!--button for navigation bar-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" id="home" onclick="home()" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid" >
+        <div class="homepage-container" id="header">
+          <div class="jumbotron text-center bg-light" >
+          <h1 class="mt-4" >Wits Freelancers</h1>
+          </div>
+          <p>Hire witsies to do jobs for you! All you have to do is post a project with the requirements and wait for free lancers to respond</p>
+        <p></p>
+
+        </div>
+
+        <!--Show this container when job is selected-->
+
+        <div class="post-job-container" id="post_job_cont" >
+          <form  action="//1627982.ms.wits.ac.za/~student/Job.php?ACTION=0" class="was-validated">
+
+            <div class="jumbotron text-center">
+            <h1 class="mt-4">Post Project</h1>
+            </div>
+            <div class="form-group">
+            Student number: <input type="text" id="Employer_id" class="form-control" name="JOB_EMPLOYER_ID" required placeholder="Enter Student number">
+              <div class="invalid-feedback">Please enter your student number.</div>
+            </div>
+
+            <div class="form-group">
+            Title: <br><input type="text" id="Job_title"  class="form-control" name="JOB_TITLE" required placeholder="Title of the project">
+              <div class="invalid-feedback">Please enter the title of your project</div>
+            </div>
+
+            <div class="form-group">
+            Description: <br><input type="text" id="Job_desc" class="form-control" name="JOB_DESCRIPTION" required placeholder="Description of the project">
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">Please enter project's description</div>
+            </div>
+
+            <!--Todo:Mbuso Check if min amount <  max amount-->
+
+
+            <div class="form-group">
+            Minimum range: <input type="number" id="min_range" class="form-control" name="JOB_AMOUNT_RANGE_LOW" required placeholder="Minimum amount for project">
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback" id="minLabel">Please enter the correct minimum amount for your project</div>
+            </div>
+            <div class="form-group">
+            Maximum range: <input type="number" id="max_range" class="form-control" name="JOB_AMOUNT_RANGE_HIGH" required placeholder="Maximum amount for project">
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback" id="maxLabel">Please enter the correct maximum amount for your project</div>
+            </div>
+            <div class="form-group">
+              End date: <br><input type="date" id="date" class="form-control" placeholder="Select due date" name="JOB_DUE_DATE_TIME" required>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback" id="dateLabel">Please enter the correct date</div>
+            </div>
+            <div class="form-group">
+            Job location: <br><input type="text" id="location" class="form-control" name="JOB_LOCATION" required placeholder="Enter job location">
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">Please enter location </div>
+            </div>
+
+            <div class="form-group">
+              CATEGORY:<br>
+            <select class="form-control" id="category" name="JOB_CATEGORY">
+              <option value=1>School</option>
+              <option value=2>Finance</option>
+              <option value=3>Programming</option>
+              <option value=4>Assignments</option>
+            </select><div class="valid-feedback"></div>
+              <div class="invalid-feedback">Please select category</div>
+
+            </div>
+
+            <!--Todo: Mbuso check validation then post it to the php scrip-->
+            <button type="button" class="btn btn-primary btn-block" id="post_job_btn" value="Post Job" >Post Job</button><br>
+            <!--Do we need reset button-->
+            <button type="reset" id="resetBtn" class="btn btn-primary btn-block">Reset</button><br>
+
+          </form>
+        </div>
+
+
+      </div>
+
+      <!--Todo: Mbuso-->
+      <!--Dis play this when view project is selected-->
+      <div class="jumbotron1">
+        <div class="card pmd-card">
+          <div class="table-fixed-head">
+            <div class="table-responsive scrollable-table">
+              <table cellspacing="0" cellpadding="0" class="table table-striped">
+                <thead class="header">
+                <tr>
+                  <th>Title</th>
+                  <th>Category</th>
+                  <!--                    <th>Description</th>-->
+                  <!--                    <th>End Date for project</th>-->
+                  <!--                    <th>No. bids</th>-->
+
+                  <th></th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                <tr>
+                  <td data-title="JOB_TITLE">Skhumbuzo</td>
+                  <td data-title="JOB_CATEGORY">School</td>
+
+
+                  <td data-title=""><a href="javascript:void(0);"><i class="material-icons md-dark pmd-sm" data-toggle="modal" data-target="#myModal">View more</i></a></td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- The Modal -->
+
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Title of project</h4>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <!--                            <input type="number" id="min_range" class="form-control" name="FUND_AMOUNT" required placeholder="Enter credit amount">-->
+                <!--                            <div class="valid-feedback"></div>-->
+                <!--                            <div class="invalid-feedback" id="minLabel"></div>-->
+                <!--Todo: Add information about the task-->
+                <!--See Job_php documentation-->
+                <!--                    JOB_AMOUNT_RANGE_LOW-->
+                <!--                    JOB_DESCRIPTION-->
+                <!--                    JOB_AMOUNT_RANGE_LOW-->
+                <!--                    JOB_AMOUNT_RANGE_HIGH-->
+                <!--                    JOB_DUE_DATE_TIME-->
+                <!--                    JOB_LOCATION-->
+                <!--                    JOB_CATEGORY-->
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <h4 class="text-center">Bid</h4>
+
+                <div class="form-group">
+                  Bid amount: <input type="number" id="min_range1" class="form-control" name="BID_SUGGESTED_AMOUNT" required placeholder="Enter bid amount">
+                  <div class="valid-feedback"></div>
+                  <div class="invalid-feedback" id="minLabel1">Enter suggested amount</div>
+                </div>
+
+                <div class="form-group">
+                  Bid message: <br><input type="text" class="form-control" name="BID_MESSAGE" required placeholder="Bid message">
+                  <div class="valid-feedback"></div>
+                  <div class="invalid-feedback">Enter bid message</div>
+                </div>
+
+              </div>
+              <!--Todo: Mbuso-->
+              <!--Todo: Should be sent to the database-->
+              <button type="button" class="btn btn-primary btn-block" id="bid_btn1" value="Bid" >Bid</button><br>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!--Account-->
+
+
+
+      <div class="container_account">
+
+        <div class="jumbotron text-center bg-light" >
+          <h1 class="mt-4" >My account</h1>
+        </div>
+
+        <style>
+          .mt-4 {
+            top: 615px;
+          }
+
+        </style>
+
+        <div class="amount">
+          <!--Displays how much the user has-->
+
+          <div class="jumbotron text-center" >
+            <!--Lists all transactions-->
+            <h4 class="mt-4" ><!--Todo: show balance here--></h4>
+          </div>
+        </div>
+
+
+        <div class="transactions">
+          <!--Empty for now-->
+
+          <!--        <div class="jumbotron text-left">-->
+          <!--            &lt;!&ndash;Lists all transactions&ndash;&gt;-->
+          <!--            <h3 class="mt-4" >My transactions:</h3>-->
+
+          <!--        </div>-->
+        </div>
+
+
+
+
+        <div class="container mt-3">
+
+          <!-- Button to Open the Modal -->
+
+
+          <i class='fas fa-plus' id="but" style='font-size:36px' data-toggle="modal" data-target="#myModal"></i>
+
+          <!-- The Modal -->
+
+          <div class="modal fade" id="myModal2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Add credit</h4>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <form class="was-validated">
+                    <div class="form-group">
+                      <input type="number" id="fund" class="form-control" name="FUND_AMOUNT" required placeholder="Enter credit amount">
+                      <div class="valid-feedback"></div>
+                      <div class="invalid-feedback" id="minLabel3"></div>
+                    </div>
+                  </form>
+                </div>
+
+                <!-- Modal footer -->
+                <!--Todo: Mbuso->When add is clicked post to funds php-->
+                <div class="modal-footer">
+                  <button type="button" id="postFundbtn" class="btn btn-success" >Add</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+
+
+  <!-- /#wrapper -->
+
+  <!--Todo:Mbuso check how this works-->
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <!--Todo:Mbuso check how this works-->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>

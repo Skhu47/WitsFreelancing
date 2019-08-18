@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- ALWAYS HAVE THIS -->
+    <meta charset="UTF-8">
+
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script src="../Javascript/jquery-3.4.1.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <!--------------------------------------------------------------------------------------------------------------->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script src="../Javascript/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../Javascript/Account.js"></script>
+
+    <link href="../css/floating%20button.css" rel="stylesheet">
+    <title>Account</title>
+
+
+
+</head>
+<body>
+
+
+
+
+<div class="container">
+
+<div class="jumbotron text-center bg-light" >
+    <h1 class="mt-4" >My account</h1>
+</div>
+
+<style>
+    .mt-4 {
+        top: 615px;
+    }
+
+</style>
+<div class="amount">
+    <!--Displays how much the user has-->
+
+    <div class="jumbotron text-center" >
+        <!--Lists all transactions-->
+        <h4 class="mt-4" ><!--Todo: show balance here--></h4>
+    </div>
+</div>
+
+
+<div class="transactions">
+    <!--Empty for now-->
+
+    <!--        <div class="jumbotron text-left">-->
+    <!--            &lt;!&ndash;Lists all transactions&ndash;&gt;-->
+    <!--            <h3 class="mt-4" >My transactions:</h3>-->
+
+    <!--        </div>-->
+</div>
+
+
+
+
+<div class="container mt-3">
+
+    <!-- Button to Open the Modal -->
+
+
+    <i class='fas fa-plus' id="but" style='font-size:36px' data-toggle="modal" data-target="#myModal"></i>
+
+    <!-- The Modal -->
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Add credit</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form class="was-validated">
+                        <div class="form-group">
+                            <input type="number" id="fund" class="form-control" name="FUND_AMOUNT" required placeholder="Enter credit amount">
+                            <div class="valid-feedback"></div>
+                            <div class="invalid-feedback" id="minLabel"></div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <!--Todo: Mbuso->When add is clicked post to funds php-->
+                <div class="modal-footer">
+                    <button type="button" id="postFundbtn" class="btn btn-success" >Add</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+</body>
+</html>
