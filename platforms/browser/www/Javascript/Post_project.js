@@ -55,48 +55,48 @@ function  postProject() {
         //if it's for here, then code the clear function
     });
     function sendDetails(){ //here we post a project/job
-            const options = {
-                method: "post",
-                timeout: 10000,
-                data: {
-                    ACTION: 0,
-                    JOB_EMPLOYER_ID: localStorage.getItem("Stud_No"),          //$("#Username").val(),
-                    JOB_TITLE: $('#Job_title').val() ,
-                    JOB_DESCRIPTION: $('#Job_desc').val() ,
-                    JOB_AMOUNT_RANGE_LOW: $('#min_range').val(),
-                    JOB_AMOUNT_RANGE_HIGH: $('#max_range').val() ,
-                    JOB_DUE_DATE_TIME: $('#date').val() ,
-                    JOB_LOCATION: $('#location').val() ,
-                    JOB_CATEGORY: $('#category').val()
+        const options = {
+            method: "post",
+            timeout: 10000,
+            data: {
+                ACTION: 0,
+                JOB_EMPLOYER_ID: localStorage.getItem("Stud_No"),          //$("#Username").val(),
+                JOB_TITLE: $('#Job_title').val() ,
+                JOB_DESCRIPTION: $('#Job_desc').val() ,
+                JOB_AMOUNT_RANGE_LOW: $('#min_range').val(),
+                JOB_AMOUNT_RANGE_HIGH: $('#max_range').val() ,
+                JOB_DUE_DATE_TIME: $('#date').val() ,
+                JOB_LOCATION: $('#location').val() ,
+                JOB_CATEGORY: $('#category').val()
 
-                }
-            };
-            const url = "http://1627982.ms.wits.ac.za/~student/Job.php";
+            }
+        };
+        const url = "http://1627982.ms.wits.ac.za/~student/Bid.php";
 
-            cordova.plugin.http.sendRequest(url, options,
-                function (response) {
-                    //success
-                    let results = response.data; //data from server, it's a string, must be converted to an appropriate format
-                    //e.g. json
-                    alert(results);
-                    //alert(results.toString().length);
-                    //alert(results.toString()[0]);
-                },
-                function (response) { // we get a respo
-                    //fail
-                    let results = response.data;
-                    //alert("2");
-                    alert(results);
+        cordova.plugin.http.sendRequest(url, options,
+            function (response) {
+                //success
+                let results = response.data; //data from server, it's a string, must be converted to an appropriate format
+                //e.g. json
+                alert(results);
+                //alert(results.toString().length);
+                //alert(results.toString()[0]);
+            },
+            function (response) { // we get a respo
+                //fail
+                let results = response.data;
+                //alert("2");
+                alert(results);
 
-                },
-                function (response) {
-                    //permission denied
-                    // alert("3");
-                    let results = response.data;
-                    //alert("2");
-                    alert(results);
-                }
-            )
+            },
+            function (response) {
+                //permission denied
+                // alert("3");
+                let results = response.data;
+                //alert("2");
+                alert(results);
+            }
+        );
     }
     //going to viewJob
     $(document).ready(function (){
