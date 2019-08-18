@@ -31,7 +31,5 @@ function browseProj() {
     $("#postProject").click(function () {
         postProject();
     });
-        //
-
 
 }

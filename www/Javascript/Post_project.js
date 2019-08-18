@@ -8,6 +8,9 @@ function  postProject() {
         $(".container_account").hide(function () { //show the bidding page
             $(".container_account").slideUp(1000);
         });
+        $(".jumbotron1").hide(function () { //show the bidding page
+            $(".jumbotron1").slideUp(1000);
+        });
         $("#post_job_cont").show(function () {
             $("#post_job_cont").slideDown(1000);
 
