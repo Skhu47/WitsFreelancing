@@ -27,7 +27,8 @@ $(document).ready(function(){
             cordova.plugin.http.sendRequest(url, options,
                 function (response) {
                     //success
-                    let results = response.data; //data from server, it's a string, must be converted to an appropriate format
+                    let results = response.data;
+                    //data from server, it's a string, must be converted to an appropriate format
                     //e.g. json
                     //alert(results.toString().length);
                     //alert(results.toString()[0]);
@@ -53,8 +54,5 @@ $(document).ready(function(){
                 }
             );
         }
-        //e.preventDefault();
-
-
     });
 });
