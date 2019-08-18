@@ -14,6 +14,7 @@ function browseProj() {
             $(".container_account").slideUp(1000);
         });
         getJobs();
+        getBid();
     });
     function getJobs(){
         const options = {
