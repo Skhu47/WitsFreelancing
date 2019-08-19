@@ -31,25 +31,44 @@ function browseProj() {
                 //success
                 let results = response.data; //data from server, it's a string, must be converted to an appropriate format
                 //e.g. json
-                let output = JSON.parse(response);
-                $("#jobCat").html(response);
-                alert(results);
+                let jobTable = document.getElementById("jobTable").getElementsByTagName("tbody")[0];
+
+                let output = JSON.parse(results);
+                console.log(results);
+
+                for(let i=0; i < output.length; i++){
+                    let jobItem = output[i];
+                    let row = jobTable.insertRow();
+                    let title = row.insertCell(0);
+                    let category = row.insertCell(1);
+                    let price_range = row.insertCell(2);
+                    let view_more = row.insertCell(3);
+
+
+                    title.innerHTML = jobItem["JOB_TITLE"];
+                    category.innerHTML = jobItem["JOB_CATEGORY"];
+                    price_range.innerHTML = jobItem["JOB_AMOUNT_RANGE_LOW"] + " - " + jobItem["JOB_AMOUNT_RANGE_HIGH"];
+                    view_more.innerHTML = "View more";
+                }
+
+
+
+                //alert(results);
                 //alert(results.toString().length);
                 //alert(results.toString()[0]);
             },
             function (response) { // we get a respo
                 //fail
                 let results = response.data;
-                //alert("2");
-                alert(results);
+                alert("1");
+                //alert(results);
 
             },
             function (response) {
                 //permission denied
-                // alert("3");
                 let results = response.data;
-                //alert("2");
-                alert(results);
+                alert("2");
+                //alert(results);
             });
     }
     //go home
