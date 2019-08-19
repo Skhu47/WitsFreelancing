@@ -37,16 +37,12 @@ function openAccount() {
 
 
 }
-
-$(document).ready(function () {
-    $("#account").on("click", (e) =>{ //getting the funds +++++++++++++++++++++++++++++++++++!!!!!!!!!!!!!!!!!!!!!!!!
-        e.preventDefault();
-
+    function  getFunds() { //we are getting funds
         const options = {
             method: "post",
             timeout: 10000,
             data: {
-                FUND_STUD_ID: 1699140,
+                FUND_STUD_ID: localStorage.getItem("Stud_No"),
                 ACTION: 2
             }
         };
@@ -72,12 +68,10 @@ $(document).ready(function () {
                 alert("empty3");
             }
         )
-    });
+    }
     //Posting funds
-    $("#postFundbtn").on("click", (e) =>{
 
-        e.preventDefault();
-
+    function postF() {
         const options = {
             method: "post",
             timeout: 10000,
@@ -112,7 +106,6 @@ $(document).ready(function () {
                 alert(results);
             }
         )
-    });
+}
 
-});
 

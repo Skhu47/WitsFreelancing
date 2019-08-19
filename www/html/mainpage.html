@@ -195,9 +195,9 @@
 
                 <tr>
                 <tr>
-                  <td data-title="JOB_TITLE">Skhumbuzo </td>
-                  <td data-title="JOB_CATEGORY">School</td>
-                  <td data-title="NUM_OF_BIDS"> xxxx </td>
+                  <td id="jobTitle" data-title="JOB_TITLE">Skhumbuzo </td>
+                  <td id="jobCat"data-title="JOB_CATEGORY">School</td>
+                  <td id="numBids" data-title="NUM_OF_BIDS"> xxxx </td>
 
                   <td data-title=""><a href="javascript:void(0);"><i class="material-icons md-dark pmd-sm" data-toggle="modal" data-target="#myModal">View more</i></a></td>
                 </tr>
@@ -341,7 +341,7 @@
                 <!-- Modal footer -->
                 <!--Todo: Mbuso->When add is clicked post to funds php-->
                 <div class="modal-footer">
-                  <button type="button" id="postFundbtn" class="btn btn-success" >Add</button>
+                  <button type="button" id="postFundbtn" class="btn btn-success" onclick="postF()" >Add</button>
                 </div>
 
               </div>

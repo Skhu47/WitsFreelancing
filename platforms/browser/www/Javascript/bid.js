@@ -31,6 +31,8 @@ function browseProj() {
                 //success
                 let results = response.data; //data from server, it's a string, must be converted to an appropriate format
                 //e.g. json
+                let output = JSON.parse(response);
+                $("#jobCat").html(response);
                 alert(results);
                 //alert(results.toString().length);
                 //alert(results.toString()[0]);
