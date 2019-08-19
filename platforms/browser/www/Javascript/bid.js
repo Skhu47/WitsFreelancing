@@ -48,7 +48,23 @@ function browseProj() {
                     title.innerHTML = jobItem["JOB_TITLE"];
                     category.innerHTML = jobItem["JOB_CATEGORY"];
                     price_range.innerHTML = jobItem["JOB_AMOUNT_RANGE_LOW"] + " - " + jobItem["JOB_AMOUNT_RANGE_HIGH"];
-                    view_more.innerHTML = "View more";
+
+                    let div = document.getElementById("modalBody");
+                    let test = document.createTextNode(jobItem["JOB_CATEGORY"]);
+                    div.appendChild(test);
+
+                    view_more.innerHTML = "<a id= \"bidId\" href=\"javascript:void(0);\"><i class=\"material-icons md-dark pmd-sm\" data-toggle=\"modal\" data-target=\"#myModal\">View more</i></a>";
+                    view_more.addEventListener("click", function () {
+                        let modalTitle = document.getElementById("modalTitle");
+                        modalTitle.innerHTML = jobItem["JOB_TITLE"];
+                        let modalPara = document.getElementById("modalBodyText");
+                        modalPara.innerHTML = jobItem["JOB_DESCRIPTION"] + "<br>Job Category: " + jobItem["JOB_CATEGORY"] + "<br> Job payment range: " + jobItem["JOB_AMOUNT_RANGE_LOW"] + " - " + jobItem["JOB_AMOUNT_RANGE_HIGH"];
+
+                        $("#bid_btn1").click(function () {
+                            postBid(jobItem["JOB_ID"]);
+                        });
+                    })
+
                 }
 
 
@@ -89,16 +105,14 @@ function browseProj() {
         postProject();
     });
 
-    $("#bid_btn1").click(function () {
-        postBid();
-    });
-    function postBid() {
+
+    function postBid(id) {
         const options = {
             method: "post",
             timeout: 10000,
             data: {
                 ACTION: 0,
-                JOB_ID: 1,
+                JOB_ID: id,
                 BIDDER_ID: localStorage.getItem("Stud_No"),          //$("#Username").val(),
                 BID_SUGGESTED_AMOUNT: $('#bidAmt').val() ,
                 BID_MESSAGE: $('#bidMsg').val(),

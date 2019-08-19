@@ -49,6 +49,7 @@ function  postProject() {
         else if(new Date(endDate) > (new Date($.now()))){
             $("#dateLabel").hide();
             sendDetails();
+            clearPage();
         }
 
     });
@@ -56,7 +57,8 @@ function  postProject() {
     $("#resetBtn").click(function () {
         //if it's for here, then code the clear function
     });
-    function sendDetails(){ //here we post a project/job
+    function sendDetails(){
+        //here we post a project/job
         const options = {
             method: "post",
             timeout: 10000,
@@ -99,6 +101,16 @@ function  postProject() {
                 alert(results);
             }
         );
+    }
+    //remove the shanis
+    function clearPage() {
+        $('#Job_title').val("");
+        $('#Job_desc').val("");
+        $('#min_range').val("");
+        $('#max_range').val("");
+        $('#date').val("");
+        $('#location').val("");
+        $('#category').val("");
     }
     //going to viewJob
     $(document).ready(function (){
