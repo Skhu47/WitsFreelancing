@@ -37,9 +37,7 @@ function openAccount() {
 
 
 }
-    $("#account").on("click", (e) =>{ //getting the funds +++++++++++++++++++++++++++++++++++!!!!!!!!!!!!!!!!!!!!!!!!
-        e.preventDefault();
-
+    function  getFunds() { //we are getting funds
         const options = {
             method: "post",
             timeout: 10000,
@@ -70,12 +68,10 @@ function openAccount() {
                 alert("empty3");
             }
         )
-    });
+    }
     //Posting funds
 
     function postF() {
-
-
         const options = {
             method: "post",
             timeout: 10000,

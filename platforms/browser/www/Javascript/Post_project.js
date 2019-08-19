@@ -33,22 +33,24 @@ function  postProject() {
         let maxRange = $('#max_range').val();
         let endDate = $('#date').val();
         //there is a bug in the code below
-        if(minRange > maxRange){
-            $("#minLabel").show();
-            $("#maxLabel").show();
-        }else if(maxRange > minRange){
-            $("#minLabel").hide();
-            $("#maxLabel").hide();
-            if(new Date(endDate) < (new Date($.now())) || endDate===""){
-                $("#dateLabel").show();
-            }else if(new Date(endDate) > (new Date($.now()))){
-                $("#dateLabel").hide();
-                sendDetails();
-            }
-        }else if(minRange==="" || maxRange === ""){ //if the input boxes are empty
-            $("#minLabel").show();
-            $("#maxLabel").show();
+        let minLabel = $("#minLabel");
+        let maxLabel = $("#maxLabel");
+
+        minLabel.hide();
+        maxLabel.hide();
+
+        if(minRange >= maxRange || (minRange==="" || maxRange === "")){
+            minLabel.show();
+            maxLabel.show();
         }
+        else if(new Date(endDate) < (new Date($.now())) || endDate===""){
+            $("#dateLabel").show();
+        }
+        else if(new Date(endDate) > (new Date($.now()))){
+            $("#dateLabel").hide();
+            sendDetails();
+        }
+
     });
     //when you click reset
     $("#resetBtn").click(function () {

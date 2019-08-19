@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbc59da2-6e1f-4e14-99d9-9f9f3b765795" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/Javascript/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/Javascript/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/html/Account.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/html/Account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/html/mainpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/html/postJob.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/html/postJob.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/html/viewJob.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/html/viewJob.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/Javascript/Post_project.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/Post_project.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/Account.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/Post_project.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/Post_project.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/mainpage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
