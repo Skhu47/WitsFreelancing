@@ -73,7 +73,7 @@ function  postProject() {
 
             }
         };
-        const url = "http://1627982.ms.wits.ac.za/~student/Bid.php";
+        const url = "http://1627982.ms.wits.ac.za/~student/Job.php";
 
         cordova.plugin.http.sendRequest(url, options,
             function (response) {

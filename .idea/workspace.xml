@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbc59da2-6e1f-4e14-99d9-9f9f3b765795" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/Account.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/Post_project.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/Post_project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/mainpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/Javascript/Post_project.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/Post_project.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -393,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566123037723</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="removed student number">
+      <created>1566238517617</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1566238517617</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView">
@@ -440,7 +443,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="," />
     <MESSAGE value="testing" />
     <MESSAGE value="bootsrap css" />
     <MESSAGE value="fixed login css" />
@@ -465,6 +467,7 @@
     <MESSAGE value="Mbuso" />
     <MESSAGE value="fixed the validation bug" />
     <MESSAGE value="you can post bid" />
-    <option name="LAST_COMMIT_MESSAGE" value="you can post bid" />
+    <MESSAGE value="removed student number" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed student number" />
   </component>
 </project>
