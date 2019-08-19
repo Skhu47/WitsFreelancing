@@ -11,6 +11,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+  <script type="text/javascript" src="../cordova.js"></script>
+  <script src="../Javascript/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="../Javascript/Account.js"></script>
+
+  <link href="../css/floating%20button.css" rel="stylesheet">
+
   <script type="text/javascript" src="../cordova.js"></script>
   <script src="../Javascript/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -43,9 +57,8 @@
       <div class="list-group list-group-flush">
 
         <!--Todo: Mbuso check out how to implement a dynamic page when we click on these options bellow:-->
-        <a href="#" id="postProject" class="list-group-item list-group-item-action bg-light" onclick="postProject()">Post Project</a>
-        <a href="#" id="seeJobs" class="list-group-item list-group-item-action bg-light" onclick="browseProj()">Browse Projects</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Browse Freelancers</a>
+        <a href="#" id="postProject" class="list-group-item list-group-item-action bg-light" onclick="postProject()">Post Job</a>
+        <a href="#" id="seeJobs" class="list-group-item list-group-item-action bg-light" onclick="browseProj()">Browse Jobs</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">My Profile</a>
 
         <!--Todo: Mbuso, need an onclick here to my account page-->
@@ -170,6 +183,7 @@
                 <tr>
                   <th>Title</th>
                   <th>Category</th>
+                  <th>Price range</th>
                   <!--                    <th>Description</th>-->
                   <!--                    <th>End Date for project</th>-->
                   <!--                    <th>No. bids</th>-->
@@ -181,9 +195,9 @@
 
                 <tr>
                 <tr>
-                  <td data-title="JOB_TITLE">Skhumbuzo</td>
+                  <td data-title="JOB_TITLE">Skhumbuzo </td>
                   <td data-title="JOB_CATEGORY">School</td>
-
+                  <td data-title="NUM_OF_BIDS"> xxxx </td>
 
                   <td data-title=""><a href="javascript:void(0);"><i class="material-icons md-dark pmd-sm" data-toggle="modal" data-target="#myModal">View more</i></a></td>
                 </tr>
@@ -299,7 +313,7 @@
           <!-- Button to Open the Modal -->
 
 
-          <i class='fas fa-plus' id="but" style='font-size:36px' data-toggle="modal" data-target="#myModal"></i>
+          <i class='fas fa-plus' id="but" style='font-size:36px' data-toggle="modal" data-target="#myModal2"></i>
 
           <!-- The Modal -->
 
