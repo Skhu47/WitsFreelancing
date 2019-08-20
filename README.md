@@ -85,9 +85,4 @@ SDKs for mobile platforms often come bundled with emulators that execute a devic
 
     $ cordova emulate android
 
-## Running the tests
-To run tests we used codecov as well as Coverals for our TEst Driven Development. 
 
-[![Build Status](https://travis-ci.org/software-projects-qubit/Software-Project-1.0.svg?branch=master)](https://travis-ci.org/software-projects-qubit/Software-Project-1.0)
-
-[![codecov](https://codecov.io/gh/software-projects-qubit/Software-Project-1.0/branch/master/graph/badge.svg)](https://codecov.io/gh/software-projects-qubit/Software-Project-1.0)
