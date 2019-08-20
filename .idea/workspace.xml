@@ -5,12 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/Post_project.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/Post_project.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/bid.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/bid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/Account.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/Account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/Javascript/Post_project.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/Post_project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/Javascript/bid.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/bid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/html/Account.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/Account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/mainpage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -413,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566242877472</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="a whole lot of changes">
+      <created>1566251208287</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1566251208287</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TodoView">
@@ -460,7 +462,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="fixed login css" />
     <MESSAGE value="added bootstrap" />
     <MESSAGE value="added job div to home page" />
     <MESSAGE value="Fixed button and some layouts. Mbuso check comments" />
@@ -485,6 +486,7 @@
     <MESSAGE value="removed student number" />
     <MESSAGE value="fixed the bug of posting jobs" />
     <MESSAGE value="getting jobs and showing it" />
-    <option name="LAST_COMMIT_MESSAGE" value="getting jobs and showing it" />
+    <MESSAGE value="a whole lot of changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="a whole lot of changes" />
   </component>
 </project>

@@ -38,8 +38,9 @@ function  postProject() {
 
         minLabel.hide();
         maxLabel.hide();
-
-        if(minRange >= maxRange || (minRange==="" || maxRange === "")){
+        sendDetails();
+        clearPage();
+        /*if(minRange >= maxRange || (minRange==="" || maxRange === "")){
             minLabel.show();
             maxLabel.show();
         }
@@ -50,7 +51,7 @@ function  postProject() {
             $("#dateLabel").hide();
             sendDetails();
             clearPage();
-        }
+        }*/
 
     });
     //when you click reset
@@ -82,15 +83,21 @@ function  postProject() {
                 //success
                 let results = response.data; //data from server, it's a string, must be converted to an appropriate format
                 //e.g. json
-                alert(results);
-                //alert(results.toString().length);
-                //alert(results.toString()[0]);
+                if(results === 0){
+                    alert("The job post was unsuccessful!");
+                }
+                if(results === 1){
+                    alert("The job post was successfully posted!");
+                }
+                if(results === 2){
+                    alert("You have insufficient funds");
+                }
             },
             function (response) { // we get a respo
                 //fail
                 let results = response.data;
                 //alert("2");
-                alert(results);
+                //alert(results);
 
             },
             function (response) {
@@ -98,7 +105,7 @@ function  postProject() {
                 // alert("3");
                 let results = response.data;
                 //alert("2");
-                alert(results);
+                //alert(results);
             }
         );
     }
