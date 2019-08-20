@@ -88,9 +88,21 @@ function openAccount() {
                 //success
                 let results = response.data; //data from server, it's a string, must be converted to an appropriate format
                 //e.g. json
-                alert(results);
+                //alert(results);
                 //alert(results.toString().length);
                 //alert(results.toString()[0]);
+
+                if(results === "0"){
+                    alert("The fund deposit was unsuccessful!");
+                }
+                if(results === "1"){
+                    alert("The fund was successfully deposited!");
+                    $("#fund").val("");
+                }
+                if(results === "2"){
+                    alert("You could not deposit, try again");
+                }
+
             },
             function (response) { // we get a respo
                 //fail

@@ -39,7 +39,6 @@ function  postProject() {
         minLabel.hide();
         maxLabel.hide();
         sendDetails();
-        clearPage();
         /*if(minRange >= maxRange || (minRange==="" || maxRange === "")){
             minLabel.show();
             maxLabel.show();
@@ -57,6 +56,13 @@ function  postProject() {
     //when you click reset
     $("#resetBtn").click(function () {
         //if it's for here, then code the clear function
+        $('#Job_title').val("");
+        $('#Job_desc').val("");
+        $('#min_range').val("");
+        $('#max_range').val("");
+        $('#date').val("");
+        $('#location').val("");
+        $('#category').val("");
     });
     function sendDetails(){
         //here we post a project/job
@@ -83,14 +89,17 @@ function  postProject() {
                 //success
                 let results = response.data; //data from server, it's a string, must be converted to an appropriate format
                 //e.g. json
-                if(results === 0){
+                if(results === "0"){
                     alert("The job post was unsuccessful!");
                 }
-                if(results === 1){
+                if(results === "1"){
                     alert("The job post was successfully posted!");
+                    clearPage();
                 }
-                if(results === 2){
+                if(results === "2"){
                     alert("You have insufficient funds");
+                    $('#min_range').val("");
+                    $('#max_range').val("");
                 }
             },
             function (response) { // we get a respo

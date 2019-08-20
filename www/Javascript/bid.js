@@ -14,7 +14,7 @@ function browseProj() {
             $(".container_account").slideUp(1000);
         });
         getJobs();
-        getBid();
+        //getBid();
     });
     function getJobs(){
         const options = {
@@ -127,13 +127,13 @@ function browseProj() {
                 let results = response.data; //data from server, it's a string, must be converted to an appropriate format
                 //e.g. json
                 alert(results);
-                if(results === 0){
+                if(results === "0"){
                     alert("The bid was unsuccessful!");
                 }
-                if(results === 1){
+                if(results === "1"){
                     alert("The bid was successful!");
                 }
-                if(results === 3){
+                if(results === "3"){
                     alert("You have bidded!");
                 }
             },
