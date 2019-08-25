@@ -156,6 +156,7 @@ function browseProj() {
     }
 
     function getBid(){
+
         const options = {
             method: "post",
             timeout: 10000,

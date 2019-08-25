@@ -37,6 +37,7 @@ function browseProj() {
                 console.log(results);
 
                 for(let i=0; i < output.length; i++){
+
                     let jobItem = output[i];
                     let row = jobTable.insertRow();
                     let title = row.insertCell(0);
@@ -155,6 +156,7 @@ function browseProj() {
     }
 
     function getBid(){
+        
         const options = {
             method: "post",
             timeout: 10000,
