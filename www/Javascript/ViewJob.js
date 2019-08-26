@@ -16,6 +16,16 @@ $(document).ready(function () {
     let NumBids = document.getElementById("job_numBid");
     NumBids.innerHTML = "Num of bids: "+localStorage.getItem("NumBids");
 
+    //view bids
+    if(localStorage.getItem("NumBids") !== "0") {
+        let bidderID = document.getElementById("bidder_id");
+
+        bidderID.innerHTML = "bidder ID: " + localStorage.getItem("bidderID");
+        let sugAmt = document.getElementById("suggested_amt");
+        sugAmt.innerHTML = "bidder suggested amount: " + localStorage.getItem("sug_amt");
+        let bidMsg = document.getElementById("bidMessage");
+        bidMsg.innerHTML = "bidder message: " + localStorage.getItem("bid_msg");
+    }
     $("#bid_btn1").click(function () {
         postBid(jobItem["JOB_ID"]);
     });
