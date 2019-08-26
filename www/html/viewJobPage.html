@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script src="../Javascript/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script src="../Javascript/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../Javascript/Account.js"></script>
+
+    <link href="../css/floating%20button.css" rel="stylesheet">
+
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script src="../Javascript/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../Javascript/Account.js"></script>
+    <link href="../css/floating%20button.css" rel="stylesheet">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script src="../Javascript/jquery-3.4.1.min.js"></script>
+
+    <!-- Custom styles for sidebar -->
+    <link href="../css/simple-sidebar.css" rel="stylesheet">
+    <script src="../Javascript/mainpage.js"></script>
+    <script src="../Javascript/bid.js"></script>
+    <script src="../Javascript/Post_project.js"></script>
+    <script>hid()</script>
+</head>
+
+<body>
+
+<div class="d-flex" id="wrapper">
+
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="home" onclick="window.location.href = 'mainpage.html'">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron container-fluid" >
+            <!--Todo: Inflate this-->
+        <!--            Add stuff here-->
+            <div class="jumbotron text-center bg-light" >
+                <h1 class="mt-4" >4th Industrial Revolution</h1>
+            </div>
+            <h5>Name</h5>
+            <h5>Category: School</h5>
+            <h5>Description</h5>
+            <h5>Due date</h5>
+            <h5>Number of bids</h5>
+            <div class="jumbotron text-center bg-light">
+            <h2>DISPLAY BIDS</h2>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4 class="text-center">Bid</h4>
+
+            <div class="form-group">
+                Bid amount: <input type="number" id="bidAmt" class="form-control" name="BID_SUGGESTED_AMOUNT" required placeholder="Enter bid amount">
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback" id="minLabel1">Enter suggested amount</div>
+            </div>
+
+            <div class="form-group">
+                Bid message: <br><input type="text" id="bidMsg" class="form-control" name="BID_MESSAGE" required placeholder="Bid message">
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Enter bid message</div>
+            </div>
+            <button type="button" class="btn btn-primary btn-block" id="bid_btn1" value="Bid" >Bid</button>
+
+        </div>
+
+            <!--Show this container when job is selected-->
+
+
+
+        </div>
+
+    <!--Todo: Mbuso-->
+
+
+
+    </div>
+
+</div>
+<!-- /#page-content-wrapper -->
+
+</div>
+
+
+<!-- /#wrapper -->
+
+<!--Todo:Mbuso check how this works-->
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<!--Todo:Mbuso check how this works-->
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+
+</body>
+
+</html>
