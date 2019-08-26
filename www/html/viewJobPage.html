@@ -44,6 +44,7 @@
     <script src="../Javascript/mainpage.js"></script>
     <script src="../Javascript/bid.js"></script>
     <script src="../Javascript/Post_project.js"></script>
+    <script src="../Javascript/ViewJob.js"></script>
     <script>hid()</script>
 </head>
 
@@ -68,17 +69,17 @@
             </div>
         </nav>
 
-        <div class="jumbotron container-fluid" >
+        <div class="jumbotron container-fluid" id="bidder_page">
             <!--Todo: Inflate this-->
         <!--            Add stuff here-->
             <div class="jumbotron text-center bg-light" >
-                <h1 class="mt-4" >4th Industrial Revolution</h1>
+                <h1 class="mt-4" id="bid_job_title" >4th Industrial Revolution</h1>
             </div>
-            <h5>Name</h5>
-            <h5>Category: School</h5>
-            <h5>Description</h5>
-            <h5>Due date</h5>
-            <h5>Number of bids</h5>
+            <h5 id="job_name"></h5>
+            <h5 id="job_cat">Category: School</h5>
+            <h5 id="job_desc">Description</h5>
+            <h5 id="job_due_date">Due date</h5>
+            <h5 id="job_numBid">Number of bids</h5>
             <div class="jumbotron text-center bg-light">
             <h2>DISPLAY BIDS</h2>
             </div>
