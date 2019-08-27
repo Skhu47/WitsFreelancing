@@ -87,4 +87,3 @@ SDKs for mobile platforms often come bundled with emulators that execute a devic
 
 ## Running the tests
  run tests we used travis CI and coveralls
-[![Build Status](https://travis-ci.org/MbusoMakitla/WitsFreelancing.svg?branch=master)](https://travis-ci.org/MbusoMakitla/WitsFreelancing.svg)
