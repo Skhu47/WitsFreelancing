@@ -1,6 +1,8 @@
 # WitsFreelancing
 Serverside repo can be found here https://github.com/PermanentPortionX/Wits-freelancing-ServerSide
 
+https://img.shields.io/appveyor/ci/MbusoMakitla/WitsFreelancing?style=plastic
+
 ## Requirements
 To add support or rebuild a project for any platform, you need to run the command-line interface from the same machine that supports the platform's SDK. The CLI supports the following combinations:
 
