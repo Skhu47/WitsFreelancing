@@ -1,55 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dbc59da2-6e1f-4e14-99d9-9f9f3b765795" name="Default Changelist" comment="">
+    <list default="true" id="dbc59da2-6e1f-4e14-99d9-9f9f3b765795" name="Default Changelist" comment="get bid update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/html/mainpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/browser.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/browser.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/cordova-js-src/confighelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/cordova-js-src/confighelper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/cordova-js-src/exec.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/cordova-js-src/exec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/cordova-js-src/platform.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/cordova-js-src/platform.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/cordova.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/cordova.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/cordova_plugins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/src/browser/cordova-http-plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/src/browser/cordova-http-plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/advanced-http.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/advanced-http.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/cookie-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/cookie-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/global-configs.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/global-configs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/helpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/js-util.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/js-util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/local-storage-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/local-storage-store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/lodash.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/lodash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/messages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/public-interface.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/public-interface.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/umd-tough-cookie.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/umd-tough-cookie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/url-util.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-advanced-http/www/url-util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/src/browser/FileProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/src/browser/FileProxy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/DirectoryEntry.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/DirectoryEntry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/DirectoryReader.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/DirectoryReader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/Entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/Entry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/File.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/File.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/FileEntry.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/FileEntry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/FileError.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/FileError.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/FileReader.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/FileReader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/FileSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/FileSystem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/FileUploadOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/FileUploadOptions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/FileUploadResult.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/FileUploadResult.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/FileWriter.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/FileWriter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/Flags.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/Flags.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/LocalFileSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/LocalFileSystem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/Metadata.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/Metadata.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/ProgressEvent.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/ProgressEvent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/browser/FileSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/browser/FileSystem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/browser/Preparing.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/browser/Preparing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/browser/isChrome.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/browser/isChrome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/fileSystemPaths.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/fileSystemPaths.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/fileSystems.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/fileSystems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/requestFileSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/requestFileSystem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/resolveLocalFileSystemURI.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-file/www/resolveLocalFileSystemURI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/html/viewJobPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/viewJobPage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -502,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566851798369</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="get bid update">
+      <created>1566852295989</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1566852295989</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView">
@@ -549,7 +509,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="loggin in update 1" />
     <MESSAGE value="mainpage functionality, post_project handled." />
     <MESSAGE value="floating button" />
     <MESSAGE value="Mbuso conect to php" />
@@ -574,6 +533,7 @@
     <MESSAGE value="updated outputs1" />
     <MESSAGE value="updated view more" />
     <MESSAGE value="get bid" />
-    <option name="LAST_COMMIT_MESSAGE" value="get bid" />
+    <MESSAGE value="get bid update" />
+    <option name="LAST_COMMIT_MESSAGE" value="get bid update" />
   </component>
 </project>
