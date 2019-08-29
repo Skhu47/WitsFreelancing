@@ -1,8 +1,6 @@
 # WitsFreelancing
 Serverside repo can be found here https://github.com/PermanentPortionX/Wits-freelancing-ServerSide
 
-[![Build Status](https://travis-ci.com/MbusoMakitla/WitsFreelancing.svg?branch=master)](https://travis-ci.com/MbusoMakitla/WitsFreelancing)
-
 https://img.shields.io/appveyor/ci/MbusoMakitla/WitsFreelancing?style=plastic
 
 ## Requirements
@@ -91,3 +89,4 @@ SDKs for mobile platforms often come bundled with emulators that execute a devic
 
 ## Running the tests
  run tests we used travis CI and coveralls
+ Travis CI [![Build Status](https://travis-ci.com/MbusoMakitla/WitsFreelancing.svg?branch=master)](https://travis-ci.com/MbusoMakitla/WitsFreelancing)
