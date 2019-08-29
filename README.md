@@ -88,5 +88,4 @@ SDKs for mobile platforms often come bundled with emulators that execute a devic
     $ cordova emulate android
 
 ## Running the tests
- run tests we used travis CI and coveralls
  Travis CI [![Build Status](https://travis-ci.com/MbusoMakitla/WitsFreelancing.svg?branch=master)](https://travis-ci.com/MbusoMakitla/WitsFreelancing)
