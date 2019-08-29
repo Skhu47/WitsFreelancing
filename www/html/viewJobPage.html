@@ -84,6 +84,7 @@
             <h6 id="bidder_id">There are</h6>
                 <h6 id="suggested_amt">no</h6>
                 <h6 id="bidMessage"> bids</h6>
+
             </div>
 
 
@@ -95,22 +96,54 @@
             <br>
             <br>
             <br>
-            <h3 class="text-center"> Place Bid</h3>
+<!--            <h3 class="text-center"> Place Bid</h3>-->
+            <div class="container mt-3">
 
-            <div class="form-group">
-                Bid amount: <input type="number" id="bidAmt" class="form-control" name="BID_SUGGESTED_AMOUNT" required placeholder="Enter bid amount">
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback" id="minLabel1">Enter suggested amount</div>
+                <!-- Button to Open the Modal -->
+
+
+                <i class='fas fa-plus' id="but" style='font-size:36px' data-toggle="modal" data-target="#myModal1"></i>
+
+                <!-- The Modal -->
+                <!--Funds model-->
+                <div class="modal fade" id="myModal1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Place Bid</h4>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                            </div>
+                            <div class="modal-body">
+                            <!-- Modal body -->
+                            <div class="form-group">
+                                Bid amount: <input type="number" id="bidAmt" class="form-control" name="BID_SUGGESTED_AMOUNT" required placeholder="Enter bid amount">
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback" id="minLabel1">Enter suggested amount</div>
+                            </div>
+
+                            <div class="form-group">
+                                Bid message: <br><input type="text" id="bidMsg" class="form-control" name="BID_MESSAGE" required placeholder="Bid message">
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback">Enter bid message</div>
+                            </div>
+
+                        </div>
+                        <!--Todo: Mbuso-->
+                        <!--Todo: Should be sent to the database-->
+                        <button type="button" class="btn btn-primary btn-block" id="bid_btn1" value="Bid" >Bid</button><br>
+                    </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="form-group">
-                Bid message: <br><input type="text" id="bidMsg" class="form-control" name="BID_MESSAGE" required placeholder="Bid message">
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback">Enter bid message</div>
-            </div>
-            <button type="button" class="btn btn-primary btn-block" id="bid_btn1" value="Bid" >Bid</button>
 
         </div>
+
+                        </div>
+                    </div>
+                </div>
 
             <!--Show this container when job is selected-->
 
