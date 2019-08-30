@@ -1,6 +1,8 @@
 # WitsFreelancing
 Serverside repo can be found here https://github.com/PermanentPortionX/Wits-freelancing-ServerSide
 
+https://img.shields.io/appveyor/ci/MbusoMakitla/WitsFreelancing?style=plastic
+
 ## Requirements
 To add support or rebuild a project for any platform, you need to run the command-line interface from the same machine that supports the platform's SDK. The CLI supports the following combinations:
 
@@ -85,4 +87,5 @@ SDKs for mobile platforms often come bundled with emulators that execute a devic
 
     $ cordova emulate android
 
-
+## Running the tests
+ Travis CI [![Build Status](https://travis-ci.com/MbusoMakitla/WitsFreelancing.svg?branch=master)](https://travis-ci.com/MbusoMakitla/WitsFreelancing)

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script src="../Javascript/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script src="../Javascript/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../Javascript/Account.js"></script>
+
+    <link href="../css/floating%20button.css" rel="stylesheet">
+
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script src="../Javascript/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../Javascript/Account.js"></script>
+    <link href="../css/floating%20button.css" rel="stylesheet">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script src="../Javascript/jquery-3.4.1.min.js"></script>
+
+    <!-- Custom styles for sidebar -->
+    <link href="../css/simple-sidebar.css" rel="stylesheet">
+    <script src="../Javascript/mainpage.js"></script>
+    <script src="../Javascript/bid.js"></script>
+    <script src="../Javascript/Post_project.js"></script>
+    <script src="../Javascript/ViewJob.js"></script>
+    <script>hid()</script>
+</head>
+
+<body>
+
+
+
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="home" onclick="window.location.href = 'mainpage.html'">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron container-fluid" id="bidder_page">
+            <!--Todo: Inflate this-->
+        <!--            Add stuff here-->
+            <div class="jumbotron text-center bg-light" >
+                <h1 class="mt-4" id="bid_job_title" >4th Industrial Revolution</h1>
+            </div>
+
+
+<!--Cards to display job info-->
+            <div class="card-columns" >
+                <h3>Category</h3>
+                <div class="card bg-primary text-white" id="job_name">
+                    <div class="card-body text-center">
+                        <p class="card-text" id="job_cat">Some text inside the first card</p>
+                    </div>
+                </div>
+                <h3>Due date</h3>
+                <div class="card bg-info text-white">
+                    <div class="card-body text-center">
+                        <p class="card-text" id="job_due_date">Some text inside the second card</p>
+                    </div>
+                </div>
+                <h3>Current number of bids</h3>
+                <div class="card bg-primary text-white">
+                    <div class="card-body text-center">
+                        <p class="card-text" id="job_numBid">Some text inside the third card</p>
+                    </div>
+                </div>
+                <br>
+
+
+            </div>
+            <br>
+            <h3>Description</h3>
+            <div class="card" >
+                <div class="card-body" id="job_desc">Basic card</div>
+            </div>
+
+<!--            -->
+            <br>
+<!--            THis is where bidders will appear-->
+            <h3>Bidders</h3>
+            <div class="card">
+                <div class="card-header" id="bidder_id">Header</div>
+                <div class="card-body" id="bidMessage">Content</div>
+                <div class="card-footer" id="suggested_amt">Footer</div>
+            </div>
+
+<!--            <h3 class="text-center"> Place Bid</h3>-->
+            <div class="container mt-3">
+
+                <!-- Button to Open the Modal -->
+
+
+                <i class='fas fa-plus' id="but" style='font-size:36px' data-toggle="modal" data-target="#myModal1"></i>
+
+                <!-- The Modal -->
+                <!--Funds model-->
+                <div class="modal fade" id="myModal1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Place Bid</h4>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                            </div>
+                            <div class="modal-body">
+                            <!-- Modal body -->
+                            <div class="form-group">
+                                Bid amount: <input type="number" id="bidAmt" class="form-control" name="BID_SUGGESTED_AMOUNT" required placeholder="Enter bid amount">
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback" id="minLabel1">Enter suggested amount</div>
+                            </div>
+
+                            <div class="form-group">
+                                Bid message: <br><input type="text" id="bidMsg" class="form-control" name="BID_MESSAGE" required placeholder="Bid message">
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback">Enter bid message</div>
+                            </div>
+
+                        </div>
+                        <!--Todo: Mbuso-->
+                        <!--Todo: Should be sent to the database-->
+                        <button type="button" class="btn btn-primary btn-block" id="bid_btn1" value="Bid" >Bid</button><br>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            <!--Show this container when job is selected-->
+
+
+
+        </div>
+
+    <!--Todo: Mbuso-->
+
+
+
+    </div>
+
+</div>
+<!-- /#page-content-wrapper -->
+
+</div>
+
+
+<!-- /#wrapper -->
+
+<!--Todo:Mbuso check how this works-->
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<!--Todo:Mbuso check how this works-->
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+
+</body>
+
+</html>

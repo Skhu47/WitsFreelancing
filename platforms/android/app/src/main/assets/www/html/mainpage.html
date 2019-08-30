@@ -49,7 +49,7 @@
 
 <body>
 
-  <div class="d-flex" id="wrapper">
+  <div class="d-flex" id="wrapper_main">
 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
@@ -109,10 +109,6 @@
             <div class="jumbotron text-center">
             <h1 class="mt-4">Post Project</h1>
             </div>
-            <div class="form-group">
-            Student number: <input type="text" id="Employer_id" class="form-control" name="JOB_EMPLOYER_ID" required placeholder="Enter Student number">
-              <div class="invalid-feedback">Please enter your student number.</div>
-            </div>
 
             <div class="form-group">
             Title: <br><input type="text" id="Job_title"  class="form-control" name="JOB_TITLE" required placeholder="Title of the project">
@@ -152,10 +148,10 @@
             <div class="form-group">
               CATEGORY:<br>
             <select class="form-control" id="category" name="JOB_CATEGORY">
-              <option value=1>School</option>
-              <option value=2>Finance</option>
-              <option value=3>Programming</option>
-              <option value=4>Assignments</option>
+              <option value="School">School</option>
+              <option value="Finance">Finance</option>
+              <option value="Finance">Programming</option>
+              <option value="Finance">Assignments</option>
             </select><div class="valid-feedback"></div>
               <div class="invalid-feedback">Please select category</div>
 
@@ -178,7 +174,7 @@
         <div class="card pmd-card">
           <div class="table-fixed-head">
             <div class="table-responsive scrollable-table">
-              <table cellspacing="0" cellpadding="0" class="table table-striped">
+              <table id="jobTable" cellspacing="0" cellpadding="0" class="table table-striped">
                 <thead class="header">
                 <tr>
                   <th>Title</th>
@@ -193,14 +189,14 @@
                 </thead>
                 <tbody>
 
-                <tr>
-                <tr>
-                  <td data-title="JOB_TITLE">Skhumbuzo </td>
-                  <td data-title="JOB_CATEGORY">School</td>
-                  <td data-title="NUM_OF_BIDS"> xxxx </td>
 
-                  <td data-title=""><a href="javascript:void(0);"><i class="material-icons md-dark pmd-sm" data-toggle="modal" data-target="#myModal">View more</i></a></td>
-                </tr>
+                 <tr>
+                   <td id="jobTitle" rowspan="2" data-title="JOB_TITLE"> Job title </td>
+                   <td id="jobCat"data-title="JOB_CATEGORY">School</td>
+                   <td id="numBids" data-title="NUM_OF_BIDS"> xxxx </td>
+
+                   <td data-title=""><a href="javascript:void(0);"><i class="material-icons md-dark pmd-sm" data-toggle="modal" data-target="#myModal">View more</i></a></td>
+
 
                 </tbody>
               </table>
@@ -209,7 +205,7 @@
         </div>
 
 
-
+<!--        View more-->
         <!-- The Modal -->
 
         <div class="modal fade" id="myModal">
@@ -218,41 +214,38 @@
 
               <!-- Modal Header -->
               <div class="modal-header">
-                <h4 class="modal-title">Title of project</h4>
+                <h4 id="modalTitle" class="modal-title">Title of project</h4>
                 <button type="button" class="close" data-dismiss="modal">×</button>
               </div>
 
               <!-- Modal body -->
-              <div class="modal-body">
+              <div id="modalBody" class="modal-body">
                 <!--                            <input type="number" id="min_range" class="form-control" name="FUND_AMOUNT" required placeholder="Enter credit amount">-->
                 <!--                            <div class="valid-feedback"></div>-->
                 <!--                            <div class="invalid-feedback" id="minLabel"></div>-->
                 <!--Todo: Add information about the task-->
                 <!--See Job_php documentation-->
-                <!--                    JOB_AMOUNT_RANGE_LOW-->
-                <!--                    JOB_DESCRIPTION-->
-                <!--                    JOB_AMOUNT_RANGE_LOW-->
-                <!--                    JOB_AMOUNT_RANGE_HIGH-->
-                <!--                    JOB_DUE_DATE_TIME-->
-                <!--                    JOB_LOCATION-->
-                <!--                    JOB_CATEGORY-->
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                <!--JOB_AMOUNT_RANGE_LOW&ndash;&gt;
+                JOB_DESCRIPTION&ndash;&gt;
+                JOB_AMOUNT_RANGE_LOW&ndash;&gt;
+                JOB_AMOUNT_RANGE_HIGH&ndash;&gt;
+                JOB_DUE_DATE_TIME&ndash;&gt;
+                JOB_LOCATION&ndash;&gt;
+                JOB_CATEGORY-->
+                <p id="modalBodyText">
+                  Something here
+                </p>
 
                 <h4 class="text-center">Bid</h4>
 
                 <div class="form-group">
-                  Bid amount: <input type="number" id="min_range1" class="form-control" name="BID_SUGGESTED_AMOUNT" required placeholder="Enter bid amount">
+                  Bid amount: <input type="number" id="bidAmt" class="form-control" name="BID_SUGGESTED_AMOUNT" required placeholder="Enter bid amount">
                   <div class="valid-feedback"></div>
                   <div class="invalid-feedback" id="minLabel1">Enter suggested amount</div>
                 </div>
 
                 <div class="form-group">
-                  Bid message: <br><input type="text" class="form-control" name="BID_MESSAGE" required placeholder="Bid message">
+                  Bid message: <br><input type="text" id="bidMsg" class="form-control" name="BID_MESSAGE" required placeholder="Bid message">
                   <div class="valid-feedback"></div>
                   <div class="invalid-feedback">Enter bid message</div>
                 </div>
@@ -341,7 +334,7 @@
                 <!-- Modal footer -->
                 <!--Todo: Mbuso->When add is clicked post to funds php-->
                 <div class="modal-footer">
-                  <button type="button" id="postFundbtn" class="btn btn-success" >Add</button>
+                  <button type="button" id="postFundbtn" class="btn btn-success" onclick="postF()" >Add</button>
                 </div>
 
               </div>

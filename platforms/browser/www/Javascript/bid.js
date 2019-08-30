@@ -37,6 +37,7 @@ function browseProj() {
                 console.log(results);
 
                 for(let i=0; i < output.length; i++){
+
                     let jobItem = output[i];
                     let row = jobTable.insertRow();
                     let title = row.insertCell(0);
@@ -45,16 +46,33 @@ function browseProj() {
                     let view_more = row.insertCell(3);
 
 
-                    title.innerHTML = jobItem["JOB_TITLE"];
+                    title.innerHTML = jobItem["JOB_TITLE"]; //localStorage.getItem("Stud_No")   //localStorage.setItem("Stud_No", userNameInput.val());
                     category.innerHTML = jobItem["JOB_CATEGORY"];
                     price_range.innerHTML = jobItem["JOB_AMOUNT_RANGE_LOW"] + " - " + jobItem["JOB_AMOUNT_RANGE_HIGH"];
+
 
                     let div = document.getElementById("modalBody");
                     let test = document.createTextNode(jobItem["JOB_CATEGORY"]);
                     div.appendChild(test);
 
-                    view_more.innerHTML = "<a id= \"bidId\" href=\"javascript:void(0);\"><i class=\"material-icons md-dark pmd-sm\" data-toggle=\"modal\" data-target=\"#myModal\">View more</i></a>";
+                    view_more.innerHTML = "<a id= \"bidId\" href=\"javascript:void(0);\"><i class=\"material-icons md-dark pmd-sm\" >View more</i></a>";
                     view_more.addEventListener("click", function () {
+                        localStorage.setItem("jobTitle", jobItem["JOB_TITLE"]);
+                        localStorage.setItem("category", jobItem["JOB_CATEGORY"]);
+                        localStorage.setItem("dueDate", jobItem["JOB_DUE_DATE_TIME"]);
+                        localStorage.setItem("NumBids", jobItem["NUM_OF_BIDS"]);
+                        localStorage.setItem("description", jobItem["JOB_DESCRIPTION"]);
+                        localStorage.setItem("job_id", jobItem["JOB_ID"]);
+                        getBid();
+
+                        $(document).ready(function (){
+                            $("#wrapper_main").load("viewJobPage.html");
+                        });
+
+                        /**/
+
+                    })
+                    /*view_more.addEventListener("click", function () { //data-toggle="modal" data-target="#myModal" --this stuff shades the entire page
                         let modalTitle = document.getElementById("modalTitle");
                         modalTitle.innerHTML = jobItem["JOB_TITLE"];
                         let modalPara = document.getElementById("modalBodyText");
@@ -63,7 +81,7 @@ function browseProj() {
                         $("#bid_btn1").click(function () {
                             postBid(jobItem["JOB_ID"]);
                         });
-                    })
+                    })*/
 
                 }
 
@@ -155,12 +173,13 @@ function browseProj() {
     }
 
     function getBid(){
+
         const options = {
             method: "post",
             timeout: 10000,
             data: {
                 ACTION: 1,
-                JOB_ID: 1,
+                JOB_ID: localStorage.getItem("job_id"),
             }
         };
         const url = "http://1627982.ms.wits.ac.za/~student/Bid.php";
@@ -170,9 +189,15 @@ function browseProj() {
                 //success
                 let results = response.data; //data from server, it's a string, must be converted to an appropriate format
                 //e.g. json
-                alert(results);
-                //alert(results.toString().length);
-                //alert(results.toString()[0]);
+                let output = JSON.parse(results);
+                for(let i=0; i < output.length; i++) {
+
+                    let bidItem = output[i];
+                    localStorage.setItem("bidderID", bidItem["BIDDER_ID"]);
+                    localStorage.setItem("sug_amt", bidItem["BID_SUGGESTED_AMOUNT"]);
+                    localStorage.setItem("bid_msg", bidItem["BID_MESSAGE"]);
+
+                }
             },
             function (response) { // we get a respo
                 //fail
