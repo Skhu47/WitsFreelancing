@@ -75,27 +75,48 @@
             <div class="jumbotron text-center bg-light" >
                 <h1 class="mt-4" id="bid_job_title" >4th Industrial Revolution</h1>
             </div>
-            <h5 id="job_name"></h5>
-            <h5 id="job_cat">Category: School</h5>
-            <h5 id="job_desc">Description</h5>
-            <h5 id="job_due_date">Due date</h5>
-            <h5 id="job_numBid">Number of bids</h5>
-            <div class="jumbotron text-center bg-light">
-            <h6 id="bidder_id">There are</h6>
-                <h6 id="suggested_amt">no</h6>
-                <h6 id="bidMessage"> bids</h6>
+
+
+<!--Cards to display job info-->
+            <div class="card-columns" >
+                <h3>Category</h3>
+                <div class="card bg-primary text-white" id="job_name">
+                    <div class="card-body text-center">
+                        <p class="card-text" id="job_cat">Some text inside the first card</p>
+                    </div>
+                </div>
+                <h3>Due date</h3>
+                <div class="card bg-info text-white">
+                    <div class="card-body text-center">
+                        <p class="card-text" id="job_due_date">Some text inside the second card</p>
+                    </div>
+                </div>
+                <h3>Current number of bids</h3>
+                <div class="card bg-primary text-white">
+                    <div class="card-body text-center">
+                        <p class="card-text" id="job_numBid">Some text inside the third card</p>
+                    </div>
+                </div>
+                <br>
+
 
             </div>
+            <br>
+            <h3>Description</h3>
+            <div class="card" >
+                <div class="card-body" id="job_desc">Basic card</div>
+            </div>
 
+<!--            -->
+            <br>
+<!--            THis is where bidders will appear-->
+            <h3>Bidders</h3>
+            <div class="card">
+                <div class="card-header" id="bidder_id">Header</div>
+                <div class="card-body" id="bidMessage">Content</div>
+                <div class="card-footer" id="suggested_amt">Footer</div>
+            </div>
 
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
 <!--            <h3 class="text-center"> Place Bid</h3>-->
             <div class="container mt-3">
 
