@@ -58,6 +58,7 @@
 
         <!--Todo: Mbuso check out how to implement a dynamic page when we click on these options bellow:-->
         <a href="#" id="postProject" class="list-group-item list-group-item-action bg-light" onclick="postProject()">Post Job</a>
+<!--        Todo: when browse project is clicked it should move to "jobs overview"-->
         <a href="#" id="seeJobs" class="list-group-item list-group-item-action bg-light" onclick="browseProj()">Browse Jobs</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">My Profile</a>
 
@@ -102,7 +103,7 @@
         </div>
 
         <!--Show this container when job is selected-->
-
+        <!--Shows post jobs-->
         <div class="post-job-container" id="post_job_cont" >
           <form  action="//1627982.ms.wits.ac.za/~student/Job.php?ACTION=0" class="was-validated">
 
@@ -195,7 +196,6 @@
                    <td id="jobCat"data-title="JOB_CATEGORY">School</td>
                    <td id="numBids" data-title="NUM_OF_BIDS"> xxxx </td>
 
-                   <td data-title=""><a href="javascript:void(0);"><i class="material-icons md-dark pmd-sm" data-toggle="modal" data-target="#myModal">View more</i></a></td>
 
 
                 </tbody>

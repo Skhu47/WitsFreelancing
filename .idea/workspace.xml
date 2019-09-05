@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/www/html/viewProfile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/html/jobsOverview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/bid.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/bid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/Javascript/bid.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/bid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/mainpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/html/viewJobPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/viewSpecificJobPage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +163,9 @@
       <workItem from="1566132936685" duration="91000" />
       <workItem from="1566133059039" duration="56000" />
       <workItem from="1566232942045" duration="4133000" />
-      <workItem from="1567137944339" duration="9447000" />
+      <workItem from="1567137944339" duration="10198000" />
+      <workItem from="1567609899149" duration="8504000" />
+      <workItem from="1567656621540" duration="5131000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1565184567235</created>
@@ -485,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567147287654</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="added view profile">
+      <created>1567147886395</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1567147886395</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TodoView">
@@ -532,7 +550,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="--" />
     <MESSAGE value="Added viewJob with functionalities" />
     <MESSAGE value="reset button fixed" />
     <MESSAGE value="fixed button" />
@@ -557,6 +574,7 @@
     <MESSAGE value="Changed bid" />
     <MESSAGE value="Fixed layout on viewMyJob" />
     <MESSAGE value="Fixed input for bid" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed input for bid" />
+    <MESSAGE value="added view profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="added view profile" />
   </component>
 </project>

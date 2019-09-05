@@ -54,7 +54,7 @@ function browseProj() {
                     let div = document.getElementById("modalBody");
                     let test = document.createTextNode(jobItem["JOB_CATEGORY"]);
                     div.appendChild(test);
-
+                    //Change this
                     view_more.innerHTML = "<a id= \"bidId\" href=\"javascript:void(0);\"><i class=\"material-icons md-dark pmd-sm\" >View more</i></a>";
                     view_more.addEventListener("click", function () {
                         localStorage.setItem("jobTitle", jobItem["JOB_TITLE"]);
@@ -66,7 +66,7 @@ function browseProj() {
                         getBid();
 
                         $(document).ready(function (){
-                            $("#wrapper_main").load("viewJobPage.html");
+                            $("#wrapper_main").load("viewSpecificJobPage.html");
                         });
 
                         /**/
