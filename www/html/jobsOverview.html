@@ -41,10 +41,7 @@
 
     <!-- Custom styles for sidebar -->
     <link href="../css/simple-sidebar.css" rel="stylesheet">
-    <script src="../Javascript/mainpage.js"></script>
-    <script src="../Javascript/bid.js"></script>
-    <script src="../Javascript/Post_project.js"></script>
-    <script>hid()</script>
+
 </head>
 
 <body>
@@ -60,7 +57,6 @@
             <a href="#" id="browseJobs" class="list-group-item list-group-item-action bg-light" onclick="postProject()">Browse jobs</a>
             <a href="#" id="myJobs" class="list-group-item list-group-item-action bg-light" onclick="postProject()">My Jobs</a>
             <a href="#" id="seeJobs" class="list-group-item list-group-item-action bg-light" >Offered Jobs</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">View All Jobs</a>
 
             <a href="#" class="list-group-item list-group-item-action bg-light">Support</a>
 
@@ -90,7 +86,7 @@
             </div>
         </nav>
 
-<!--Shows all the available jobs-->
+<!--Todo:Shows all the browse jobs is selected-->
         <div class="jumbotron">
             <div class="card pmd-card">
                 <div class="table-fixed-head">
@@ -115,7 +111,7 @@
                                 <td id="jobTitle" rowspan="2" data-title="JOB_TITLE"> Job title </td>
                                 <td id="jobCat"data-title="JOB_CATEGORY">School</td>
                                 <td id="numBids" data-title="NUM_OF_BIDS"> xxxx </td>
-<!--When view more is clicked go to view Specific Job-->
+                    <!--When view more is clicked go to view Specific Job-->
 
 
 
@@ -124,14 +120,93 @@
                     </div>
                 </div>
             </div>
+    </div>
+
+        <!-- Todo:Shows all the my jobs is selected-->
+        <div class="myJob">
+        <div class="jumbotron11">
+            <div class="card pmd-card">
+                <div class="table-fixed-head">
+                    <div class="table-responsive scrollable-table">
+                        <table id="jobTable2" cellspacing="0" cellpadding="0" class="table table-striped">
+                            <thead class="header">
+                            <tr>
+                                <th>Title</th>
+                                <th>Category</th>
+                                <th>Price range</th>
+                                <th>Status</th>
+
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+            <!--Todo:Show specific jobs that the user posted-->
+                            <tr>
+                                <td id="jobTitleMyJobs" rowspan="2" data-title="JOB_TITLE"> Job title </td>
+                                <td id="jobCatMyJobs"data-title="JOB_CATEGORY">School</td>
+                                <td id="numBidsMyJobs" data-title="NUM_OF_BIDS"> xxxx </td>
+                                <td id="jobStatus" data-title="Job_Status">Job status</td>
+                                <td id="viewBidders" data-title="VIEW_BIDDERS"><a href="assignBidderPage.html"> View Bidders </a></td>
+
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <!--Todo: Show this when Offerred jobs is selected-->
+
+        <!-- Todo:Shows all the my jobs is selected-->
+        <div class="myJob">
+            <div class="jumbotron11">
+                <div class="card pmd-card">
+                    <div class="table-fixed-head">
+                        <div class="table-responsive scrollable-table">
+                            <table id="jobTable1" cellspacing="0" cellpadding="0" class="table table-striped">
+                                <thead class="header">
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Category</th>
+                                    <th>Price range</th>
+                                    <th>Status</th>
+
+                                    <th></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                <!--Todo:Show specific jobs that the user posted-->
+                                <tr>
+                                    <td id="jobTitleOfferedJob" rowspan="2" data-title="JOB_TITLE"> Job title </td>
+                                    <td id="jobCatOfferedJob"data-title="JOB_CATEGORY">School</td>
+                                    <td id="numBidsOfferedJob" data-title="NUM_OF_BIDS"> xxxx </td>
+                                    <td id="jobStatusOfferedJob" data-title="Job_Status">
+                                    <div>
+                                        <button type="button" class="btn btn-success">Completed</button>
+                                    </div>
+
+                                    </td>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
 
 
 
 
     </div>
-
-</div>
 <!-- /#page-content-wrapper -->
 
 </div>
