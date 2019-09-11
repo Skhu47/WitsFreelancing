@@ -5,8 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/html/QUnit.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/QUnit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/www/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/www/.travis.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,25 +24,43 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+            <state relative-caret-position="216">
+              <caret line="9" column="80" selection-start-line="9" selection-start-column="80" selection-end-line="9" selection-end-column="80" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/test/coverage.html">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-389">
+              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/test/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="240">
+              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -69,6 +86,7 @@
         <option value="$PROJECT_DIR$/www/test/test.js" />
         <option value="$PROJECT_DIR$/www/html/QUnit.html" />
         <option value="$PROJECT_DIR$/www/package.json" />
+        <option value="$PROJECT_DIR$/www/.travis.yml" />
         <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
@@ -99,24 +117,6 @@
               <item name="WitsFreelancing" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="WitsFreelancing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WitsFreelancing" type="462c0819:PsiDirectoryNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WitsFreelancing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WitsFreelancing" type="462c0819:PsiDirectoryNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="Javascript" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WitsFreelancing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WitsFreelancing" type="462c0819:PsiDirectoryNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -142,18 +142,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing\www\html" />
+      <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing\www\css" />
+      <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing" />
+      <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing\www" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Mbuso Makitla\WebstormProjects\WitsFreelancing\www\html" />
       <recent name="C:\Users\Mbuso Makitla\WebstormProjects\WitsFreelancing\www\Javascript" />
       <recent name="C:\Users\Mbuso Makitla\WebstormProjects\WitsFreelancing\www\test" />
       <recent name="C:\Users\Skhumbuzo\WebstormProjects\WitsFreelancing\www" />
       <recent name="C:\Users\Mbuso Makitla\WebstormProjects\WitsFreelancing\www" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing\www\html" />
-      <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing\www\css" />
-      <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing" />
-      <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing\www" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -617,7 +617,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7381000" />
+    <option name="totallyTimeSpent" value="8929000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -629,24 +629,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="-6" y="0" width="781" height="870" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="npm" sideWeight="0.5019608" side_tool="true" visible="true" weight="0.13086583" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49803922" visible="true" weight="0.13086583" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7410359" visible="true" weight="0.26612905" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info id="npm" order="2" sideWeight="0.25896415" side_tool="true" visible="true" weight="0.26612905" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29166666" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2949438" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -733,27 +734,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/test/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="240">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
+        <state relative-caret-position="-389">
           <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/test/coverage.html">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="80" selection-start-line="9" selection-start-column="80" selection-end-line="9" selection-end-column="80" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
