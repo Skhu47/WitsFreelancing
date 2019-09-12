@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/Post_project.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/Post_project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/Javascript/ViewJob.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/ViewJob.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/Javascript/bid.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/bid.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +15,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/html/viewSpecificJobPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="59" column="4" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+            <state relative-caret-position="-142">
+              <caret line="135" column="70" lean-forward="true" selection-start-line="135" selection-start-column="70" selection-end-line="135" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -27,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/Javascript/bid.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3074">
-              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+            <state relative-caret-position="24">
+              <caret line="75" column="28" lean-forward="true" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -36,17 +33,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/Javascript/ViewJob.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+            <state relative-caret-position="415">
+              <caret line="29" column="58" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/html/viewJob.html">
+        <entry file="file://$PROJECT_DIR$/www/html/Account.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-240">
-              <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+            <state relative-caret-position="-1933" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/html/assignBidderPage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="96" column="92" lean-forward="true" selection-start-line="96" selection-start-column="92" selection-end-line="96" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/html/jobsOverview.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -54,16 +67,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/html/viewMyJobs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="73" column="41" lean-forward="true" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
+            <state relative-caret-position="673">
+              <caret line="80" column="4" lean-forward="true" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/html/jobsOverview.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3991" />
           </provider>
         </entry>
       </file>
@@ -76,15 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/Javascript/mainpage.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/Javascript/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1056">
+            <state relative-caret-position="151">
               <caret line="44" column="57" lean-forward="true" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
             </state>
           </provider>
@@ -121,8 +122,9 @@
         <option value="$PROJECT_DIR$/www/html/mainpage.html" />
         <option value="$PROJECT_DIR$/www/html/viewSpecificJobPage.html" />
         <option value="$PROJECT_DIR$/www/Javascript/Post_project.js" />
-        <option value="$PROJECT_DIR$/www/Javascript/ViewJob.js" />
+        <option value="$PROJECT_DIR$/www/Javascript/mainpage.js" />
         <option value="$PROJECT_DIR$/www/Javascript/bid.js" />
+        <option value="$PROJECT_DIR$/www/Javascript/ViewJob.js" />
       </list>
     </option>
   </component>
@@ -321,27 +323,6 @@
       <workItem from="1567609899149" duration="8504000" />
       <workItem from="1567656621540" duration="5131000" />
       <workItem from="1567876788621" duration="7381000" />
-    </task>
-    <task id="LOCAL-00006" summary="Comments: Mbuso">
-      <created>1565385406430</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1565385406430</updated>
-    </task>
-    <task id="LOCAL-00007" summary="post job form">
-      <created>1565388533750</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1565388533750</updated>
-    </task>
-    <task id="LOCAL-00008" summary="testing">
-      <created>1565432518344</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1565432518344</updated>
     </task>
     <task id="LOCAL-00009" summary="fixed login css">
       <created>1565454568431</created>
@@ -665,11 +646,32 @@
       <option name="project" value="LOCAL" />
       <updated>1568300210557</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="connected browse to new page">
+      <created>1568313584976</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1568313584976</updated>
+    </task>
+    <task id="LOCAL-00056" summary="connected browse to new page">
+      <created>1568313634852</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1568313634852</updated>
+    </task>
+    <task id="LOCAL-00057" summary="transition">
+      <created>1568318633887</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1568318633887</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24838000" />
+    <option name="totallyTimeSpent" value="33827000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -684,13 +686,13 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.89221555" visible="true" weight="0.1579643" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.89221555" visible="true" weight="0.1579643" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.10778443" side_tool="true" visible="true" weight="0.1579643" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.072222225" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.072222225" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -746,8 +748,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="changed package id and renamed" />
-    <MESSAGE value="connected everything, added post funds functionality, post job functionality, account script etc. The only problem is getting funds only." />
     <MESSAGE value="Todo" />
     <MESSAGE value="Mbuso" />
     <MESSAGE value="fixed the validation bug" />
@@ -771,7 +771,9 @@
     <MESSAGE value="testing 1" />
     <MESSAGE value="testing 2" />
     <MESSAGE value="chnage" />
-    <option name="LAST_COMMIT_MESSAGE" value="chnage" />
+    <MESSAGE value="connected browse to new page" />
+    <MESSAGE value="transition" />
+    <option name="LAST_COMMIT_MESSAGE" value="transition" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config.xml">
@@ -840,36 +842,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/html/viewMyJobs.html">
+    <entry file="file://$PROJECT_DIR$/www/Javascript/mainpage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="73" column="41" lean-forward="true" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
+        <state relative-caret-position="120">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/html/jobsOverview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3991" />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/www/Javascript/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/html/viewSpecificJobPage.html">
+    <entry file="file://$PROJECT_DIR$/www/Javascript/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="59" column="4" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/Javascript/bid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3074">
-          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/Javascript/ViewJob.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        <state relative-caret-position="151">
+          <caret line="44" column="57" lean-forward="true" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -880,18 +866,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/Javascript/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/Javascript/login.js">
+    <entry file="file://$PROJECT_DIR$/www/html/viewMyJobs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="44" column="57" lean-forward="true" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
+        <state relative-caret-position="673">
+          <caret line="80" column="4" lean-forward="true" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/Javascript/mainpage.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/www/html/viewSpecificJobPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142">
+          <caret line="135" column="70" lean-forward="true" selection-start-line="135" selection-start-column="70" selection-end-line="135" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/Javascript/bid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="75" column="28" lean-forward="true" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/Javascript/ViewJob.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="29" column="58" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/html/Account.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1933" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/html/assignBidderPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="96" column="92" lean-forward="true" selection-start-line="96" selection-start-column="92" selection-end-line="96" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/html/jobsOverview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
