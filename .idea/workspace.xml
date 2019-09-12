@@ -3,26 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/express/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express/History.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/express/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/express/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/express/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/express/lib/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express/lib/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/express/lib/express.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express/lib/express.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/express/lib/middleware/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express/lib/middleware/init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/express/lib/middleware/query.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express/lib/middleware/query.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/express/lib/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express/lib/request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/express/lib/response.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express/lib/response.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/express/lib/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express/lib/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/express/lib/router/layer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express/lib/router/layer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/express/lib/router/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express/lib/router/route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/express/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/express/lib/view.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express/lib/view.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/express/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/www/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/www/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/Post_project.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/Post_project.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/Javascript/ViewJob.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/ViewJob.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/Javascript/bid.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/bid.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,53 +16,83 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/html/QUnit.html">
+        <entry file="file://$PROJECT_DIR$/www/html/viewSpecificJobPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+            <state relative-caret-position="389">
+              <caret line="59" column="4" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/Javascript/bid.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3074">
+              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/Javascript/ViewJob.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/html/viewJob.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-240">
+              <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/html/viewMyJobs.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="73" column="41" lean-forward="true" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/html/jobsOverview.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3991" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/Javascript/Post_project.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-428">
+              <caret line="29" column="82" lean-forward="true" selection-start-line="29" selection-start-column="82" selection-end-line="29" selection-end-column="82" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/test/coverage.html">
+        <entry file="file://$PROJECT_DIR$/www/Javascript/mainpage.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/.travis.yml">
+        <entry file="file://$PROJECT_DIR$/www/Javascript/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="1056">
+              <caret line="44" column="57" lean-forward="true" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/test/test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/www/Javascript/index.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -105,12 +118,17 @@
         <option value="$PROJECT_DIR$/www/.travis.yml" />
         <option value="$PROJECT_DIR$/www/package.json" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/www/html/mainpage.html" />
+        <option value="$PROJECT_DIR$/www/html/viewSpecificJobPage.html" />
+        <option value="$PROJECT_DIR$/www/Javascript/Post_project.js" />
+        <option value="$PROJECT_DIR$/www/Javascript/ViewJob.js" />
+        <option value="$PROJECT_DIR$/www/Javascript/bid.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
-    <option name="width" value="1017" />
+    <option name="width" value="977" />
     <option name="height" value="1088" />
   </component>
   <component name="ProjectId" id="1PbBTXYZ7AHZ79bKRJZkqpeAhJP" />
@@ -132,6 +150,12 @@
               <item name="WitsFreelancing" type="b2602c69:ProjectViewProjectNode" />
               <item name="WitsFreelancing" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WitsFreelancing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WitsFreelancing" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WitsFreelancing" type="b2602c69:ProjectViewProjectNode" />
@@ -297,20 +321,6 @@
       <workItem from="1567609899149" duration="8504000" />
       <workItem from="1567656621540" duration="5131000" />
       <workItem from="1567876788621" duration="7381000" />
-    </task>
-    <task id="LOCAL-00004" summary="Main page">
-      <created>1565374966536</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1565374966536</updated>
-    </task>
-    <task id="LOCAL-00005" summary="added vendor for bootsrap, main page + css">
-      <created>1565378950090</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1565378950090</updated>
     </task>
     <task id="LOCAL-00006" summary="Comments: Mbuso">
       <created>1565385406430</created>
@@ -641,11 +651,25 @@
       <option name="project" value="LOCAL" />
       <updated>1568206871148</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="testing 2">
+      <created>1568292409469</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1568292409470</updated>
+    </task>
+    <task id="LOCAL-00054" summary="chnage">
+      <created>1568300210557</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1568300210557</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14609000" />
+    <option name="totallyTimeSpent" value="24838000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -658,14 +682,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7411765" visible="true" weight="0.13086583" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.89221555" visible="true" weight="0.1579643" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.25882354" side_tool="true" visible="true" weight="0.13086583" />
+      <window_info id="npm" order="2" sideWeight="0.10778443" side_tool="true" visible="true" weight="0.1579643" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29166666" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.072222225" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -721,8 +746,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Nodal info" />
-    <MESSAGE value="Added more functionality" />
     <MESSAGE value="changed package id and renamed" />
     <MESSAGE value="connected everything, added post funds functionality, post job functionality, account script etc. The only problem is getting funds only." />
     <MESSAGE value="Todo" />
@@ -746,7 +769,9 @@
     <MESSAGE value="initial tests" />
     <MESSAGE value="testing" />
     <MESSAGE value="testing 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing 1" />
+    <MESSAGE value="testing 2" />
+    <MESSAGE value="chnage" />
+    <option name="LAST_COMMIT_MESSAGE" value="chnage" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config.xml">
@@ -792,6 +817,81 @@
           <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/html/viewProfile.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-439" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/html/mainpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3014">
+          <caret line="53" column="2" lean-forward="true" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/html/viewJob.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/html/viewMyJobs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="73" column="41" lean-forward="true" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/html/jobsOverview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3991" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/html/viewSpecificJobPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="59" column="4" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/Javascript/bid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3074">
+          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/Javascript/ViewJob.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/Javascript/Post_project.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-428">
+          <caret line="29" column="82" lean-forward="true" selection-start-line="29" selection-start-column="82" selection-end-line="29" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/Javascript/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/Javascript/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="44" column="57" lean-forward="true" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/Javascript/mainpage.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
