@@ -27,6 +27,6 @@ $(document).ready(function () {
         bidMsg.innerHTML = "bidder message: " + localStorage.getItem("bid_msg");
     }
     $("#bid_btn1").click(function () {
-        postBid(jobItem["JOB_ID"]);
+        postBid(jobItem["JOB_ID"]); //what was mojo doing?
     });
 });

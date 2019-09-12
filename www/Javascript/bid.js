@@ -66,6 +66,13 @@ function browseProj() {
                         getBid();
 
                         $(document).ready(function (){
+                            /*$("#wrapper_main").hide(function () {
+                                $("#wrapper_main").slideUp(1000);
+                            });
+
+                            $("#bidder_page").show(function () {
+                                $("#bidder_page").slideDown(1000);
+                            });*/
                             $("#wrapper_main").load("viewSpecificJobPage.html");
                         });
 
@@ -152,7 +159,7 @@ function browseProj() {
                     alert("The bid was successful!");
                 }
                 if(results === "3"){
-                    alert("You have bidded!");
+                    alert("You have bid!");
                 }
             },
             function (response) { // we get a respo
