@@ -5,9 +5,10 @@
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "main": "/javascript/login.js",
   "scripts": {
-    "test": "./test/jshint test.js",
     "test:coverage": "jest --coverage",
-    "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
+    "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "start": "login.js",
+    "test": "mocha --recursive --reporter mocha-junit-reporter --timeout 60000 --exit"
   },
   "keywords": [
     "ecosystem:cordova"
@@ -15,11 +16,13 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "dependencies": {
+    "chai": "^4.2.0",
     "cordova-android": "^8.0.0",
     "cordova-browser": "^6.0.0",
     "cordova-ios": "^5.0.1",
     "cordova-plugin-advanced-http": "^2.1.1",
-    "cordova-plugin-file": "^6.0.2"
+    "cordova-plugin-file": "^6.0.2",
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "cordova-plugin-whitelist": "^1.3.4",
