@@ -41,6 +41,7 @@ function myJobs() { //look at the transitions
                 let output = JSON.parse(results);
                 //console.log(results);
 
+
                 for(let i=0; i < output.length; i++){
                     console.log("inside loop");
                     let jobItem = output[i];
