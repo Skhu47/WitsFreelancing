@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/ViewJob.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/ViewJob.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/bid.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/bid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/jobOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/jobOverview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/assignBidderPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/assignBidderPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/viewSpecificJobPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/viewSpecificJobPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/Javascript/ViewJob.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/ViewJob.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/Javascript/bid.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/bid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/Javascript/jobOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/jobOverview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/html/assignBidderPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/assignBidderPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/html/viewSpecificJobPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/viewSpecificJobPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/Javascript/jobOverview.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="215" column="44" selection-start-line="215" selection-start-column="37" selection-end-line="215" selection-end-column="44" />
+            <state relative-caret-position="129">
+              <caret line="103" column="69" lean-forward="true" selection-start-line="103" selection-start-column="69" selection-end-line="103" selection-end-column="69" />
               <folding>
                 <element signature="e#7349#7512#0" />
                 <element signature="e#7351#7368#0" />
@@ -122,11 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+            <state relative-caret-position="98">
+              <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -173,6 +164,7 @@
         <option value="$PROJECT_DIR$/www/html/assignBidderPage.html" />
         <option value="$PROJECT_DIR$/www/Javascript/ViewJob.js" />
         <option value="$PROJECT_DIR$/www/Javascript/jobOverview.js" />
+        <option value="$PROJECT_DIR$/config.xml" />
       </list>
     </option>
   </component>
@@ -364,13 +356,6 @@
       <workItem from="1568550174099" duration="40000" />
       <workItem from="1568617607682" duration="5329000" />
       <workItem from="1568629782035" duration="2805000" />
-    </task>
-    <task id="LOCAL-00011" summary="Fixed button and some layouts. Mbuso check comments">
-      <created>1565686310943</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1565686310943</updated>
     </task>
     <task id="LOCAL-00012" summary="Added more css">
       <created>1565688821140</created>
@@ -708,11 +693,18 @@
       <option name="project" value="LOCAL" />
       <updated>1568660463076</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="assign and notifications">
+      <created>1568675288437</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1568675288438</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30788000" />
+    <option name="totallyTimeSpent" value="31683000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -733,13 +725,13 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.06944445" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.50555557" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.06944445" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.11805555" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.24444444" />
@@ -796,7 +788,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="fixed the validation bug" />
     <MESSAGE value="you can post bid" />
     <MESSAGE value="removed student number" />
     <MESSAGE value="fixed the bug of posting jobs" />
@@ -821,19 +812,8 @@
     <MESSAGE value="transitions" />
     <MESSAGE value="populating the lists" />
     <MESSAGE value="complaint working" />
-    <option name="LAST_COMMIT_MESSAGE" value="complaint working" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/www/Javascript/jobOverview.js</url>
-          <line>144</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="assign and notifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="assign and notifications" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/www/Javascript/login.js">
@@ -901,8 +881,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/Javascript/jobOverview.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="215" column="44" selection-start-line="215" selection-start-column="37" selection-end-line="215" selection-end-column="44" />
+        <state relative-caret-position="129">
+          <caret line="103" column="69" lean-forward="true" selection-start-line="103" selection-start-column="69" selection-end-line="103" selection-end-column="69" />
           <folding>
             <element signature="e#7349#7512#0" />
             <element signature="e#7351#7368#0" />
@@ -916,6 +896,13 @@
             <element signature="e#10939#11258#0" />
             <element signature="e#10973#10992#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
         </state>
       </provider>
     </entry>
