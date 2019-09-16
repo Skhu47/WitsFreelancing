@@ -178,6 +178,7 @@ function browseProj() {
         );
     }
 
+
     function getBid(){
 
         const options = {

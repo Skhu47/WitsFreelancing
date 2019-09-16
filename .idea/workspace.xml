@@ -3,14 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/ViewJob.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/ViewJob.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/bid.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/bid.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/jobOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/jobOverview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/jobsOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/jobsOverview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/assignBidderPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/assignBidderPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/viewSpecificJobPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/viewSpecificJobPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/Javascript/ViewJob.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/ViewJob.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/Javascript/bid.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/bid.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/Javascript/jobOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/jobOverview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/html/jobsOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/jobsOverview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/html/assignBidderPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/assignBidderPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/html/viewSpecificJobPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/viewSpecificJobPage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,17 +28,26 @@
             <file pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/www/html/mainpage.html">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-2578">
-                    <caret line="238" selection-start-line="238" selection-end-line="238" />
+                  <state relative-caret-position="7584">
+                    <caret line="316" column="85" lean-forward="true" selection-start-line="316" selection-start-column="85" selection-end-line="316" selection-end-column="85" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/www/html/jobsOverview.html">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="168">
+                    <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
                   </state>
                 </provider>
               </entry>
             </file>
             <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/www/html/jobsOverview.html">
+              <entry file="file://$PROJECT_DIR$/www/html/assignBidderPage.html">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="360">
-                    <caret line="277" selection-start-line="277" selection-end-line="277" />
+                  <state relative-caret-position="408">
+                    <caret line="119" column="17" lean-forward="true" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="28" />
                   </state>
                 </provider>
               </entry>
@@ -49,10 +60,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/html/viewSpecificJobPage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/Javascript/bid.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="4320">
+              <caret line="180" selection-start-line="180" selection-end-line="180" />
             </state>
           </provider>
         </entry>
@@ -60,8 +80,44 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/Javascript/jobOverview.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+            <state relative-caret-position="273">
+              <caret line="215" column="44" selection-start-line="215" selection-start-column="37" selection-end-line="215" selection-end-column="44" />
+              <folding>
+                <element signature="e#7349#7512#0" />
+                <element signature="e#7351#7368#0" />
+                <element signature="e#7546#7735#0" />
+                <element signature="e#7564#7583#0" />
+                <element signature="e#4614#4778#0" />
+                <element signature="e#4616#4633#0" />
+                <element signature="e#4812#4970#0" />
+                <element signature="e#10628#10889#0" />
+                <element signature="e#10630#10647#0" />
+                <element signature="e#10939#11258#0" />
+                <element signature="e#10973#10992#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/Javascript/ViewJob.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3168">
+              <caret line="213" column="175" selection-start-line="213" selection-start-column="175" selection-end-line="213" selection-end-column="175" />
+              <folding>
+                <element signature="e#1937#3458#0" />
+                <element signature="e#1675#1855#0" />
+                <element signature="e#1677#1694#0" />
+                <element signature="e#1885#2087#0" />
+                <element signature="e#1899#1918#0" />
+                <element signature="e#1420#1444#0" />
+                <element signature="e#4128#4145#0" />
+                <element signature="e#1871#2027#0" />
+                <element signature="e#2184#2437#0" />
+                <element signature="e#2471#2675#0" />
+                <element signature="e#2473#2490#0" />
+                <element signature="e#2709#2939#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,17 +143,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/Javascript/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/html/assignBidderPage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="807">
-              <caret line="84" column="89" lean-forward="true" selection-start-line="84" selection-start-column="89" selection-end-line="84" selection-end-column="89" />
+            <state relative-caret-position="120">
+              <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -121,9 +168,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/www/html/jobsOverview.html" />
+        <option value="$PROJECT_DIR$/www/Javascript/bid.js" />
+        <option value="$PROJECT_DIR$/www/html/viewSpecificJobPage.html" />
+        <option value="$PROJECT_DIR$/www/html/assignBidderPage.html" />
+        <option value="$PROJECT_DIR$/www/Javascript/ViewJob.js" />
         <option value="$PROJECT_DIR$/www/Javascript/jobOverview.js" />
       </list>
     </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1088" />
   </component>
   <component name="ProjectId" id="1PbBTXYZ7AHZ79bKRJZkqpeAhJP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -308,20 +364,6 @@
       <workItem from="1568550174099" duration="40000" />
       <workItem from="1568617607682" duration="5329000" />
       <workItem from="1568629782035" duration="2805000" />
-    </task>
-    <task id="LOCAL-00009" summary="fixed login css">
-      <created>1565454568431</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1565454568431</updated>
-    </task>
-    <task id="LOCAL-00010" summary="added job div to home page">
-      <created>1565682973917</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1565682973918</updated>
     </task>
     <task id="LOCAL-00011" summary="Fixed button and some layouts. Mbuso check comments">
       <created>1565686310943</created>
@@ -652,11 +694,25 @@
       <option name="project" value="LOCAL" />
       <updated>1568642496438</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="populating the lists">
+      <created>1568655207810</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1568655207810</updated>
+    </task>
+    <task id="LOCAL-00059" summary="complaint working">
+      <created>1568660463076</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1568660463076</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12086000" />
+    <option name="totallyTimeSpent" value="30788000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -671,19 +727,19 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8908819" visible="true" weight="0.15730338" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.89044946" weight="0.64784944" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.10911809" side_tool="true" visible="true" weight="0.15730338" />
+      <window_info id="npm" order="2" sideWeight="0.109550565" side_tool="true" weight="0.31989247" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.07083333" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.06944445" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.08472222" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.06944445" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.24444444" />
@@ -707,7 +763,14 @@
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
               </option>
-              <option name="COLUMN_ORDER" />
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
             </State>
           </value>
         </entry>
@@ -733,8 +796,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Todo" />
-    <MESSAGE value="Mbuso" />
     <MESSAGE value="fixed the validation bug" />
     <MESSAGE value="you can post bid" />
     <MESSAGE value="removed student number" />
@@ -758,41 +819,103 @@
     <MESSAGE value="implemented jasmine" />
     <MESSAGE value="removed extra lines in the script section" />
     <MESSAGE value="transitions" />
-    <option name="LAST_COMMIT_MESSAGE" value="transitions" />
+    <MESSAGE value="populating the lists" />
+    <MESSAGE value="complaint working" />
+    <option name="LAST_COMMIT_MESSAGE" value="complaint working" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/www/Javascript/jobOverview.js</url>
+          <line>144</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/Javascript/bid.js">
+    <entry file="file://$PROJECT_DIR$/www/Javascript/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/html/assignBidderPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="807">
-          <caret line="84" column="89" lean-forward="true" selection-start-line="84" selection-start-column="89" selection-end-line="84" selection-end-column="89" />
+        <state relative-caret-position="120">
+          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/html/mainpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2578">
-          <caret line="238" selection-start-line="238" selection-end-line="238" />
+        <state relative-caret-position="7584">
+          <caret line="316" column="85" lean-forward="true" selection-start-line="316" selection-start-column="85" selection-end-line="316" selection-end-column="85" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/html/jobsOverview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="277" selection-start-line="277" selection-end-line="277" />
+        <state relative-caret-position="168">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/Javascript/bid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4320">
+          <caret line="180" selection-start-line="180" selection-end-line="180" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/html/viewSpecificJobPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/Javascript/ViewJob.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3168">
+          <caret line="213" column="175" selection-start-line="213" selection-start-column="175" selection-end-line="213" selection-end-column="175" />
+          <folding>
+            <element signature="e#1937#3458#0" />
+            <element signature="e#1675#1855#0" />
+            <element signature="e#1677#1694#0" />
+            <element signature="e#1885#2087#0" />
+            <element signature="e#1899#1918#0" />
+            <element signature="e#1420#1444#0" />
+            <element signature="e#4128#4145#0" />
+            <element signature="e#1871#2027#0" />
+            <element signature="e#2184#2437#0" />
+            <element signature="e#2471#2675#0" />
+            <element signature="e#2473#2490#0" />
+            <element signature="e#2709#2939#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/html/assignBidderPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="119" column="17" lean-forward="true" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/Javascript/jobOverview.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+        <state relative-caret-position="273">
+          <caret line="215" column="44" selection-start-line="215" selection-start-column="37" selection-end-line="215" selection-end-column="44" />
+          <folding>
+            <element signature="e#7349#7512#0" />
+            <element signature="e#7351#7368#0" />
+            <element signature="e#7546#7735#0" />
+            <element signature="e#7564#7583#0" />
+            <element signature="e#4614#4778#0" />
+            <element signature="e#4616#4633#0" />
+            <element signature="e#4812#4970#0" />
+            <element signature="e#10628#10889#0" />
+            <element signature="e#10630#10647#0" />
+            <element signature="e#10939#11258#0" />
+            <element signature="e#10973#10992#0" />
+          </folding>
         </state>
       </provider>
     </entry>
