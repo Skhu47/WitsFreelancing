@@ -5,8 +5,10 @@
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "main": "/javascript/login.js",
   "scripts": {
+    "test:coverage": "jest --coverage",
+    "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "start": "/javascript/login.js",
-    "test": "jasmine"
+    "test": "mocha --recursive --reporter mocha-junit-reporter --timeout 60000 --exit"
   },
   "keywords": [
     "ecosystem:cordova"
