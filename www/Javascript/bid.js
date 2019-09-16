@@ -54,7 +54,7 @@ function browseProj() {
                     let div = document.getElementById("modalBody");
                     let test = document.createTextNode(jobItem["JOB_CATEGORY"]);
                     div.appendChild(test);
-
+                    //Change this
                     view_more.innerHTML = "<a id= \"bidId\" href=\"javascript:void(0);\"><i class=\"material-icons md-dark pmd-sm\" >View more</i></a>";
                     view_more.addEventListener("click", function () {
                         localStorage.setItem("jobTitle", jobItem["JOB_TITLE"]);
@@ -66,7 +66,14 @@ function browseProj() {
                         getBid();
 
                         $(document).ready(function (){
-                            $("#wrapper_main").load("viewJobPage.html");
+                            /*$("#wrapper_main").hide(function () {
+                                $("#wrapper_main").slideUp(1000);
+                            });
+
+                            $("#bidder_page").show(function () {
+                                $("#bidder_page").slideDown(1000);
+                            });*/
+                            $("#wrapper_main").load("viewSpecificJobPage.html");
                         });
 
                         /**/
@@ -152,7 +159,7 @@ function browseProj() {
                     alert("The bid was successful!");
                 }
                 if(results === "3"){
-                    alert("You have bidded!");
+                    alert("You have bid!");
                 }
             },
             function (response) { // we get a respo

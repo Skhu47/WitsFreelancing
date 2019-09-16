@@ -3,6 +3,7 @@ function hid(){
         $("#post_job_cont").hide(); // find a way to make this seem invisible. OR
         $(".jumbotron1").hide();
         $(".container_account").hide();
+
         //$("#sidebar-wrapper").toggle(); //we need the toggling button here too
     });
 }

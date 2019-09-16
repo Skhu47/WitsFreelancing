@@ -54,7 +54,7 @@ function browseProj() {
                     let div = document.getElementById("modalBody");
                     let test = document.createTextNode(jobItem["JOB_CATEGORY"]);
                     div.appendChild(test);
-
+                    //Change this
                     view_more.innerHTML = "<a id= \"bidId\" href=\"javascript:void(0);\"><i class=\"material-icons md-dark pmd-sm\" >View more</i></a>";
                     view_more.addEventListener("click", function () {
                         localStorage.setItem("jobTitle", jobItem["JOB_TITLE"]);
@@ -66,7 +66,14 @@ function browseProj() {
                         getBid();
 
                         $(document).ready(function (){
-                            $("#wrapper_main").load("viewJobPage.html");
+                            /*$("#wrapper_main").hide(function () {
+                                $("#wrapper_main").slideUp(1000);
+                            });
+
+                            $("#bidder_page").show(function () {
+                                $("#bidder_page").slideDown(1000);
+                            });*/
+                            $("#wrapper_main").load("viewSpecificJobPage.html");
                         });
 
                         /**/
@@ -123,6 +130,57 @@ function browseProj() {
         postProject();
     });
 
+    $(document).ready(function () {
+        $("#bid_btn1").click(function (id) {
+            const options = {
+                method: "post",
+                timeout: 10000,
+                data: {
+                    ACTION: 0,
+                    JOB_ID: id,
+                    BIDDER_ID: localStorage.getItem("Stud_No"),          //$("#Username").val(),
+                    BID_SUGGESTED_AMOUNT: $('#bidAmt').val() ,
+                    BID_MESSAGE: $('#bidMsg').val(),
+
+                }
+            };
+            const url = "http://1627982.ms.wits.ac.za/~student/Bid.php";
+
+            cordova.plugin.http.sendRequest(url, options,
+                function (response) {
+                    //success
+                    let results = response.data; //data from server, it's a string, must be converted to an appropriate format
+                    //e.g. json
+                    alert(results);
+                    if(results === "0"){
+                        alert("The bid was unsuccessful!");
+                    }
+                    if(results === "1"){
+                        alert("The bid was successful!");
+                    }
+                    if(results === "3"){
+                        alert("You have bid!");
+                    }
+                },
+                function (response) { // we get a respo
+                    //fail
+                    let results = response.data;
+                    //alert("2");
+                    alert(results);
+
+                },
+                function (response) {
+                    //permission denied
+                    // alert("3");
+                    let results = response.data;
+                    //alert("2");
+                    alert(results);
+                }
+            );
+        });
+        }
+    );
+
 
     function postBid(id) {
         const options = {
@@ -152,7 +210,7 @@ function browseProj() {
                     alert("The bid was successful!");
                 }
                 if(results === "3"){
-                    alert("You have bidded!");
+                    alert("You have bid!");
                 }
             },
             function (response) { // we get a respo
