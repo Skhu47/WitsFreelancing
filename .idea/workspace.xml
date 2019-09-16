@@ -156,7 +156,7 @@
       <workItem from="1567539640117" duration="776000" />
       <workItem from="1568550029130" duration="67000" />
       <workItem from="1568550174099" duration="40000" />
-      <workItem from="1568617607682" duration="597000" />
+      <workItem from="1568617607682" duration="1060000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1565184567235</created>
@@ -480,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568617950359</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="added travis yml file again">
+      <created>1568618248593</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1568618248593</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TodoView">
@@ -527,7 +534,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Mbuso conect to php" />
     <MESSAGE value="--" />
     <MESSAGE value="Added viewJob with functionalities" />
     <MESSAGE value="reset button fixed" />
@@ -552,6 +558,7 @@
     <MESSAGE value="fixed page" />
     <MESSAGE value="Changed bid" />
     <MESSAGE value="added travis yml file" />
-    <option name="LAST_COMMIT_MESSAGE" value="added travis yml file" />
+    <MESSAGE value="added travis yml file again" />
+    <option name="LAST_COMMIT_MESSAGE" value="added travis yml file again" />
   </component>
 </project>
