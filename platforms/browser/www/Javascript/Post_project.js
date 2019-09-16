@@ -37,8 +37,8 @@ function  postProject() {
 
         minLabel.hide();
         maxLabel.hide();
-
-        if(minRange >= maxRange || (minRange==="" || maxRange === "")){
+        sendDetails();
+        /*if(minRange >= maxRange || (minRange==="" || maxRange === "")){
             minLabel.show();
             maxLabel.show();
         }
@@ -48,14 +48,23 @@ function  postProject() {
         else if(new Date(endDate) > (new Date($.now()))){
             $("#dateLabel").hide();
             sendDetails();
-        }
+            clearPage();
+        }*/
 
     });
     //when you click reset
     $("#resetBtn").click(function () {
         //if it's for here, then code the clear function
+        $('#Job_title').val("");
+        $('#Job_desc').val("");
+        $('#min_range').val("");
+        $('#max_range').val("");
+        $('#date').val("");
+        $('#location').val("");
+        $('#category').val("");
     });
-    function sendDetails(){ //here we post a project/job
+    function sendDetails(){
+        //here we post a project/job
         const options = {
             method: "post",
             timeout: 10000,
@@ -72,22 +81,31 @@ function  postProject() {
 
             }
         };
-        const url = "http://1627982.ms.wits.ac.za/~student/Bid.php";
+        const url = "http://1627982.ms.wits.ac.za/~student/Job.php";
 
         cordova.plugin.http.sendRequest(url, options,
             function (response) {
                 //success
                 let results = response.data; //data from server, it's a string, must be converted to an appropriate format
                 //e.g. json
-                alert(results);
-                //alert(results.toString().length);
-                //alert(results.toString()[0]);
+                if(results === "0"){
+                    alert("The job post was unsuccessful!");
+                }
+                if(results === "1"){
+                    alert("The job post was successfully posted!");
+                    clearPage();
+                }
+                if(results === "2"){
+                    alert("You have insufficient funds");
+                    $('#min_range').val("");
+                    $('#max_range').val("");
+                }
             },
             function (response) { // we get a respo
                 //fail
                 let results = response.data;
                 //alert("2");
-                alert(results);
+                //alert(results);
 
             },
             function (response) {
@@ -95,9 +113,19 @@ function  postProject() {
                 // alert("3");
                 let results = response.data;
                 //alert("2");
-                alert(results);
+                //alert(results);
             }
         );
+    }
+    //remove the shanis
+    function clearPage() {
+        $('#Job_title').val("");
+        $('#Job_desc').val("");
+        $('#min_range').val("");
+        $('#max_range').val("");
+        $('#date').val("");
+        $('#location').val("");
+        $('#category').val("");
     }
     //going to viewJob
     $(document).ready(function (){
