@@ -22,7 +22,8 @@
     <script src="../Javascript/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="../Javascript/Account.js"></script>
+    <script src="../Javascript/bid.js"></script>
+    <script src="../Javascript/jobOverview.js"></script>
 
     <link href="../css/floating%20button.css" rel="stylesheet">
 
@@ -39,6 +40,7 @@
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript" src="../cordova.js"></script>
     <script src="../Javascript/jquery-3.4.1.min.js"></script>
+    <!-- <script >hideContent()</script> -->
 
     <!-- Custom styles for sidebar -->
     <link href="../css/simple-sidebar.css" rel="stylesheet">
@@ -55,9 +57,9 @@
         <div class="list-group list-group-flush">
 
             <!--Todo: Mbuso check out how to implement a dynamic page when we click on these options bellow:-->
-            <a href="#" id="browseJobs" class="list-group-item list-group-item-action bg-light" onclick="postProject()">Browse jobs</a>
-            <a href="#" id="myJobs" class="list-group-item list-group-item-action bg-light" onclick="postProject()">My Jobs</a>
-            <a href="#" id="seeJobs" class="list-group-item list-group-item-action bg-light" >Offered Jobs</a>
+            <a href="#" id="browseJobs" class="list-group-item list-group-item-action bg-light" onclick="browseProj()">Browse jobs</a>
+            <a href="#" id="myJobs" class="list-group-item list-group-item-action bg-light" onclick="myJobs()" >My Jobs</a>
+            <a href="#" id="offeredJobs" class="list-group-item list-group-item-action bg-light" onclick="offers()" >Offered Jobs</a>
 
             <a href="#" class="list-group-item list-group-item-action bg-light">Support</a>
 
@@ -80,7 +82,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" id="home" onclick="home()" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" id="home"  href="#" onclick="goHome()">Home <span class="sr-only">(current)</span></a>
                     </li>
 
                 </ul>
@@ -88,7 +90,7 @@
         </nav>
 
         <!--Todo:Shows all the browse jobs is selected-->
-        <div class="card pmd-card">
+        <div class="newBrowseJobs">
             <div class="table-fixed-head">
                 <div class="table-responsive scrollable-table">
                     <table id="jobTable" cellspacing="0" cellpadding="0" class="table table-striped">
@@ -119,13 +121,31 @@
                     </table>
                 </div>
             </div>
+
+
+            <!-- Modal body -->
+            <div id="modalBody" class="modal-body">
+                <!--                            <input type="number" id="min_range" class="form-control" name="FUND_AMOUNT" required placeholder="Enter credit amount">-->
+                <!--                            <div class="valid-feedback"></div>-->
+                <!--                            <div class="invalid-feedback" id="minLabel"></div>-->
+                <!--Todo: Add information about the task-->
+                <!--See Job_php documentation-->
+                <!--JOB_AMOUNT_RANGE_LOW&ndash;&gt;
+                JOB_DESCRIPTION&ndash;&gt;
+                JOB_AMOUNT_RANGE_LOW&ndash;&gt;
+                JOB_AMOUNT_RANGE_HIGH&ndash;&gt;
+                JOB_DUE_DATE_TIME&ndash;&gt;
+                JOB_LOCATION&ndash;&gt;
+                JOB_CATEGORY-->
+
+
+            </div>
+
         </div>
 
 
         <!-- Todo:Shows all the my jobs is selected-->
         <div class="myJob">
-
-
             <div class="jumbotron11">
                 <div class="card pmd-card">
                     <div class="table-fixed-head">
@@ -207,8 +227,7 @@
 
         <!--Todo: Show this when Offerred jobs is selected-->
 
-        <!-- Todo:Shows all the my jobs is selected-->
-        <div class="myJob">
+        <div class="offeredJobs1">
             <div class="jumbotron11">
                 <div class="card pmd-card">
                     <div class="table-fixed-head">
@@ -237,6 +256,11 @@
                                         </div>
 
                                     </td>
+                                    <td>
+                                        <div>
+
+                                            <button type="button" class="btn btn-primary"> Accept Job Offer</button>
+                                        </div></td>
 
                                 </tbody>
                             </table>

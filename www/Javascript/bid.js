@@ -1,19 +1,16 @@
+
 function browseProj() {
     $(document).ready(function () {
 
-        $(".jumbotron1").show(function () { //show the bidding page
+        /*$(".jumbotron1").show(function () { //show the bidding page
             $(".jumbotron1").slideDown(1000);
+        });*/
+        $(".myJob").hide();
+        $(".offeredJobs1").hide();
+        $(".newBrowseJobs").show(function () {
+            getJobs();
         });
-        $("#post_job_cont").hide(function () {
-            $("#post_job_cont").slideUp(1000);
-        });
-        $("#header").hide(function () {
-            $("#header").slideUp(1000);
-        });
-        $(".container_account").hide(function () { //show the bidding page
-            $(".container_account").slideUp(1000);
-        });
-        getJobs();
+        //call this after going to the job overview
         //getBid();
     });
     function getJobs(){
@@ -34,11 +31,12 @@ function browseProj() {
                 let jobTable = document.getElementById("jobTable").getElementsByTagName("tbody")[0];
 
                 let output = JSON.parse(results);
-                console.log(results);
+                //console.log(results);
 
                 for(let i=0; i < output.length; i++){
-
+                    console.log("inside loop");
                     let jobItem = output[i];
+                    console.log(jobItem);
                     let row = jobTable.insertRow();
                     let title = row.insertCell(0);
                     let category = row.insertCell(1);

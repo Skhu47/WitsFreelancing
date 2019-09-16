@@ -1,21 +1,44 @@
-$(document).ready(function (){
-     //show browse jobs?
-    //handle all transitions
-    $("#seeJobs").click(function () {
+function hideContent() {
+    $(document).ready(function (){
+        $(".newBrowseJobs").hide(); // find a way to make this seem invisible. OR
         $(".myJob").hide();
-        $(".offeredJobs").hide();
+        $(".offeredJobs1").hide();
+        //show browse jobs?
+        //handle all transitions
+        //show jobs here
     });
-//handle myJobs
-    $(".myJob").click(function () {
-        $("#seeJobs").hide();
-        $(".offeredJobs").hide();
+}
+
+function jobSection() { //look at the transitions
+    $("#wrapper_main").load("jobsOverview.html");
+}
+
+function myJobs() { //look at the transitions
+    $(document).ready(function (){
+        $(".newBrowseJobs").hide();
+        $(".offeredJobs1").hide();
+        $(".myJob").show();
     });
-//handle offered jobs
-    $(".offeredJobs").click(function () {
-        $("#seeJobs").hide();
+}
+
+function offers() { //look at the transitions
+    $(document).ready(function (){
+        $(".newBrowseJobs").hide();
         $(".myJob").hide();
+        $(".offeredJobs1").show();
     });
+function goHome(){ //call home
+    $(document).ready(function () { // when you click going to home
+            $("#post_job_cont").hide(function () {
+                $("#post_job_cont").slideUp(1000);
+            });
+            $(".jumbotron1").hide(function () {
+                $(".jumbotron1").slideUp(1000);
+            });
+            $("#header").show(function () {
+                $("#header").slideDown(1000);
+            });
 
-
-    //$("#sidebar-wrapper").toggle(); //we need the toggling button here too
-});
+    });
+}
+}
