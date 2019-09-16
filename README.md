@@ -92,6 +92,3 @@ SDKs for mobile platforms often come bundled with emulators that execute a devic
  
  ## code coverage
  [![Coverage Status](https://coveralls.io/repos/github/MbusoMakitla/WitsFreelancing/badge.svg?branch=master)](https://coveralls.io/github/MbusoMakitla/WitsFreelancing?branch=master)
- 
- ## Bitrise
- [![Build Status](https://app.bitrise.io/app/da76fb36d7ed69a5/status.svg?token=261qVwuLfIQz8KyY6b__vA)](https://app.bitrise.io/app/da76fb36d7ed69a5)
