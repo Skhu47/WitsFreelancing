@@ -8,44 +8,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/Javascript/bid.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="23" selection-start-column="23" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/Javascript/jobOverview.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -53,87 +22,14 @@
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/www/test/test.js" />
-        <option value="$PROJECT_DIR$/www/html/QUnit.html" />
-        <option value="$PROJECT_DIR$/www/.travis.yml" />
-        <option value="$PROJECT_DIR$/www/package.json" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/www/html/viewSpecificJobPage.html" />
-        <option value="$PROJECT_DIR$/www/Javascript/Post_project.js" />
-        <option value="$PROJECT_DIR$/www/Javascript/mainpage.js" />
-        <option value="$PROJECT_DIR$/www/Javascript/bid.js" />
-        <option value="$PROJECT_DIR$/www/Javascript/ViewJob.js" />
-        <option value="$PROJECT_DIR$/www/Javascript/jobOverview.js" />
-        <option value="$PROJECT_DIR$/www/html/jobsOverview.html" />
-        <option value="$PROJECT_DIR$/www/html/mainpage.html" />
-        <option value="$PROJECT_DIR$/config.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1929" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1098" />
-  </component>
   <component name="ProjectId" id="1PbBTXYZ7AHZ79bKRJZkqpeAhJP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="WitsFreelancing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WitsFreelancing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WitsFreelancing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WitsFreelancing" type="462c0819:PsiDirectoryNode" />
-              <item name="platforms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WitsFreelancing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WitsFreelancing" type="462c0819:PsiDirectoryNode" />
-              <item name="platforms" type="462c0819:PsiDirectoryNode" />
-              <item name="browser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WitsFreelancing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WitsFreelancing" type="462c0819:PsiDirectoryNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WitsFreelancing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WitsFreelancing" type="462c0819:PsiDirectoryNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WitsFreelancing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WitsFreelancing" type="462c0819:PsiDirectoryNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="Javascript" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.phonegap.settings.workdir" value="$PROJECT_DIR$" />
-    <property name="last_opened_file_path" value="D:/HTML/Table_Fixed_Header" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Witsie On The Move" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -147,18 +43,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mulisa\WebstormProjects\WitsFreelancing" />
+      <recent name="C:\Users\Skhumbuzo\WebstormProjects\WitsFreelancing\www" />
+      <recent name="C:\Users\Mbuso Makitla\WebstormProjects\WitsFreelancing\www" />
+      <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing\www" />
+      <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing\www\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing\www\html" />
       <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing\www\css" />
       <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing" />
       <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing\www" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Mbuso Makitla\WebstormProjects\WitsFreelancing\www\html" />
-      <recent name="C:\Users\Mbuso Makitla\WebstormProjects\WitsFreelancing\www\Javascript" />
-      <recent name="C:\Users\Mbuso Makitla\WebstormProjects\WitsFreelancing\www\test" />
-      <recent name="C:\Users\Skhumbuzo\WebstormProjects\WitsFreelancing\www" />
-      <recent name="C:\Users\Mbuso Makitla\WebstormProjects\WitsFreelancing\www" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -173,7 +69,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PhoneGap/Cordova.browser">
+  <component name="RunManager">
+    <configuration name="Browser" type="PhoneGap" factoryName="PhoneGap/Cordova">
+      <option name="myExecutable" value="C:\Users\Mulisa\AppData\Roaming\npm\cordova.cmd" />
+      <option name="myWorkDir" value="$PROJECT_DIR$" />
+      <option name="myCommand" value="emulate" />
+      <option name="myPassParent" value="true" />
+      <option name="myPlatform" value="browser" />
+      <option name="myExtraArgs" value="" />
+      <option name="hasTarget" value="false" />
+      <option name="target" value="" />
+      <method v="2">
+        <option name="PhonegapTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="PhoneGap" factoryName="PhoneGap/Cordova">
       <option name="myExecutable" value="C:\Users\Mbuso Makitla\AppData\Roaming\npm\cordova.cmd" />
       <option name="myWorkDir" value="$PROJECT_DIR$" />
@@ -187,34 +96,6 @@
         <option name="PhonegapTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="browser" type="PhoneGap" factoryName="PhoneGap/Cordova">
-      <option name="myExecutable" value="C:\Users\Mbuso Makitla\AppData\Roaming\npm\cordova.cmd" />
-      <option name="myWorkDir" value="$PROJECT_DIR$" />
-      <option name="myCommand" value="emulate" />
-      <option name="myPassParent" value="true" />
-      <option name="myPlatform" value="browser" />
-      <option name="myExtraArgs" value="" />
-      <option name="hasTarget" value="false" />
-      <option name="target" value="" />
-      <method v="2">
-        <option name="PhonegapTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="npm.test" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
@@ -270,11 +151,54 @@
       <workItem from="1566132936685" duration="91000" />
       <workItem from="1566133059039" duration="56000" />
       <workItem from="1566232942045" duration="4133000" />
-      <workItem from="1567137944339" duration="10198000" />
-      <workItem from="1567609899149" duration="8504000" />
-      <workItem from="1567656621540" duration="5131000" />
-      <workItem from="1567876788621" duration="7381000" />
-      <workItem from="1568613650418" duration="4078000" />
+      <workItem from="1567137944339" duration="5327000" />
+      <workItem from="1567263819453" duration="64000" />
+      <workItem from="1567539640117" duration="776000" />
+      <workItem from="1568550029130" duration="67000" />
+      <workItem from="1568550174099" duration="40000" />
+      <workItem from="1568617607682" duration="2909000" />
+    </task>
+    <task id="LOCAL-00003" summary="Main page">
+      <created>1565373609762</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1565373609762</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Main page">
+      <created>1565374966536</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1565374966536</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added vendor for bootsrap, main page + css">
+      <created>1565378950090</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1565378950090</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Comments: Mbuso">
+      <created>1565385406430</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1565385406430</updated>
+    </task>
+    <task id="LOCAL-00007" summary="post job form">
+      <created>1565388533750</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1565388533750</updated>
+    </task>
+    <task id="LOCAL-00008" summary="testing">
+      <created>1565432518344</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1565432518344</updated>
     </task>
     <task id="LOCAL-00009" summary="fixed login css">
       <created>1565454568431</created>
@@ -535,95 +459,50 @@
       <option name="project" value="LOCAL" />
       <updated>1567078146147</updated>
     </task>
-    <task id="LOCAL-00046" summary="Fixed layout on viewMyJob">
-      <created>1567143530210</created>
+    <task id="LOCAL-00046" summary="added travis yml file">
+      <created>1568617950359</created>
       <option name="number" value="00046" />
       <option name="presentableId" value="LOCAL-00046" />
       <option name="project" value="LOCAL" />
-      <updated>1567143530210</updated>
+      <updated>1568617950359</updated>
     </task>
-    <task id="LOCAL-00047" summary="Fixed input for bid">
-      <created>1567147287654</created>
+    <task id="LOCAL-00047" summary="added travis yml file again">
+      <created>1568618248593</created>
       <option name="number" value="00047" />
       <option name="presentableId" value="LOCAL-00047" />
       <option name="project" value="LOCAL" />
-      <updated>1567147287654</updated>
+      <updated>1568618248593</updated>
     </task>
-    <task id="LOCAL-00048" summary="added view profile">
-      <created>1567147886395</created>
+    <task id="LOCAL-00048" summary="changed language in yml file to node_js">
+      <created>1568618763965</created>
       <option name="number" value="00048" />
       <option name="presentableId" value="LOCAL-00048" />
       <option name="project" value="LOCAL" />
-      <updated>1567147886395</updated>
+      <updated>1568618763965</updated>
     </task>
-    <task id="LOCAL-00049" summary="initial tests">
-      <created>1567877486225</created>
+    <task id="LOCAL-00049" summary="changed language in yml file to node_js and modified package.json">
+      <created>1568619220041</created>
       <option name="number" value="00049" />
       <option name="presentableId" value="LOCAL-00049" />
       <option name="project" value="LOCAL" />
-      <updated>1567877486225</updated>
+      <updated>1568619220041</updated>
     </task>
-    <task id="LOCAL-00050" summary="testing">
-      <created>1568205929809</created>
+    <task id="LOCAL-00050" summary="modified travis.yml file">
+      <created>1568619618539</created>
       <option name="number" value="00050" />
       <option name="presentableId" value="LOCAL-00050" />
       <option name="project" value="LOCAL" />
-      <updated>1568205929809</updated>
+      <updated>1568619618540</updated>
     </task>
-    <task id="LOCAL-00051" summary="testing 1">
-      <created>1568206830667</created>
+    <task id="LOCAL-00051" summary="attempt on travis again">
+      <created>1568620172249</created>
       <option name="number" value="00051" />
       <option name="presentableId" value="LOCAL-00051" />
       <option name="project" value="LOCAL" />
-      <updated>1568206830667</updated>
+      <updated>1568620172249</updated>
     </task>
-    <task id="LOCAL-00052" summary="testing 1">
-      <created>1568206871148</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1568206871148</updated>
-    </task>
-    <task id="LOCAL-00053" summary="testing 2">
-      <created>1568292409469</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1568292409470</updated>
-    </task>
-    <task id="LOCAL-00054" summary="chnage">
-      <created>1568300210557</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1568300210557</updated>
-    </task>
-    <task id="LOCAL-00055" summary="connected browse to new page">
-      <created>1568313584976</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1568313584976</updated>
-    </task>
-    <task id="LOCAL-00056" summary="connected browse to new page">
-      <created>1568313634852</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1568313634852</updated>
-    </task>
-    <task id="LOCAL-00057" summary="transition">
-      <created>1568318633887</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1568318633887</updated>
-    </task>
-    <option name="localTasksCounter" value="58" />
+    <option name="localTasksCounter" value="52" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39404000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -634,31 +513,6 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8908819" visible="true" weight="0.15730338" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.10911809" side_tool="true" visible="true" weight="0.15730338" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.07083333" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -668,12 +522,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -700,6 +548,10 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
+    <MESSAGE value="Nodal info" />
+    <MESSAGE value="Added more functionality" />
+    <MESSAGE value="changed package id and renamed" />
+    <MESSAGE value="connected everything, added post funds functionality, post job functionality, account script etc. The only problem is getting funds only." />
     <MESSAGE value="Todo" />
     <MESSAGE value="Mbuso" />
     <MESSAGE value="fixed the validation bug" />
@@ -715,165 +567,12 @@
     <MESSAGE value="get bid" />
     <MESSAGE value="fixed page" />
     <MESSAGE value="Changed bid" />
-    <MESSAGE value="Fixed layout on viewMyJob" />
-    <MESSAGE value="Fixed input for bid" />
-    <MESSAGE value="added view profile" />
-    <MESSAGE value="initial tests" />
-    <MESSAGE value="testing" />
-    <MESSAGE value="testing 1" />
-    <MESSAGE value="testing 2" />
-    <MESSAGE value="chnage" />
-    <MESSAGE value="connected browse to new page" />
-    <MESSAGE value="transition" />
-    <option name="LAST_COMMIT_MESSAGE" value="transition" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/html/QUnit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/test/coverage.html" />
-    <entry file="file://$PROJECT_DIR$/www/test/index-spec.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/test/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/html/viewProfile.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-439" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/html/viewJob.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/html/viewSpecificJobPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3240">
-          <caret line="135" column="70" selection-start-line="135" selection-start-column="70" selection-end-line="135" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/html/Account.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/html/viewMyJobs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1920">
-          <caret line="80" column="4" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platforms/browser/config.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/Javascript/ViewJob.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" column="3" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/Javascript/Post_project.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/Javascript/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="44" column="57" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/Javascript/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/html/mainpage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="46" column="54" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/Javascript/bid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/html/assignBidderPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="96" column="92" selection-start-line="96" selection-start-column="92" selection-end-line="96" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/Javascript/mainpage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/html/jobsOverview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4276">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/Javascript/jobOverview.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <MESSAGE value="added travis yml file" />
+    <MESSAGE value="added travis yml file again" />
+    <MESSAGE value="changed language in yml file to node_js" />
+    <MESSAGE value="changed language in yml file to node_js and modified package.json" />
+    <MESSAGE value="modified travis.yml file" />
+    <MESSAGE value="attempt on travis again" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempt on travis again" />
   </component>
 </project>
