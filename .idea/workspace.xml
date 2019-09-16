@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/.travis.yml" beforeDir="false" />
-    </list>
+    <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,14 +156,7 @@
       <workItem from="1567539640117" duration="776000" />
       <workItem from="1568550029130" duration="67000" />
       <workItem from="1568550174099" duration="40000" />
-      <workItem from="1568617607682" duration="1984000" />
-    </task>
-    <task id="LOCAL-00001" summary="First commit">
-      <created>1565184567235</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1565184567236</updated>
+      <workItem from="1568617607682" duration="2457000" />
     </task>
     <task id="LOCAL-00002" summary="Added comments">
       <created>1565370303432</created>
@@ -504,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568619220041</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="modified travis.yml file">
+      <created>1568619618539</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1568619618540</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TodoView">
@@ -551,7 +548,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="reset button fixed" />
     <MESSAGE value="fixed button" />
     <MESSAGE value="Nodal info" />
     <MESSAGE value="Added more functionality" />
@@ -576,6 +572,7 @@
     <MESSAGE value="added travis yml file again" />
     <MESSAGE value="changed language in yml file to node_js" />
     <MESSAGE value="changed language in yml file to node_js and modified package.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed language in yml file to node_js and modified package.json" />
+    <MESSAGE value="modified travis.yml file" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified travis.yml file" />
   </component>
 </project>
