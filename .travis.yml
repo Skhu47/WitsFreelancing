@@ -14,3 +14,13 @@ deploy:
     skip_cleanup: true
     on:
       master: true
+
+#language: node_js
+#node_js:
+#  - "stable"
+#cache:
+#  directories:
+#    - "node_modules"
+#script:
+#  - npm run lint
+#  - npm run test:coveralls*/
