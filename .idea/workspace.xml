@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,10 +67,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/Javascript/jobOverview.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
+            <state relative-caret-position="-984">
               <caret line="103" column="69" lean-forward="true" selection-start-line="103" selection-start-column="69" selection-end-line="103" selection-end-column="69" />
               <folding>
                 <element signature="e#7349#7512#0" />
@@ -113,11 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="168">
+              <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -356,13 +355,6 @@
       <workItem from="1568550174099" duration="40000" />
       <workItem from="1568617607682" duration="5329000" />
       <workItem from="1568629782035" duration="2805000" />
-    </task>
-    <task id="LOCAL-00012" summary="Added more css">
-      <created>1565688821140</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1565688821140</updated>
     </task>
     <task id="LOCAL-00013" summary="Fixed button layout">
       <created>1565694158185</created>
@@ -700,11 +692,18 @@
       <option name="project" value="LOCAL" />
       <updated>1568675288438</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="start from login">
+      <created>1568676528129</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1568676528129</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31683000" />
+    <option name="totallyTimeSpent" value="32798000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -725,7 +724,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.50555557" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.093055554" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -788,7 +787,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="you can post bid" />
     <MESSAGE value="removed student number" />
     <MESSAGE value="fixed the bug of posting jobs" />
     <MESSAGE value="getting jobs and showing it" />
@@ -813,16 +811,10 @@
     <MESSAGE value="populating the lists" />
     <MESSAGE value="complaint working" />
     <MESSAGE value="assign and notifications" />
-    <option name="LAST_COMMIT_MESSAGE" value="assign and notifications" />
+    <MESSAGE value="start from login" />
+    <option name="LAST_COMMIT_MESSAGE" value="start from login" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/Javascript/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/html/mainpage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7584">
@@ -879,9 +871,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/Javascript/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/Javascript/jobOverview.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
+        <state relative-caret-position="-984">
           <caret line="103" column="69" lean-forward="true" selection-start-line="103" selection-start-column="69" selection-end-line="103" selection-end-column="69" />
           <folding>
             <element signature="e#7349#7512#0" />
@@ -896,13 +902,6 @@
             <element signature="e#10939#11258#0" />
             <element signature="e#10973#10992#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
         </state>
       </provider>
     </entry>

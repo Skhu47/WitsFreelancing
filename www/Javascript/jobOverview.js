@@ -171,7 +171,7 @@ function offers() { //look at the transitions
             timeout: 10000,
             data: {
                 ACTION: 7,
-                JOB_EMPLOYER_ID: localStorage.getItem("Stud_No")
+                JOB_EMPLOYEE_ID: localStorage.getItem("Stud_No")
             }
         };
         const url = "http://1627982.ms.wits.ac.za/~student/Job.php";
