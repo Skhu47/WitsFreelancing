@@ -22,6 +22,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="../Javascript/Account.js"></script>
+    <script src="../Javascript/jobOverview.js"></script>
+
 
     <link href="../css/floating%20button.css" rel="stylesheet">
 
@@ -54,11 +56,11 @@
         <div class="list-group list-group-flush">
 
             <!--Todo: Mbuso check out how to implement a dynamic page when we click on these options bellow:-->
-            <a href="#" id="browseJobs" class="list-group-item list-group-item-action bg-light" onclick="postProject()">Browse jobs</a>
-            <a href="#" id="myJobs" class="list-group-item list-group-item-action bg-light" onclick="postProject()">My Jobs</a>
-            <a href="#" id="seeJobs" class="list-group-item list-group-item-action bg-light" >Offered Jobs</a>
+            <a href="#" id="browseJobs_overview" class="list-group-item list-group-item-action bg-light" >Browse jobs</a>
+            <a href="#" id="myJobs" class="list-group-item list-group-item-action bg-light" >My Jobs</a>
+            <a href="#" id="offeredJobs" class="list-group-item list-group-item-action bg-light" >Offered Jobs</a>
 
-            <a href="#" class="list-group-item list-group-item-action bg-light">Support</a>
+            <a href="#" id="support" class="list-group-item list-group-item-action bg-light">Support</a>
 
         </div>
     </div>
@@ -87,7 +89,7 @@
         </nav>
 
 <!--Todo:Shows all the browse jobs is selected-->
-        <div class="jumbotron">
+        <div class="jumbotron" id="openJobs">
             <div class="card pmd-card">
                 <div class="table-fixed-head">
                     <div class="table-responsive scrollable-table">
@@ -108,9 +110,9 @@
 
 
                             <tr>
-                                <td id="jobTitle" rowspan="2" data-title="JOB_TITLE"> Job title </td>
-                                <td id="jobCat"data-title="JOB_CATEGORY">School</td>
-                                <td id="numBids" data-title="NUM_OF_BIDS"> xxxx </td>
+                                <td id="jobTitle_overview" rowspan="2" data-title="JOB_TITLE"> Job title </td>
+                                <td id="jobCat_overview"data-title="JOB_CATEGORY">School</td>
+                                <td id="numBids_overview" data-title="NUM_OF_BIDS"> xxxx </td>
                     <!--When view more is clicked go to view Specific Job-->
 
 
@@ -123,7 +125,7 @@
     </div>
 
         <!-- Todo:Shows all the my jobs is selected-->
-        <div class="myJob">
+        <div class="myJob" >
         <div class="jumbotron11">
             <div class="card pmd-card">
                 <div class="table-fixed-head">
@@ -163,7 +165,7 @@
         <!--Todo: Show this when Offerred jobs is selected-->
 
         <!-- Todo:Shows all the my jobs is selected-->
-        <div class="myJob">
+        <div class="offeredJobs" >
             <div class="jumbotron11">
                 <div class="card pmd-card">
                     <div class="table-fixed-head">
