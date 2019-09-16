@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -160,14 +159,8 @@
       <workItem from="1567539640117" duration="776000" />
       <workItem from="1568550029130" duration="67000" />
       <workItem from="1568550174099" duration="40000" />
-      <workItem from="1568617607682" duration="4443000" />
-    </task>
-    <task id="LOCAL-00006" summary="Comments: Mbuso">
-      <created>1565385406430</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1565385406430</updated>
+      <workItem from="1568617607682" duration="5329000" />
+      <workItem from="1568629782035" duration="2263000" />
     </task>
     <task id="LOCAL-00007" summary="post job form">
       <created>1565388533750</created>
@@ -505,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568621888048</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="implemented jasmine">
+      <created>1568622678124</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1568622678125</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView">
@@ -552,7 +552,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Added more functionality" />
     <MESSAGE value="changed package id and renamed" />
     <MESSAGE value="connected everything, added post funds functionality, post job functionality, account script etc. The only problem is getting funds only." />
     <MESSAGE value="Todo" />
@@ -577,6 +576,7 @@
     <MESSAGE value="modified travis.yml file" />
     <MESSAGE value="attempt on travis again" />
     <MESSAGE value="attempt on travis again and again" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempt on travis again and again" />
+    <MESSAGE value="implemented jasmine" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented jasmine" />
   </component>
 </project>
