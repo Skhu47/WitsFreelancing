@@ -90,6 +90,7 @@
         </nav>
 
         <!--Todo:Shows all the browse jobs is selected-->
+
         <div class="newBrowseJobs">
             <div class="table-fixed-head">
                 <div class="table-responsive scrollable-table">
@@ -110,9 +111,9 @@
 
 
                         <tr>
-                            <td id="jobTitle" rowspan="2" data-title="JOB_TITLE"> Job title </td>
-                            <td id="jobCat"data-title="JOB_CATEGORY">School</td>
-                            <td id="numBids" data-title="NUM_OF_BIDS"> xxxx </td>
+                            <!--<td id="jobTitle" rowspan="2" data-title="JOB_TITLE"> </td>
+                            <td id="jobCat"data-title="JOB_CATEGORY"></td>
+                            <td id="numBids" data-title="NUM_OF_BIDS"> </td>-->
                             <!--When view more is clicked go to view Specific Job-->
 
 
@@ -150,7 +151,7 @@
                 <div class="card pmd-card">
                     <div class="table-fixed-head">
                         <div class="table-responsive scrollable-table">
-                            <table id="jobTable2" cellspacing="0" cellpadding="0" class="table table-striped">
+                            <table id="jobTableMyJobs" cellspacing="0" cellpadding="0" class="table table-striped">
                                 <thead class="header">
                                 <tr>
                                     <th>Title</th>
@@ -165,24 +166,41 @@
 
                                 <!--Todo:Show specific jobs that the user posted-->
                                 <tr>
-                                    <td id="jobTitleMyJobs" rowspan="2" data-title="JOB_TITLE"> Job title </td>
-                                    <td id="jobCatMyJobs"data-title="JOB_CATEGORY">School</td>
-                                    <td id="numBidsMyJobs" data-title="NUM_OF_BIDS"> xxxx </td>
-                                    <td id="jobStatus" data-title="Job_Status">Job status</td>
-                                    <td id="viewBidders" data-title="VIEW_BIDDERS"><a href="assignBidderPage.html"> View Bidders </a></td>
+                                    <!--<td id="jobTitleMyJobs" rowspan="2" data-title="JOB_TITLE"></td>
+                                    <td id="jobCatMyJobs"data-title="JOB_CATEGORY"></td>
+                                    <td id="numBidsMyJobs" data-title="NUM_OF_BIDS"> </td>
+                                    <td id="jobStatus" data-title="Job_Status"></td>-->
+                                    <!--<td id="viewBidders" data-title="VIEW_BIDDERS"><a href="assignBidderPage.html"> View Bidders </a></td>-->
 
 
                                     <!--Todo: Hide view bidders and Show this when the status of the job status is "completed"-->
-                                    <td id="makePayments" data-title="make payments"><a href="assignBidderPage.html"> Make payment </a></td>
+                                    <!--<td id="makePayments" data-title="make payments"><a href=""> Make payment </a></td>-->
 
                                     <!--Todo: Show this only when job status is "Completed"-->
-                                    <td id="messageBox" data-title="dispute"><a data-toggle="modal" data-target="#myModal"> Not satisfied? </a></td>
+                                    <!--<td id="messageBox" data-title="dispute"><a data-toggle="modal" data-target="#myModal"> Not satisfied? </a></td>-->
 
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
+                <div id="modalBodyMyJob" class="modal-body">
+                    <!--                            <input type="number" id="min_range" class="form-control" name="FUND_AMOUNT" required placeholder="Enter credit amount">-->
+                    <!--                            <div class="valid-feedback"></div>-->
+                    <!--                            <div class="invalid-feedback" id="minLabel"></div>-->
+                    <!--Todo: Add information about the task-->
+                    <!--See Job_php documentation-->
+                    <!--JOB_AMOUNT_RANGE_LOW&ndash;&gt;
+                    JOB_DESCRIPTION&ndash;&gt;
+                    JOB_AMOUNT_RANGE_LOW&ndash;&gt;
+                    JOB_AMOUNT_RANGE_HIGH&ndash;&gt;
+                    JOB_DUE_DATE_TIME&ndash;&gt;
+                    JOB_LOCATION&ndash;&gt;
+                    JOB_CATEGORY-->
+
+
+                </div>
+
             </div>
 
 
@@ -232,13 +250,12 @@
                 <div class="card pmd-card">
                     <div class="table-fixed-head">
                         <div class="table-responsive scrollable-table">
-                            <table id="jobTable1" cellspacing="0" cellpadding="0" class="table table-striped">
+                            <table id="jobTableMyOffers" cellspacing="0" cellpadding="0" class="table table-striped">
                                 <thead class="header">
                                 <tr>
                                     <th>Title</th>
                                     <th>Category</th>
                                     <th>Price range</th>
-                                    <th>Status</th>
 
                                     <th></th>
                                 </tr>
@@ -247,19 +264,18 @@
 
                                 <!--Todo:Show specific jobs that the user posted-->
                                 <tr>
-                                    <td id="jobTitleOfferedJob" rowspan="2" data-title="JOB_TITLE"> Job title </td>
-                                    <td id="jobCatOfferedJob"data-title="JOB_CATEGORY">School</td>
-                                    <td id="numBidsOfferedJob" data-title="NUM_OF_BIDS"> xxxx </td>
+                                    <!--<td id="jobTitleOfferedJob" rowspan="2" data-title="JOB_TITLE"> Job title </td>
+                                    <td id="jobCatOfferedJob"data-title="JOB_CATEGORY"></td>
+                                    <td id="numBidsOfferedJob" data-title="NUM_OF_BIDS"> </td>
                                     <td id="jobStatusOfferedJob" data-title="Job_Status">
                                         <div>
                                             <button type="button" class="btn btn-success">Completed</button>
                                         </div>
 
-                                    </td>
+                                    </td>-->
                                     <td>
                                         <div>
 
-                                            <button type="button" class="btn btn-primary"> Accept Job Offer</button>
                                         </div></td>
 
                                 </tbody>
@@ -267,6 +283,24 @@
                         </div>
                     </div>
                 </div>
+
+                <div id="modalBodyMyOffers" class="modal-body">
+                    <!--                            <input type="number" id="min_range" class="form-control" name="FUND_AMOUNT" required placeholder="Enter credit amount">-->
+                    <!--                            <div class="valid-feedback"></div>-->
+                    <!--                            <div class="invalid-feedback" id="minLabel"></div>-->
+                    <!--Todo: Add information about the task-->
+                    <!--See Job_php documentation-->
+                    <!--JOB_AMOUNT_RANGE_LOW&ndash;&gt;
+                    JOB_DESCRIPTION&ndash;&gt;
+                    JOB_AMOUNT_RANGE_LOW&ndash;&gt;
+                    JOB_AMOUNT_RANGE_HIGH&ndash;&gt;
+                    JOB_DUE_DATE_TIME&ndash;&gt;
+                    JOB_LOCATION&ndash;&gt;
+                    JOB_CATEGORY-->
+
+
+                </div>
+
             </div>
 
         </div>

@@ -10,6 +10,7 @@ function browseProj() {
         $(".newBrowseJobs").show(function () {
             getJobs();
         });
+
         //call this after going to the job overview
         //getBid();
     });

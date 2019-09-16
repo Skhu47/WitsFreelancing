@@ -42,6 +42,7 @@ $(document).ready(function(){
                         localStorage.setItem("Surname", jsonResults["surname"]);
                         localStorage.setItem("Stud_No", userNameInput.val());
 
+
                         $("#div1").load("mainpage.html");
                     }
                 },
