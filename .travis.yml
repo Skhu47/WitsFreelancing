@@ -6,5 +6,7 @@ cache:
     - "node_modules"
 before_script:
   - npm install -g jasmine
+  - jasmine init
+  - jasmine examples
 script:
   - jasmine
