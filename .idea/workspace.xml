@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,21 +160,7 @@
       <workItem from="1567539640117" duration="776000" />
       <workItem from="1568550029130" duration="67000" />
       <workItem from="1568550174099" duration="40000" />
-      <workItem from="1568617607682" duration="3623000" />
-    </task>
-    <task id="LOCAL-00004" summary="Main page">
-      <created>1565374966536</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1565374966536</updated>
-    </task>
-    <task id="LOCAL-00005" summary="added vendor for bootsrap, main page + css">
-      <created>1565378950090</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1565378950090</updated>
+      <workItem from="1568617607682" duration="4443000" />
     </task>
     <task id="LOCAL-00006" summary="Comments: Mbuso">
       <created>1565385406430</created>
@@ -504,7 +491,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568620618845</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="attempt on travis again and again">
+      <created>1568621812102</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1568621812102</updated>
+    </task>
+    <task id="LOCAL-00054" summary="attempt on travis again and again">
+      <created>1568621888048</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1568621888048</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TodoView">
