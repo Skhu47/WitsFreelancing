@@ -7,7 +7,7 @@
   "scripts": {
     "test:coverage": "jest --coverage",
     "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
-    "start": "login.js",
+    "start": "/javascript/login.js",
     "test": "mocha --recursive --reporter mocha-junit-reporter --timeout 60000 --exit"
   },
   "keywords": [

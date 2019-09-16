@@ -1,30 +1,16 @@
 language: node_js
-
 node_js:
-  - "5.5"
-
-notifications:
-  email: false
-
-sudo: false
-
-branches:
-  only:
-  - master
-
-install:
-  - npm cache clean
-  - npm install
-  - npm install -g cordova
-  - echo y | android update sdk -u --filter android-22,android-23
-
-before_script:
-  - cordova platform rm android
-  - cordova platform add android
-
-script:
-  - cordova prepare
-  - cordova build android --release -- --ant
-  
-release:
-  - exit 0  
+  - node
+cache:
+  directories:
+    - node_modules
+before_deploy:
+  - npm install now --no-save
+  - now rm node-cd --token $NOW_TOKEN --yes || true
+deploy:
+  - provider: script
+    # deploys the application to now.sh
+    script: now --public --token $NOW_TOKEN
+    skip_cleanup: true
+    on:
+      master: true
