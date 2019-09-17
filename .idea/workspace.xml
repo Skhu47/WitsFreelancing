@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/bid.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/bid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/jobsOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/jobsOverview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/viewSpecificJobPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/viewSpecificJobPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/Javascript/bid.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/bid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/html/jobsOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/jobsOverview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/html/viewSpecificJobPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/viewSpecificJobPage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,16 +30,16 @@
                 </provider>
               </entry>
             </file>
-            <file pinned="false" current-in-tab="false">
+            <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/www/html/jobsOverview.html">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="168">
-                    <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+                  <state relative-caret-position="335">
+                    <caret line="275" column="41" lean-forward="true" selection-start-line="275" selection-start-column="41" selection-end-line="275" selection-end-column="41" />
                   </state>
                 </provider>
               </entry>
             </file>
-            <file pinned="false" current-in-tab="true">
+            <file pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/www/html/assignBidderPage.html">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="408">
@@ -49,11 +55,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/html/viewSpecificJobPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+            <state relative-caret-position="2974">
+              <caret line="153" column="124" selection-start-line="153" selection-start-column="124" selection-end-line="153" selection-end-column="124" />
             </state>
           </provider>
         </entry>
@@ -61,17 +67,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/Javascript/bid.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4320">
-              <caret line="180" selection-start-line="180" selection-end-line="180" />
+            <state relative-caret-position="4086">
+              <caret line="184" column="54" lean-forward="true" selection-start-line="184" selection-start-column="54" selection-end-line="184" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/Javascript/jobOverview.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-984">
-              <caret line="103" column="69" lean-forward="true" selection-start-line="103" selection-start-column="69" selection-end-line="103" selection-end-column="69" />
+            <state relative-caret-position="3624">
+              <caret line="173" column="64" lean-forward="true" selection-start-line="173" selection-start-column="64" selection-end-line="173" selection-end-column="64" />
               <folding>
                 <element signature="e#7349#7512#0" />
                 <element signature="e#7351#7368#0" />
@@ -157,19 +163,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/www/html/jobsOverview.html" />
-        <option value="$PROJECT_DIR$/www/Javascript/bid.js" />
-        <option value="$PROJECT_DIR$/www/html/viewSpecificJobPage.html" />
         <option value="$PROJECT_DIR$/www/html/assignBidderPage.html" />
         <option value="$PROJECT_DIR$/www/Javascript/ViewJob.js" />
-        <option value="$PROJECT_DIR$/www/Javascript/jobOverview.js" />
         <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/www/Javascript/jobOverview.js" />
+        <option value="$PROJECT_DIR$/www/html/viewSpecificJobPage.html" />
+        <option value="$PROJECT_DIR$/www/Javascript/bid.js" />
+        <option value="$PROJECT_DIR$/www/html/jobsOverview.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="977" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1238" />
+    <option name="y" value="36" />
+    <option name="width" value="1154" />
     <option name="height" value="1088" />
   </component>
   <component name="ProjectId" id="1PbBTXYZ7AHZ79bKRJZkqpeAhJP" />
@@ -355,13 +362,6 @@
       <workItem from="1568550174099" duration="40000" />
       <workItem from="1568617607682" duration="5329000" />
       <workItem from="1568629782035" duration="2805000" />
-    </task>
-    <task id="LOCAL-00013" summary="Fixed button layout">
-      <created>1565694158185</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1565694158186</updated>
     </task>
     <task id="LOCAL-00014" summary="Fixed button layout">
       <created>1565694474033</created>
@@ -699,11 +699,18 @@
       <option name="project" value="LOCAL" />
       <updated>1568676528129</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="fixed job offers">
+      <created>1568677595495</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1568677595495</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32798000" />
+    <option name="totallyTimeSpent" value="36474000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -715,7 +722,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="-1374" y="29" width="923" height="870" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.89044946" weight="0.64784944" />
@@ -724,7 +731,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.093055554" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.09410112" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -787,7 +794,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="removed student number" />
     <MESSAGE value="fixed the bug of posting jobs" />
     <MESSAGE value="getting jobs and showing it" />
     <MESSAGE value="a whole lot of changes" />
@@ -812,34 +818,14 @@
     <MESSAGE value="complaint working" />
     <MESSAGE value="assign and notifications" />
     <MESSAGE value="start from login" />
-    <option name="LAST_COMMIT_MESSAGE" value="start from login" />
+    <MESSAGE value="fixed job offers" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed job offers" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/www/html/mainpage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7584">
           <caret line="316" column="85" lean-forward="true" selection-start-line="316" selection-start-column="85" selection-end-line="316" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/html/jobsOverview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/Javascript/bid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4320">
-          <caret line="180" selection-start-line="180" selection-end-line="180" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/html/viewSpecificJobPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -864,13 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/html/assignBidderPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="119" column="17" lean-forward="true" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -885,10 +864,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/html/assignBidderPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="119" column="17" lean-forward="true" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/Javascript/jobOverview.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-984">
-          <caret line="103" column="69" lean-forward="true" selection-start-line="103" selection-start-column="69" selection-end-line="103" selection-end-column="69" />
+        <state relative-caret-position="3624">
+          <caret line="173" column="64" lean-forward="true" selection-start-line="173" selection-start-column="64" selection-end-line="173" selection-end-column="64" />
           <folding>
             <element signature="e#7349#7512#0" />
             <element signature="e#7351#7368#0" />
@@ -902,6 +888,27 @@
             <element signature="e#10939#11258#0" />
             <element signature="e#10973#10992#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/Javascript/bid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4086">
+          <caret line="184" column="54" lean-forward="true" selection-start-line="184" selection-start-column="54" selection-end-line="184" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/html/viewSpecificJobPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2974">
+          <caret line="153" column="124" selection-start-line="153" selection-start-column="124" selection-end-line="153" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/html/jobsOverview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="275" column="41" lean-forward="true" selection-start-line="275" selection-start-column="41" selection-end-line="275" selection-end-column="41" />
         </state>
       </provider>
     </entry>
