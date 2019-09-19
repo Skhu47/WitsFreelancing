@@ -194,7 +194,7 @@ function postBid() {
             //success
             let results = response.data; //data from server, it's a string, must be converted to an appropriate format
             //e.g. json
-            alert(results);
+            //alert(results);
             if(results === "0"){
                 alert("The bid was unsuccessful!");
             }
