@@ -1,7 +1,7 @@
 # WitsFreelancing
 Travis CI [![Build Status](https://travis-ci.com/MbusoMakitla/WitsFreelancing.svg?branch=master)](https://travis-ci.com/MbusoMakitla/WitsFreelancing)
 
- [![Coverage Status](https://coveralls.io/repos/github/MbusoMakitla/WitsFreelancing/badge.svg?branch=master)](https://coveralls.io/github/MbusoMakitla/WitsFreelancing?branch=master)
+CodeCov [![codecov](https://codecov.io/gh/PermanentPortionX/WitsFreelancing/branch/master/graph/badge.svg)](https://codecov.io/gh/PermanentPortionX/WitsFreelancing)
  
 Serverside repo can be found here https://github.com/PermanentPortionX/Wits-freelancing-ServerSide
 
