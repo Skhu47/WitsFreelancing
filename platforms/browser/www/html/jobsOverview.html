@@ -7,39 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
     <script type="text/javascript" src="../cordova.js"></script>
-    <script src="../Javascript/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
-    <script type="text/javascript" src="../cordova.js"></script>
-
-    <script src="../Javascript/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="../Javascript/bid.js"></script>
     <script src="../Javascript/jobOverview.js"></script>
 
-    <link href="../css/floating%20button.css" rel="stylesheet">
-
-    <script type="text/javascript" src="../cordova.js"></script>
-    <script src="../Javascript/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="../Javascript/Account.js"></script>
-    <link href="../css/floating%20button.css" rel="stylesheet">
 
     <title>Simple Sidebar - Start Bootstrap Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="../cordova.js"></script>
-    <script src="../Javascript/jquery-3.4.1.min.js"></script>
      <script >hideContent()</script>
 
     <!-- Custom styles for sidebar -->
@@ -49,45 +27,38 @@
 
 <body>
 
-<div class="d-flex" id="wrapper">
+<nav class="navbar navbar-expand-md bg-dark navbar-darkk fixed-top">
+    <a class="navbar-brand" id="home" href="#" onclick="home">Home</a>
 
-    <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
-        <div class="sidebar-heading">Menu </div>
-        <div class="list-group list-group-flush">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+        <li class="nav-item">
 
-            <!--Todo: Mbuso check out how to implement a dynamic page when we click on these options bellow:-->
-            <a href="#" id="browseJobs" class="list-group-item list-group-item-action bg-light" onclick="browseProj()">Browse jobs</a>
-            <a href="#" id="myJobs" class="list-group-item list-group-item-action bg-light" onclick="myJobs()" >My Jobs</a>
-            <a href="#" id="offeredJobs" class="list-group-item list-group-item-action bg-light" onclick="offers()" >Offered Jobs</a>
+            <a class="nav-link" id="browseJobs" href="#" onclick="getJobs()">Browse Jobs</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="myJobs" href="#" onclick="myJobs()">My Jobs</a>
+        </li>
 
-            <a href="#" class="list-group-item list-group-item-action bg-light">Support</a>
+        <li class="nav-item">
+            <a class="nav-link" id="offeredJobs" href="#" onclick="offers()">Offered Jobs</a>
+        </li>
 
-        </div>
+        <li class="nav-item">
+            <a class="nav-link" id="support" href="#" onclick="offers()">Support</a>
+        </li>
+    </ul>
     </div>
-    <!-- /#sidebar-wrapper -->
+</nav>
+
+<div class="d-flex" id="wrapper">
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-            <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
-
-
-            <!--button for navigation bar-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" id="home" onclick="window.location.href = 'mainpage.html'">Home <span class="sr-only">(current)</span></a>
-                    </li>
-
-                </ul>
-            </div>
-        </nav>
 
         <!--Todo:Shows all the browse jobs is selected-->
 
@@ -95,6 +66,10 @@
             <div class="table-fixed-head">
                 <div class="table-responsive scrollable-table">
                     <table id="jobTable" cellspacing="0" cellpadding="0" class="table table-striped">
+                        <col width="500">
+                        <col width="500">
+                        <col width="500">
+                        <col width="500">
                         <thead class="header">
                         <tr>
                             <th>Title</th>
@@ -123,23 +98,56 @@
                 </div>
             </div>
 
-
+<!--Todo:This modal does nothing but you referenced it somewhere which keeps on giving us bugs-->
             <!-- Modal body -->
-            <div id="modalBody" class="modal-body">
-                <!--                            <input type="number" id="min_range" class="form-control" name="FUND_AMOUNT" required placeholder="Enter credit amount">-->
-                <!--                            <div class="valid-feedback"></div>-->
-                <!--                            <div class="invalid-feedback" id="minLabel"></div>-->
-                <!--Todo: Add information about the task-->
-                <!--See Job_php documentation-->
-                <!--JOB_AMOUNT_RANGE_LOW&ndash;&gt;
-                JOB_DESCRIPTION&ndash;&gt;
-                JOB_AMOUNT_RANGE_LOW&ndash;&gt;
-                JOB_AMOUNT_RANGE_HIGH&ndash;&gt;
-                JOB_DUE_DATE_TIME&ndash;&gt;
-                JOB_LOCATION&ndash;&gt;
-                JOB_CATEGORY-->
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
 
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 id="modalTitle" class="modal-title">Title of project</h4>
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                        </div>
 
+                        <!-- Modal body -->
+                        <div id="modalBody" class="modal-body">
+                            <!--                            <input type="number" id="min_range" class="form-control" name="FUND_AMOUNT" required placeholder="Enter credit amount">-->
+                            <!--                            <div class="valid-feedback"></div>-->
+                            <!--                            <div class="invalid-feedback" id="minLabel"></div>-->
+                            <!--Todo: Add information about the task-->
+                            <!--See Job_php documentation-->
+                            <!--JOB_AMOUNT_RANGE_LOW&ndash;&gt;
+                            JOB_DESCRIPTION&ndash;&gt;
+                            JOB_AMOUNT_RANGE_LOW&ndash;&gt;
+                            JOB_AMOUNT_RANGE_HIGH&ndash;&gt;
+                            JOB_DUE_DATE_TIME&ndash;&gt;
+                            JOB_LOCATION&ndash;&gt;
+                            JOB_CATEGORY-->
+                            <p id="modalBodyText">
+                                Something here
+                            </p>
+
+                            <h4 class="text-center">Bid</h4>
+
+                            <div class="form-group">
+                                Bid amount: <input type="number" id="bidAmt" class="form-control" name="BID_SUGGESTED_AMOUNT" required placeholder="Enter bid amount">
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback" id="minLabel1">Enter suggested amount</div>
+                            </div>
+
+                            <div class="form-group">
+                                Bid message: <br><input type="text" id="bidMsg" class="form-control" name="BID_MESSAGE" required placeholder="Bid message">
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback">Enter bid message</div>
+                            </div>
+
+                        </div>
+                        <!--Todo: Mbuso-->
+                        <!--Todo: Should be sent to the database-->
+                        <button type="button" class="btn btn-primary btn-block" id="bid_btn1" value="Bid" >Bid</button><br>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -152,6 +160,13 @@
                     <div class="table-fixed-head">
                         <div class="table-responsive scrollable-table">
                             <table id="jobTableMyJobs" cellspacing="0" cellpadding="0" class="table table-striped">
+                                <col width="270">
+                                <col width="270">
+                                <col width="270">
+                                <col width="270">
+                                <col width="270">
+                                <col width="270">
+                                <col width="270">
                                 <thead class="header">
                                 <tr>
                                     <th>Title</th>
@@ -177,13 +192,14 @@
                                     <!--<td id="makePayments" data-title="make payments"><a href=""> Make payment </a></td>-->
 
                                     <!--Todo: Show this only when job status is "Completed"-->
-                                    <!--<td id="messageBox" data-title="dispute"><a data-toggle="modal" data-target="#myModal"> Not satisfied? </a></td>-->
+                                    <!--<td id="messageBox" data-title="dispute"><a data-toggle="modal" data-target="#myModal1"> Not satisfied? </a></td>-->
 
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
+<!--Error is here-->
                 <div id="modalBodyMyJob" class="modal-body">
                     <!--                            <input type="number" id="min_range" class="form-control" name="FUND_AMOUNT" required placeholder="Enter credit amount">-->
                     <!--                            <div class="valid-feedback"></div>-->
@@ -211,7 +227,7 @@
             <!-- Button to Open the Modal -->
 
             <!-- The Modal -->
-            <div class="modal fade" id="myModal">
+            <div class="modal fade" id="myModal1">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
 

@@ -32,7 +32,7 @@
   <script src="../Javascript/Account.js"></script>
   <link href="../css/floating%20button.css" rel="stylesheet">
 
-  <title>Simple Sidebar - Start Bootstrap Template</title>
+  <title>Main page</title>
 
   <!-- Bootstrap core CSS -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -50,57 +50,50 @@
 
 <body>
 
+<!--Navigation-->
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="#" id="home" onclick="home()">Home</a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+
+      <a class="nav-link" id="browseJobs" href="#" onclick="postProject()">Post Job</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="myJobs" href="#" onclick="jobSection()">Job section</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" id="offeredJobs" href="#" onclick="openAccount()">My Account</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" id="support" href="#" onclick="offers()">Support</a>
+    </li>
+  </ul>
+</nav>
+
+
   <div class="d-flex" id="wrapper_main">
 
-    <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Menu </div>
-      <div class="list-group list-group-flush">
-
-        <!--Todo: Mbuso check out how to implement a dynamic page when we click on these options bellow:-->
-        <a href="#" id="postProject" class="list-group-item list-group-item-action bg-light" onclick="postProject()">Post Job</a>
-<!--        Todo: when browse project is clicked it should move to "jobs overview"-->
-        <a href="#" id="seeJobs" class="list-group-item list-group-item-action bg-light" onclick="jobSection()">Job section</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">My Profile</a>
-
-        <!--Todo: Mbuso, need an onclick here to my account page-->
-        <a href="#" id="account" class="list-group-item list-group-item-action bg-light" onclick="openAccount()">My Account</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Support</a>
-
-      </div>
-    </div>
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
-
-
-  <!--button for navigation bar-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" id="home" onclick="home()" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-
-          </ul>
-        </div>
-      </nav>
-
+<!--Front page content-->
       <div class="container-fluid" >
         <div class="homepage-container" id="header">
           <div class="jumbotron text-center bg-light" >
           <h1 class="mt-4" >Wits Freelancers</h1>
           </div>
-          <p>Hire witsies to do jobs for you! All you have to do is post a project with the requirements and wait for free lancers to respond</p>
-        <p></p>
+          <h3 class = "mt-3"> Need work done?</h3>
+          <p>It's easy! Simply post a job you need completed and receive competitive bids from freelancers near you within minutes.</p>
+          <p>Whatever your needs, there will be a Witsie to get it done: from taking food packs at the dinning hall, proof reading assignments and photography (and a whole lot more).</p>
+          <h3 class = "mt-3"> What's great about it?</h3>
 
+        <p></p>
+<!--Front page content ends here-->
         </div>
 
         <!--Show this container when job is selected-->
