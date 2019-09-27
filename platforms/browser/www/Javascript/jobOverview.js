@@ -139,6 +139,7 @@ function myJobs() { //look at the transitions
                     else if(job_status === "2") buttonText = "Complete";
                     else if(job_status === "3") buttonText = "Paid";
 
+
                     title.innerHTML = jobItem["JOB_TITLE"]; //localStorage.getItem("Stud_No")   //localStorage.setItem("Stud_No", userNameInput.val());
                     category.innerHTML = jobItem["JOB_CATEGORY"];
                     price_range.innerHTML = jobItem["JOB_AMOUNT_RANGE_LOW"] + " - " + jobItem["JOB_AMOUNT_RANGE_HIGH"];
@@ -153,8 +154,8 @@ function myJobs() { //look at the transitions
                     make_payment.innerHTML = "<td id=\"makePayments\" data-title=\"make payments\"><a href=\"\"> Make payment </a></td>";
                     status.innerHTML = "<button type=\"button\" class=\"btn btn-success\">"+ buttonText + "</button>";
                     complaint.innerHTML = "<td id=\"messageBox\" data-title=\"dispute\"><a data-toggle=\"modal\" data-target=\"#myModal\"> Not satisfied? </a></td>";
+                    //implement what to do after we complain
 
-                    //view_more.innerHTML = "<a id= \"bidId\" href=\"javascript:void(0);\"><i class=\"material-icons md-dark pmd-sm\" >View more</i></a>";
 
                     view_bidders.addEventListener("click", function () {
                         localStorage.setItem("jobTitle", jobItem["JOB_TITLE"]);
@@ -272,6 +273,7 @@ function offers() { //look at the transitions
                     let price_range = row.insertCell(2);
                     let accept_job_btn = row.insertCell(3);
                     let complete_btn = row.insertCell(4);
+                    let complaintEmployee =  row.insertCell(5);
 
 
                     title.innerHTML = jobItem["JOB_TITLE"]; //localStorage.getItem("Stud_No")   //localStorage.setItem("Stud_No", userNameInput.val());
@@ -284,6 +286,7 @@ function offers() { //look at the transitions
                     div.appendChild(test);
                     //Change this
                     accept_job_btn.innerHTML = "<button type=\"button\" class=\"btn btn-primary\"> Accept Job Offer</button>";
+                    complaintEmployee.innerHTML = "<td id=\"messageBox\" data-title=\"dispute\"><a data-toggle=\"modal\" data-target=\"#myModal\"> Not satisfied? </a></td>";
                     complete_btn.innerHTML = "<button type=\"button\" class=\"btn btn-success\">Job Complete</button>";
                     complete_btn.addEventListener("click", function () { //complete to database
                         //completed the job

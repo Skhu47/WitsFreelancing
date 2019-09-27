@@ -61,11 +61,11 @@ function openAccount() {
             },
             function (response) {
                 //fail
-                alert("empty1");
+                alert("failed to retrieve funds");
             },
             function (response) {
                 //permission denied
-                alert("empty3");
+                alert("You do not have permission to get the funds");
             }
         )
     }

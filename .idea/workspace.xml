@@ -3,17 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/browser.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/browser.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/browser/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/bid.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/bid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/Account.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/jobOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/jobOverview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/jobsOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/jobsOverview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/assignBidderPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/assignBidderPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/browser/www/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/Javascript/bid.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/bid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/Javascript/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/Account.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/Javascript/ViewJob.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/ViewJob.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/Javascript/jobOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/jobOverview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/html/jobsOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/jobsOverview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/html/assignBidderPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/assignBidderPage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -170,14 +170,10 @@
       <workItem from="1568550174099" duration="40000" />
       <workItem from="1568617607682" duration="5329000" />
       <workItem from="1568629782035" duration="2805000" />
-      <workItem from="1568902245824" duration="10590000" />
-    </task>
-    <task id="LOCAL-00016" summary="mainpage functionality, post_project handled.">
-      <created>1565731609926</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1565731609926</updated>
+      <workItem from="1568902245824" duration="16866000" />
+      <workItem from="1569416320476" duration="154000" />
+      <workItem from="1569500397260" duration="2068000" />
+      <workItem from="1569524841549" duration="5490000" />
     </task>
     <task id="LOCAL-00017" summary="floating button">
       <created>1565773401814</created>
@@ -515,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568902556550</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="moved the code to the jobOverview">
+      <created>1569093470080</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1569093470080</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TodoView">
@@ -562,7 +565,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="a whole lot of changes" />
     <MESSAGE value="a whole lot of changes 1" />
     <MESSAGE value="updated outputs" />
     <MESSAGE value="updated outputs1" />
@@ -587,6 +589,7 @@
     <MESSAGE value="fixed job offers" />
     <MESSAGE value="everything working, with the bid bug" />
     <MESSAGE value="latest code" />
-    <option name="LAST_COMMIT_MESSAGE" value="latest code" />
+    <MESSAGE value="moved the code to the jobOverview" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved the code to the jobOverview" />
   </component>
 </project>
