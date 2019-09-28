@@ -51,13 +51,19 @@ function openAccount() {
                 //success
                 let results = response.data; //data from server, it's a string, must be converted to an appropriate format
                 let output = JSON.parse(results);
-                let jobItem = output[0];
-                //console.log(jobItem);
-                let amount = document.getElementById("FUND_AMOUNT");
-                amount.innerHTML = "Available amount: R" + jobItem["FUND_AMOUNT"];
+                let fundItem = output[0];
+                let transactItem = output[1];
+                let bidCard = document.createElement("div");
+                bidCard.className = "cardAccount";
 
-                //console.log(response.status);
-                //console.log(response.error(e));
+                console.log(transactItem);
+                let amount = document.getElementById("FUND_AMOUNT");
+                amount.innerHTML = "Available amount: R" + fundItem["FUND_AMOUNT"];
+
+                let bidCardMessage = document.createElement("div");
+                bidCardMessage.className = "card-transactDate";
+                bidCardMessage.innerText = transactItem["TRANSACTION_DATE_TIME"];
+                bidCard.appendChild(bidCardMessage);
 
             },
             function (response) {
@@ -76,7 +82,7 @@ function openAccount() {
             method: "post",
             timeout: 10000,
             data: {
-                FUND_STUD_ID: localStorage.getItem("Stud_No"),          //$("#Username").val(),
+                FUND_STUD_ID: localStorage.getItem("Stud_No"),
                 ACTION: 0,
                 FUND_AMOUNT: $("#fund").val()
             }
