@@ -5,15 +5,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/browser/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/Account.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/ViewJob.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/ViewJob.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/jobOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/jobOverview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/assignBidderPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/assignBidderPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/jobsOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/jobsOverview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/browser/www/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/Javascript/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/Account.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/Javascript/ViewJob.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/ViewJob.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/Javascript/jobOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/jobOverview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/html/assignBidderPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/assignBidderPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/html/jobsOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/jobsOverview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/mainpage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -173,14 +172,8 @@
       <workItem from="1568902245824" duration="16866000" />
       <workItem from="1569416320476" duration="154000" />
       <workItem from="1569500397260" duration="2068000" />
-      <workItem from="1569524841549" duration="5490000" />
-    </task>
-    <task id="LOCAL-00017" summary="floating button">
-      <created>1565773401814</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1565773401815</updated>
+      <workItem from="1569524841549" duration="6160000" />
+      <workItem from="1569690724608" duration="1906000" />
     </task>
     <task id="LOCAL-00018" summary="Mbuso conect to php">
       <created>1565786445581</created>
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569093470080</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="updated view job, jobOverview and account">
+      <created>1569560265311</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1569560265312</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TodoView">
@@ -565,7 +565,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="a whole lot of changes 1" />
     <MESSAGE value="updated outputs" />
     <MESSAGE value="updated outputs1" />
     <MESSAGE value="updated view more" />
@@ -590,6 +589,7 @@
     <MESSAGE value="everything working, with the bid bug" />
     <MESSAGE value="latest code" />
     <MESSAGE value="moved the code to the jobOverview" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved the code to the jobOverview" />
+    <MESSAGE value="updated view job, jobOverview and account" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated view job, jobOverview and account" />
   </component>
 </project>

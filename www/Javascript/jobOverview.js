@@ -336,24 +336,8 @@ function offers() { //look at the transitions
                         /**/
 
                     })
-                    /*view_more.addEventListener("click", function () { //data-toggle="modal" data-target="#myModal" --this stuff shades the entire page
-                        let modalTitle = document.getElementById("modalTitle");
-                        modalTitle.innerHTML = jobItem["JOB_TITLE"];
-                        let modalPara = document.getElementById("modalBodyText");
-                        modalPara.innerHTML = jobItem["JOB_DESCRIPTION"] + "<br>Job Category: " + jobItem["JOB_CATEGORY"] + "<br> Job payment range: " + jobItem["JOB_AMOUNT_RANGE_LOW"] + " - " + jobItem["JOB_AMOUNT_RANGE_HIGH"];
-
-                        $("#bid_btn1").click(function () {
-                            postBid(jobItem["JOB_ID"]);
-                        });
-                    })*/
 
                 }
-
-
-
-                //alert(results);
-                //alert(results.toString().length);
-                //alert(results.toString()[0]);
             },
             function (response) { // we get a respo
                 //fail
