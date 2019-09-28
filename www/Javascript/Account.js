@@ -12,6 +12,7 @@ function openAccount() {
         $(".jumbotron1").hide(function () { //show the bidding page
             $(".jumbotron1").slideUp(1000);
         });
+        getFunds();
     });
 
     $("#home").click(function () { // when you click going to home
@@ -31,9 +32,6 @@ function openAccount() {
     $("#postProject").click(function () {
         postProject();
     });
-    $("#seeJobs").click(function () {
-        browseProj();
-    });
 
 
 }
@@ -51,11 +49,16 @@ function openAccount() {
         cordova.plugin.http.sendRequest(url, options,
             function (response) {
                 //success
-                console.log(response.status);
-                console.log(response.error(e));
                 let results = response.data; //data from server, it's a string, must be converted to an appropriate format
-                //e.g. json
-                alert(results);
+                let output = JSON.parse(results);
+                let jobItem = output[0];
+                //console.log(jobItem);
+                let amount = document.getElementById("FUND_AMOUNT");
+                amount.innerHTML = "Available amount: R" + jobItem["FUND_AMOUNT"];
+
+                //console.log(response.status);
+                //console.log(response.error(e));
+
             },
             function (response) {
                 //fail
