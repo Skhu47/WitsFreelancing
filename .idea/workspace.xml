@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/ViewJob.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/ViewJob.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/jobOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/jobOverview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/jobsOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/jobsOverview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/Javascript/jobOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/jobOverview.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/html/jobsOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/jobsOverview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/mainpage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -173,14 +164,7 @@
       <workItem from="1569416320476" duration="154000" />
       <workItem from="1569500397260" duration="2068000" />
       <workItem from="1569524841549" duration="6160000" />
-      <workItem from="1569690724608" duration="1906000" />
-    </task>
-    <task id="LOCAL-00018" summary="Mbuso conect to php">
-      <created>1565786445581</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1565786445581</updated>
+      <workItem from="1569690724608" duration="2713000" />
     </task>
     <task id="LOCAL-00019" summary="Mbuso conect to php">
       <created>1565786483693</created>
@@ -518,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569560265312</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="fixed few bugs">
+      <created>1569692660751</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1569692660751</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TodoView">
@@ -565,7 +556,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="updated outputs" />
     <MESSAGE value="updated outputs1" />
     <MESSAGE value="updated view more" />
     <MESSAGE value="get bid" />
@@ -590,6 +580,7 @@
     <MESSAGE value="latest code" />
     <MESSAGE value="moved the code to the jobOverview" />
     <MESSAGE value="updated view job, jobOverview and account" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated view job, jobOverview and account" />
+    <MESSAGE value="fixed few bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed few bugs" />
   </component>
 </project>
