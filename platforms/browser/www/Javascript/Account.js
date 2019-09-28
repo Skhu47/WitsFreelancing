@@ -55,8 +55,6 @@ function openAccount() {
                 console.log(response.error(e));
                 let results = response.data; //data from server, it's a string, must be converted to an appropriate format
                 //e.g. json
-                //alert(results.toString().length);
-                //alert(results.toString()[0]);
                 alert(results);
             },
             function (response) {
@@ -69,7 +67,6 @@ function openAccount() {
             }
         )
     }
-    //Posting funds
 
     function postF() {
         const options = {
