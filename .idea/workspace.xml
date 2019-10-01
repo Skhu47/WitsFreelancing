@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/www/css/rating.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobsOverview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/Account.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/Javascript/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/Account.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/mainpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/html/jobsOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/jobsOverview.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +37,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.phonegap.settings.workdir" value="$PROJECT_DIR$" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Witsie On The Move" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/www/css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -48,18 +51,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mbuso Makitla\WebstormProjects\WitsFreelancing\www\css" />
+      <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing\www\html" />
+      <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing\www\css" />
+      <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing" />
+      <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing\www" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Mulisa\WebstormProjects\WitsFreelancing" />
       <recent name="C:\Users\Skhumbuzo\WebstormProjects\WitsFreelancing\www" />
       <recent name="C:\Users\Mbuso Makitla\WebstormProjects\WitsFreelancing\www" />
       <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing\www" />
       <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing\www\css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing\www\html" />
-      <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing\www\css" />
-      <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing" />
-      <recent name="C:\Users\Skhumbuzo\WebstormProjects\Wits freelancing\www" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -167,14 +171,9 @@
       <workItem from="1569416320476" duration="154000" />
       <workItem from="1569500397260" duration="2068000" />
       <workItem from="1569524841549" duration="6160000" />
-      <workItem from="1569690724608" duration="13251000" />
-    </task>
-    <task id="LOCAL-00022" summary="Todo">
-      <created>1565900671120</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1565900671120</updated>
+      <workItem from="1569690724608" duration="13453000" />
+      <workItem from="1569830115674" duration="3829000" />
+      <workItem from="1569949390875" duration="6902000" />
     </task>
     <task id="LOCAL-00023" summary="reset button fixed">
       <created>1565941115261</created>
@@ -512,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569700261432</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="transaction funds">
+      <created>1569709718189</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1569709718189</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TodoView">
@@ -559,7 +565,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="get bid" />
     <MESSAGE value="fixed page" />
     <MESSAGE value="Changed bid" />
     <MESSAGE value="added travis yml file" />
@@ -584,6 +589,7 @@
     <MESSAGE value="fixed few bugs" />
     <MESSAGE value="fixed few bugs, account" />
     <MESSAGE value="fixed few bugs, complaint on offered jobs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed few bugs, complaint on offered jobs" />
+    <MESSAGE value="transaction funds" />
+    <option name="LAST_COMMIT_MESSAGE" value="transaction funds" />
   </component>
 </project>

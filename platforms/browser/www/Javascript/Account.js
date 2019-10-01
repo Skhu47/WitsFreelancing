@@ -59,11 +59,11 @@ function openAccount() {
                 console.log(transactItem);
                 let amount = document.getElementById("FUND_AMOUNT");
                 amount.innerHTML = "Available amount: R" + fundItem["FUND_AMOUNT"];
-
-                let bidCardMessage = document.createElement("div");
+                //fix this below
+               /* let bidCardMessage = document.createElement("div");
                 bidCardMessage.className = "card-transactDate";
                 bidCardMessage.innerText = transactItem["TRANSACTION_DATE_TIME"];
-                bidCard.appendChild(bidCardMessage);
+                bidCard.appendChild(bidCardMessage);*/
 
             },
             function (response) {
