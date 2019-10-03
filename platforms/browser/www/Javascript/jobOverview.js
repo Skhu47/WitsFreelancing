@@ -130,6 +130,7 @@ function myJobs() { //look at the transitions
                     let view_bidders = row.insertCell(4);
                     let make_payment = row.insertCell(5);
                     let complaint = row.insertCell(6);
+                    let rating = row.insertCell(7);
 
                     let job_status = jobItem["JOB_STATUS"];
                     console.log("Job status = " + job_status);
@@ -154,6 +155,7 @@ function myJobs() { //look at the transitions
                     make_payment.innerHTML = "<td id=\"makePayments\" data-title=\"make payments\"><a href=\"\"> Make payment </a></td>";
                     status.innerHTML = "<button type=\"button\" class=\"btn btn-success\">"+ buttonText + "</button>";
                     complaint.innerHTML = "<td id=\"messageBox\" data-title=\"dispute\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal\"> Not satisfied? </a></td>";
+                    rating.innerHTML = "<td id=\"Rate\" data-title=\"rate\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal4\"> Rate </a></td>";
                     //implement what to do after we complain
 
 
@@ -184,6 +186,7 @@ function myJobs() { //look at the transitions
                                 let bids = JSON.parse(results);
                                 console.log(bids);
                                 localStorage.setItem("job_bids", JSON.stringify(bids));
+
                             },
                             function (response) { // we get a respo
                                 //fail
@@ -274,6 +277,7 @@ function offers() { //look at the transitions
                     let accept_job_btn = row.insertCell(3);
                     let complete_btn = row.insertCell(4);
                     let complaintEmployee =  row.insertCell(5);
+                    let rate = row.insertCell(6);
 
 
                     title.innerHTML = jobItem["JOB_TITLE"]; //localStorage.getItem("Stud_No")   //localStorage.setItem("Stud_No", userNameInput.val());
@@ -288,6 +292,7 @@ function offers() { //look at the transitions
                     accept_job_btn.innerHTML = "<button type=\"button\" class=\"btn btn-primary\"> Accept Job Offer</button>";
                     complaintEmployee.innerHTML = "<td id=\"messageBox\" data-title=\"dispute\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal\"> Not satisfied? </a></td>";
                     complete_btn.innerHTML = "<button type=\"button\" class=\"btn btn-success\">Job Complete</button>";
+                    rate.innerHTML = "<td id=\"Rate\" data-title=\"rate\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal4\"> Rate </a></td>";
                     complete_btn.addEventListener("click", function () { //complete to database
                         //completed the job
                         let job_id = jobItem["JOB_ID"];
@@ -354,34 +359,4 @@ function offers() { //look at the transitions
             });
     }
 
-}
-
-function postComplaint() {
-    const options = {
-        method: "post",
-        timeout: 10000,
-        data: {
-            ACTION: 0,
-            JOB_ID: localStorage.getItem("job_id"),
-            COMPLAINT_TYPE: localStorage.getItem("Stud_No"),
-            COMPLAINT_MESSAGE: $('#COMPLAINT_MESSAGE')
-        }
-    };
-    const url = "http://1627982.ms.wits.ac.za/~student/Complaint.php";
-
-    cordova.plugin.http.sendRequest(url, options,
-        function (response) {
-            //success
-            let results = response.data; //data from server, it's a string, must be converted to an appropriate format
-            alert("Posted complaint successfully");
-        },
-        function (response) { // we get a respo
-            //fail
-            let results = response.data;
-            alert("You do not have any offers");
-        },
-        function (response) {
-            let results = response.data;
-            alert("Permission was denied");
-        });
 }

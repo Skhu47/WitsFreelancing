@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/www/Javascript/Rate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/Javascript/complaint.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/Account.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/jobOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/jobOverview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/jobsOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/jobsOverview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/Javascript/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/Account.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/Javascript/Rate.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/Rate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/Javascript/jobOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/jobOverview.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/html/jobsOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/jobsOverview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/mainpage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -168,14 +176,8 @@
       <workItem from="1569524841549" duration="6160000" />
       <workItem from="1569690724608" duration="13453000" />
       <workItem from="1569830115674" duration="3829000" />
-      <workItem from="1569949390875" duration="10795000" />
-    </task>
-    <task id="LOCAL-00024" summary="Todo">
-      <created>1565941189163</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1565941189163</updated>
+      <workItem from="1569949390875" duration="10859000" />
+      <workItem from="1570123746041" duration="8492000" />
     </task>
     <task id="LOCAL-00025" summary="fixed button">
       <created>1565941722012</created>
@@ -513,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569958971119</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="rate is added modified">
+      <created>1570002367098</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1570002367098</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TodoView">
@@ -560,7 +569,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Changed bid" />
     <MESSAGE value="added travis yml file" />
     <MESSAGE value="added travis yml file again" />
     <MESSAGE value="changed language in yml file to node_js" />
@@ -585,6 +593,7 @@
     <MESSAGE value="fixed few bugs, complaint on offered jobs" />
     <MESSAGE value="transaction funds" />
     <MESSAGE value="rate is added" />
-    <option name="LAST_COMMIT_MESSAGE" value="rate is added" />
+    <MESSAGE value="rate is added modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="rate is added modified" />
   </component>
 </project>

@@ -276,7 +276,7 @@
 
 
 
-            <div class="transactions">
+            <div class="transactions" id="transactionHolder">
               <!--Empty for now-->
 
               <h4 class="mt-4" ><!--Todo: show balance here--></h4>
@@ -289,16 +289,13 @@
               <div class="cardAccount" align="left">
                 <!-------------Todo: inflate this-------------->
                 <div class="card-body">
-                  <i class="fa fa-genderless" style="font-size:24px; color: #007bff"></i>
-                  <ul>
-                    <p class="card-transactAmt" id="TRANSACTION_AMOUNT">-R6545645</p>
-                    <p class="card-transactRsn" id="TRANSACTION_REASON">Deposit</p>
-                    <p class="card-transactDate" id="TRANSACTION_DATE_TIME"><small class="text-muted">2019/08/10</small></p>
+                  <i class="fa-genderless" style="font-size:24px; color: #007bff"></i>
+                  <ul class="transactCont" style="list-style: none">
+                    <li><p class="card-transactAmt" id="TRANSACTION_AMOUNT">-R6545645</p></li>
+                    <li><p class="card-transactRsn" id="TRANSACTION_REASON">Deposit</p></li>
+                    <li><p class="card-transactDate" id="TRANSACTION_DATE_TIME"><small class="text-muted">2019/08/10</small></p></li>
                   </ul>
                 </div>
-
-
-              </div>
 
             </div>
 

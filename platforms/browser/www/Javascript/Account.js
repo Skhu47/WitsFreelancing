@@ -59,6 +59,15 @@ function openAccount() {
                 console.log(transactItem);
                 let amount = document.getElementById("FUND_AMOUNT");
                 amount.innerHTML = "Available amount: R" + fundItem["FUND_AMOUNT"];
+                //create the parent
+                let TransactParent = document.getElementById("transactionHolder");
+                //create the card holder
+                let cardHolder = document.createElement("card-body"); //align left?
+                //create the italics points
+                let italicPoints = document.createElement("fa-genderless");
+                //create an unordered list
+                let unorderedList = document.createElement("");
+
                 //fix this below
                /* let bidCardMessage = document.createElement("div");
                 bidCardMessage.className = "card-transactDate";
