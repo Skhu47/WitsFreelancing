@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/Account.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/jobOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/jobOverview.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/Javascript/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/Account.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/mainpage.html" afterDir="false" />
@@ -172,14 +172,7 @@
       <workItem from="1569690724608" duration="13453000" />
       <workItem from="1569830115674" duration="3829000" />
       <workItem from="1569949390875" duration="10859000" />
-      <workItem from="1570123746041" duration="24553000" />
-    </task>
-    <task id="LOCAL-00027" summary="Added more functionality">
-      <created>1565943475483</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1565943475483</updated>
+      <workItem from="1570123746041" duration="26586000" />
     </task>
     <task id="LOCAL-00028" summary="changed package id and renamed">
       <created>1565958698111</created>
@@ -517,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570176771589</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="transactions showing in my account. modification of beauty needed">
+      <created>1570183637856</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1570183637856</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TodoView">
@@ -564,7 +564,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="changed language in yml file to node_js" />
     <MESSAGE value="changed language in yml file to node_js and modified package.json" />
     <MESSAGE value="modified travis.yml file" />
     <MESSAGE value="attempt on travis again" />
@@ -589,6 +588,7 @@
     <MESSAGE value="rate is added modified" />
     <MESSAGE value="rate added to layout" />
     <MESSAGE value="rate done for both users" />
-    <option name="LAST_COMMIT_MESSAGE" value="rate done for both users" />
+    <MESSAGE value="transactions showing in my account. modification of beauty needed" />
+    <option name="LAST_COMMIT_MESSAGE" value="transactions showing in my account. modification of beauty needed" />
   </component>
 </project>

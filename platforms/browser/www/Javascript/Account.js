@@ -69,38 +69,41 @@ function openAccount() {
                         let cardHolder = document.createElement("div"); //align left?
                         //create the italics points
                         let italicPoints = document.createElement("i");
+                        italicPoints.style.fontSize = '24px';
+                        italicPoints.style.color = '#007bff';
                         //create an unordered list
                         let unorderedList = document.createElement("ul");
                         //create the link and paragraph
                         let link1 = document.createElement("li");
+                        link1.style.textAlign = "left";
                         let transactAmt = document.createElement("p");
                         transactAmt.className = "card-transactAmt";
                         transactAmt.innerText = "Transaction amount: " + transactItem["TRANSACTION_AMOUNT"];
                         link1.appendChild(transactAmt);
-                        unorderedList.appendChild(link1);
+                        //unorderedList.appendChild(link1);
                         //unorderedList.appendChild(italicPoints);
-                        cardHolder.appendChild(unorderedList);
-                        TransactParent.appendChild(cardHolder);
+                        //cardHolder.appendChild(unorderedList);
+                        //TransactParent.appendChild(cardHolder);
 
                         //Transaction reason
                         let link2 = document.createElement("li");
                         let TransactionReason = document.createElement("p");
                         TransactionReason.className = "card-transactAmt";
                         TransactionReason.innerText = "Transaction type: " + transactItem["TRANSACTION_REASON"];
-                        link2.appendChild(TransactionReason);
-                        unorderedList.appendChild(link2);
+                        link1.appendChild(TransactionReason);
+                        //unorderedList.appendChild(link2);
                         //unorderedList.appendChild(italicPoints);
-                        cardHolder.appendChild(unorderedList);
-                        TransactParent.appendChild(cardHolder);
+                        //cardHolder.appendChild(unorderedList);
+                        //TransactParent.appendChild(cardHolder);
 
                         //Transact date
                         let link3 = document.createElement("li");
                         let transactionDate = document.createElement("p");
                         transactionDate.className = "card-transactAmt";
                         transactionDate.innerText = "Transaction date: " + transactItem["TRANSACTION_DATE_TIME"];
-                        link3.appendChild(transactionDate);
-                        unorderedList.appendChild(link3);
-                        //unorderedList.appendChild(italicPoints);
+                        link1.appendChild(transactionDate);
+                        unorderedList.appendChild(link1);
+                        unorderedList.appendChild(italicPoints);
                         cardHolder.appendChild(unorderedList);
                         TransactParent.appendChild(cardHolder);
                     }
