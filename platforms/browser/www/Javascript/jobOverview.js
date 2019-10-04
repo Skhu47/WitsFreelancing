@@ -158,6 +158,7 @@ function myJobs() { //look at the transitions
                     complaint.innerHTML = "<td id=\"messageBox\" data-title=\"dispute\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal\"> Not satisfied? </a></td>";
                     rating.innerHTML = "<td id=\"RateEmployer\" data-title=\"rate\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal4\"> Rate </a></td>";
                     sendRating.addEventListener("click", function () {
+                        localStorage.setItem("job_id", jobItem["JOB_ID"]);
                         postRating(0);
                     });
 
@@ -297,7 +298,8 @@ function offers() { //look at the transitions
                     complete_btn.innerHTML = "<button type=\"button\" class=\"btn btn-success\">Job Complete</button>";
                     rate.innerHTML = "<td id=\"Rate\" data-title=\"rate\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal4\"> Rate </a></td>";
 
-                    sendRating.addEventListener("click", function () {
+                    sendRating.addEventListener("click", function () { //it seems to be repeating a lot of times
+                        localStorage.setItem("job_id", jobItem["JOB_ID"]);
                         postRating(1);
                     });
                     complete_btn.addEventListener("click", function () { //complete to database

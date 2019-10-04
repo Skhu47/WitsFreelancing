@@ -52,21 +52,61 @@ function openAccount() {
                 let results = response.data; //data from server, it's a string, must be converted to an appropriate format
                 let output = JSON.parse(results);
                 let fundItem = output[0];
-                let transactItem = output[1];
-                let bidCard = document.createElement("div");
-                bidCard.className = "cardAccount";
 
-                console.log(transactItem);
+
+                console.log(output);
+
+
                 let amount = document.getElementById("FUND_AMOUNT");
                 amount.innerHTML = "Available amount: R" + fundItem["FUND_AMOUNT"];
-                //create the parent
-                let TransactParent = document.getElementById("transactionHolder");
-                //create the card holder
-                let cardHolder = document.createElement("card-body"); //align left?
-                //create the italics points
-                let italicPoints = document.createElement("fa-genderless");
-                //create an unordered list
-                let unorderedList = document.createElement("transactCont");
+                if(output.length > 0){
+                    for(let i = 1; i <= output.length; i++){
+                        let transactItem = output[i];
+                        console.log(transactItem);
+                        //create the parent
+                        let TransactParent = document.getElementById("transactionHolder");
+                        //create the card holder
+                        let cardHolder = document.createElement("div"); //align left?
+                        //create the italics points
+                        let italicPoints = document.createElement("i");
+                        //create an unordered list
+                        let unorderedList = document.createElement("ul");
+                        //create the link and paragraph
+                        let link1 = document.createElement("li");
+                        let transactAmt = document.createElement("p");
+                        transactAmt.className = "card-transactAmt";
+                        transactAmt.innerText = "Transaction amount: " + transactItem["TRANSACTION_AMOUNT"];
+                        link1.appendChild(transactAmt);
+                        unorderedList.appendChild(link1);
+                        //unorderedList.appendChild(italicPoints);
+                        cardHolder.appendChild(unorderedList);
+                        TransactParent.appendChild(cardHolder);
+
+                        //Transaction reason
+                        let link2 = document.createElement("li");
+                        let TransactionReason = document.createElement("p");
+                        TransactionReason.className = "card-transactAmt";
+                        TransactionReason.innerText = "Transaction type: " + transactItem["TRANSACTION_REASON"];
+                        link2.appendChild(TransactionReason);
+                        unorderedList.appendChild(link2);
+                        //unorderedList.appendChild(italicPoints);
+                        cardHolder.appendChild(unorderedList);
+                        TransactParent.appendChild(cardHolder);
+
+                        //Transact date
+                        let link3 = document.createElement("li");
+                        let transactionDate = document.createElement("p");
+                        transactionDate.className = "card-transactAmt";
+                        transactionDate.innerText = "Transaction date: " + transactItem["TRANSACTION_DATE_TIME"];
+                        link3.appendChild(transactionDate);
+                        unorderedList.appendChild(link3);
+                        //unorderedList.appendChild(italicPoints);
+                        cardHolder.appendChild(unorderedList);
+                        TransactParent.appendChild(cardHolder);
+                    }
+                }
+
+
 
                 //fix this below
                /* let bidCardMessage = document.createElement("div");
