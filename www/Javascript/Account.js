@@ -80,24 +80,16 @@ function openAccount() {
                         transactAmt.className = "card-transactAmt";
                         transactAmt.innerText = "Transaction amount: " + transactItem["TRANSACTION_AMOUNT"];
                         link1.appendChild(transactAmt);
-                        //unorderedList.appendChild(link1);
-                        //unorderedList.appendChild(italicPoints);
-                        //cardHolder.appendChild(unorderedList);
-                        //TransactParent.appendChild(cardHolder);
+
 
                         //Transaction reason
-                        let link2 = document.createElement("li");
                         let TransactionReason = document.createElement("p");
                         TransactionReason.className = "card-transactAmt";
                         TransactionReason.innerText = "Transaction type: " + transactItem["TRANSACTION_REASON"];
                         link1.appendChild(TransactionReason);
-                        //unorderedList.appendChild(link2);
-                        //unorderedList.appendChild(italicPoints);
-                        //cardHolder.appendChild(unorderedList);
-                        //TransactParent.appendChild(cardHolder);
+
 
                         //Transact date
-                        let link3 = document.createElement("li");
                         let transactionDate = document.createElement("p");
                         transactionDate.className = "card-transactAmt";
                         transactionDate.innerText = "Transaction date: " + transactItem["TRANSACTION_DATE_TIME"];
