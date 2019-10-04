@@ -152,11 +152,15 @@ function myJobs() { //look at the transitions
                     let sendRating = document.getElementById("sendRateBtn");
                     div.appendChild(test);
                     //add view bidders and make payment binding
+                    if(job_status !== "0"){
+                        complaint.innerHTML = "<td id=\"messageBox\" data-title=\"dispute\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal\"> Not satisfied? </a></td>";
+                        if(job_status === "2"){
+                            make_payment.innerHTML = "<td id=\"makePayments\" data-title=\"make payments\"><a href=\"\"> Make payment </a></td>";
+                            rating.innerHTML = "<td id=\"RateEmployer\" data-title=\"rate\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal4\"> Rate </a></td>";
+                        }
+                    }
                     view_bidders.innerHTML = "<td id=\"viewBidders\" data-title=\"VIEW_BIDDERS\"><a href=\"assignBidderPage.html\"> View Bidders </a></td>";
-                    make_payment.innerHTML = "<td id=\"makePayments\" data-title=\"make payments\"><a href=\"\"> Make payment </a></td>";
                     status.innerHTML = "<button type=\"button\" class=\"btn btn-success\">"+ buttonText + "</button>";
-                    complaint.innerHTML = "<td id=\"messageBox\" data-title=\"dispute\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal\"> Not satisfied? </a></td>";
-                    rating.innerHTML = "<td id=\"RateEmployer\" data-title=\"rate\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal4\"> Rate </a></td>";
                     sendRating.addEventListener("click", function () {
                         localStorage.setItem("job_id", jobItem["JOB_ID"]);
                         postRating(0);
@@ -193,35 +197,19 @@ function myJobs() { //look at the transitions
                             },
                             function (response) { // we get a respo
                                 //fail
-                                //let results = response.data;
-                                //alert("2");
                                // alert(results);
                             },
                             function (response) {
                                 //permission denied
-                                // alert("3");
-                                //let results = response.data;
-                                //alert("2");
                                 //alert(results);
                             }
                         );
-                        /*$(document).ready(function (){
-
-                            $("#wrapper_main").load("viewSpecificJobPage.html");
-                        });*/
-
-                        /**/
 
                     });
 
 
                 }
 
-
-
-                //alert(results);
-                //alert(results.toString().length);
-                //alert(results.toString()[0]);
             },
             function (response) { // we get a respo
                 //fail
@@ -287,17 +275,20 @@ function offers() { //look at the transitions
                     category.innerHTML = jobItem["JOB_CATEGORY"];
                     price_range.innerHTML = jobItem["JOB_AMOUNT_RANGE_LOW"] + " - " + jobItem["JOB_AMOUNT_RANGE_HIGH"];
 
-
+                    let job_status = jobItem["JOB_STATUS"];
                     let div = document.getElementById("modalBody");
                     let test = document.createTextNode(jobItem["JOB_CATEGORY"]);
                     let sendRating = document.getElementById("sendRateBtn");
                     div.appendChild(test);
-                    //Change this
-                    accept_job_btn.innerHTML = "<button type=\"button\" class=\"btn btn-primary\"> Accept Job Offer</button>";
-                    complaintEmployee.innerHTML = "<td id=\"messageBox\" data-title=\"dispute\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal\"> Not satisfied? </a></td>";
-                    complete_btn.innerHTML = "<button type=\"button\" class=\"btn btn-success\">Job Complete</button>";
-                    rate.innerHTML = "<td id=\"Rate\" data-title=\"rate\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal4\"> Rate </a></td>";
-
+                    //what appears
+                    if(job_status === "1"){
+                        accept_job_btn.innerHTML = "<button type=\"button\" class=\"btn btn-primary\"> Accept Job Offer</button>";
+                        complete_btn.innerHTML = "<button type=\"button\" class=\"btn btn-success\">Job Complete</button>";
+                        complaintEmployee.innerHTML = "<td id=\"messageBox\" data-title=\"dispute\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal\"> Not satisfied? </a></td>";
+                        if(job_status === "2"){
+                            rate.innerHTML = "<td id=\"Rate\" data-title=\"rate\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal4\"> Rate </a></td>";
+                        }
+                    }
                     sendRating.addEventListener("click", function () { //it seems to be repeating a lot of times
                         localStorage.setItem("job_id", jobItem["JOB_ID"]);
                         postRating(1);
