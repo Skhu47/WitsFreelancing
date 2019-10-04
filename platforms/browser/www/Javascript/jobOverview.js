@@ -149,15 +149,17 @@ function myJobs() { //look at the transitions
 
                     let div = document.getElementById("modalBodyMyJob");
                     let test = document.createTextNode(jobItem["JOB_CATEGORY"]);
+                    let sendRating = document.getElementById("sendRateBtn");
                     div.appendChild(test);
                     //add view bidders and make payment binding
                     view_bidders.innerHTML = "<td id=\"viewBidders\" data-title=\"VIEW_BIDDERS\"><a href=\"assignBidderPage.html\"> View Bidders </a></td>";
                     make_payment.innerHTML = "<td id=\"makePayments\" data-title=\"make payments\"><a href=\"\"> Make payment </a></td>";
                     status.innerHTML = "<button type=\"button\" class=\"btn btn-success\">"+ buttonText + "</button>";
                     complaint.innerHTML = "<td id=\"messageBox\" data-title=\"dispute\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal\"> Not satisfied? </a></td>";
-                    rating.innerHTML = "<td id=\"Rate\" data-title=\"rate\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal4\"> Rate </a></td>";
-                    //implement what to do after we complain
-
+                    rating.innerHTML = "<td id=\"RateEmployer\" data-title=\"rate\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal4\"> Rate </a></td>";
+                    sendRating.addEventListener("click", function () {
+                        postRating(0);
+                    });
 
                     view_bidders.addEventListener("click", function () {
                         localStorage.setItem("jobTitle", jobItem["JOB_TITLE"]);
@@ -287,12 +289,17 @@ function offers() { //look at the transitions
 
                     let div = document.getElementById("modalBody");
                     let test = document.createTextNode(jobItem["JOB_CATEGORY"]);
+                    let sendRating = document.getElementById("sendRateBtn");
                     div.appendChild(test);
                     //Change this
                     accept_job_btn.innerHTML = "<button type=\"button\" class=\"btn btn-primary\"> Accept Job Offer</button>";
                     complaintEmployee.innerHTML = "<td id=\"messageBox\" data-title=\"dispute\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal\"> Not satisfied? </a></td>";
                     complete_btn.innerHTML = "<button type=\"button\" class=\"btn btn-success\">Job Complete</button>";
                     rate.innerHTML = "<td id=\"Rate\" data-title=\"rate\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal4\"> Rate </a></td>";
+
+                    sendRating.addEventListener("click", function () {
+                        postRating(1);
+                    });
                     complete_btn.addEventListener("click", function () { //complete to database
                         //completed the job
                         let job_id = jobItem["JOB_ID"];

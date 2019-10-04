@@ -66,7 +66,7 @@ function openAccount() {
                 //create the italics points
                 let italicPoints = document.createElement("fa-genderless");
                 //create an unordered list
-                let unorderedList = document.createElement("");
+                let unorderedList = document.createElement("transactCont");
 
                 //fix this below
                /* let bidCardMessage = document.createElement("div");

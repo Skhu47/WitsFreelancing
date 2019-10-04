@@ -9,6 +9,7 @@
     <script type="text/javascript" src="../cordova.js"></script>
     <script src="../Javascript/bid.js"></script>
     <script src="../Javascript/jobOverview.js"></script>
+    <script src="../Javascript/Rate.js" ></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -197,7 +198,7 @@
 
 
                                     <!--                                Todo: This is for rating-->
-                                    <!-- <td id="Rate" data-title="rate"><a data-toggle="modal" href="" data-target="#myModal4"> Rate </a></td> -->
+                                    <!-- <td id="RateEmployer" data-title="rate"><a data-toggle="modal" href="" data-target="#myModal4"> Rate </a></td> -->
                                 </tbody>
                             </table>
                         </div>
@@ -285,14 +286,14 @@
                             <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Satisfied - 4 stars"></label>
                             <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Neutral - 3 stars"></label>
                             <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Dissatisfied - 2 stars"></label>
-                            <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Highly dissatisfied - 1 star"></label>
+                            <input type="radio" id="star1" name="rating" value="1"/><label class = "full" for="star1" title="Highly dissatisfied - 1 star"></label>
                         </fieldset>
                     </div>
 
                     <!-- Modal footer -->
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-success" ONCLICK="">Send</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success" id="sendRateBtn" >Send</button>
+                        <button type="button" class="btn btn-secondary" id="closeRatingTab" data-dismiss="modal">Close</button>
                     </div>
 
                 </div>
