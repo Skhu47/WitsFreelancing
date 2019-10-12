@@ -149,7 +149,7 @@ function myJobs() { //look at the transitions
 
                     let div = document.getElementById("modalBodyMyJob");
                     let test = document.createTextNode(jobItem["JOB_CATEGORY"]);
-                    let sendRating = document.getElementById("sendRateBtn");
+                    //let sendRating = document.getElementById("sendRateBtn");
                     div.appendChild(test);
                     //add view bidders and make payment binding
                     if(job_status !== "0"){
@@ -161,10 +161,14 @@ function myJobs() { //look at the transitions
                     }
                     view_bidders.innerHTML = "<td id=\"viewBidders\" data-title=\"VIEW_BIDDERS\"><a href=\"assignBidderPage.html\"> View Bidders </a></td>";
                     status.innerHTML = "<button type=\"button\" class=\"btn btn-success\">"+ buttonText + "</button>";
-                    sendRating.addEventListener("click", function () {
+                    /*sendRating.addEventListener("click", function () {
                         localStorage.setItem("job_id", jobItem["JOB_ID"]);
                         postRating(0);
                     });
+                    $("#sendRateBtn").click(function () {
+                        localStorage.setItem("job_id", jobItem["JOB_ID"]);
+                        postRating(0);
+                    });*/
 
                     view_bidders.addEventListener("click", function () {
                         localStorage.setItem("jobTitle", jobItem["JOB_TITLE"]);

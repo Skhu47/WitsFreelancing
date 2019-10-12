@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/Account.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/jobOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/jobOverview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/jobsOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/jobsOverview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/Javascript/jobOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/jobOverview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/html/jobsOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/jobsOverview.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -170,14 +171,9 @@
       <workItem from="1569690724608" duration="13453000" />
       <workItem from="1569830115674" duration="3829000" />
       <workItem from="1569949390875" duration="10859000" />
-      <workItem from="1570123746041" duration="30697000" />
-    </task>
-    <task id="LOCAL-00030" summary="Mbuso">
-      <created>1566063771480</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1566063771480</updated>
+      <workItem from="1570123746041" duration="32129000" />
+      <workItem from="1570791023549" duration="228000" />
+      <workItem from="1570858928739" duration="4796000" />
     </task>
     <task id="LOCAL-00031" summary="fixed the validation bug">
       <created>1566070210126</created>
@@ -515,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570185675681</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="buttons appear as they need to apper and when they need to appear">
+      <created>1570190773630</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1570190773630</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TodoView">
@@ -562,7 +565,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="attempt on travis again" />
     <MESSAGE value="attempt on travis again and again" />
     <MESSAGE value="implemented jasmine" />
     <MESSAGE value="removed extra lines in the script section" />
@@ -587,6 +589,7 @@
     <MESSAGE value="transactions showing in my account. modification of beauty needed" />
     <MESSAGE value="transactions showing in my account. modification fixed" />
     <MESSAGE value="updated code" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated code" />
+    <MESSAGE value="buttons appear as they need to apper and when they need to appear" />
+    <option name="LAST_COMMIT_MESSAGE" value="buttons appear as they need to apper and when they need to appear" />
   </component>
 </project>
