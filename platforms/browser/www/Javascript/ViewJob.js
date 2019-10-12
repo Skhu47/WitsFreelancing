@@ -18,9 +18,11 @@ $(document).ready(function () {
 
     //view bids
     console.log("View bids");
-    $("#biddersSection").hide();
-    
+    let bidSection = $("#biddersSection");
+    bidSection.hide();
+
     if(localStorage.getItem("NumBids") !== "0") {
+        bidSection.hide();
         console.log("Populating bids");
 
         let bids = JSON.parse(localStorage.getItem("job_bids"));
