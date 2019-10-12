@@ -19,6 +19,7 @@ function postComplaint() {
             let results = response.data; //data from server, it's a string, must be converted to an appropriate format
             console.log(results);
             console.log($('#COMPLAINT_MESSAGE').val());
+            console.log(localStorage.getItem("job_id"));
             if(results === "Message has been sent1"){
                 alert("Posted complaint successfully");
             }else{
@@ -26,7 +27,7 @@ function postComplaint() {
             }
 
         },
-        function (response) { // we get a respo
+        function (response) { // we get a response
             //fail
             let results = response.data;
             alert("You do not have any offers");
