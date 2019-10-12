@@ -9,6 +9,7 @@ before_script:
   - jasmine init
   - jasmine examples
   - npm install -g cordova
+  - cordova platform remove android
   - cordova platform add android
 
 script:
