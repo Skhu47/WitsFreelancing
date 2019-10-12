@@ -14,9 +14,9 @@ function jobSection() { //look at the transitions
 }
 
 function getJobs(){
-    $(".newBrowseJobs").show(function () {
-        //getJobs();
-    });
+    $(".newBrowseJobs").show();
+    $(".myJob").hide();
+    $(".offeredJobs1").hide();
     const options = {
         method: "post",
         timeout: 10000,
@@ -89,12 +89,10 @@ function getJobs(){
 }
 
 function myJobs() { //look at the transitions
-    $(document).ready(function (){
         $(".newBrowseJobs").hide();
         $(".offeredJobs1").hide();
         $(".myJob").show();
         getMyJobs();
-    });
 
     function getMyJobs(){
         const options = {
@@ -228,12 +226,10 @@ function myJobs() { //look at the transitions
 }
 
 function offers() { //look at the transitions
-    $(document).ready(function () {
         $(".newBrowseJobs").hide();
         $(".myJob").hide();
         $(".offeredJobs1").show();
         getMyOffers();
-    });
 
     function getMyOffers(){
         const options = {
@@ -285,9 +281,8 @@ function offers() { //look at the transitions
                         accept_job_btn.innerHTML = "<button type=\"button\" class=\"btn btn-primary\"> Accept Job Offer</button>";
                         complete_btn.innerHTML = "<button type=\"button\" class=\"btn btn-success\">Job Complete</button>";
                         complaintEmployee.innerHTML = "<td id=\"messageBox\" data-title=\"dispute\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal\"> Not satisfied? </a></td>";
-                        if(job_status === "2"){
-                            rate.innerHTML = "<td id=\"Rate\" data-title=\"rate\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal4\"> Rate </a></td>";
-                        }
+                        rate.innerHTML = "<td id=\"Rate\" data-title=\"rate\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal4\"> Rate </a></td>";
+
                     }
                     complaintEmployee.addEventListener("click", function () {
                         localStorage.setItem("job_id", jobItem["JOB_ID"]);

@@ -14,9 +14,9 @@ function jobSection() { //look at the transitions
 }
 
 function getJobs(){
-    $(".newBrowseJobs").show(function () {
-        //getJobs();
-    });
+    $(".newBrowseJobs").show();
+    $(".myJob").hide();
+    $(".offeredJobs1").hide();
     const options = {
         method: "post",
         timeout: 10000,
@@ -89,12 +89,10 @@ function getJobs(){
 }
 
 function myJobs() { //look at the transitions
-    $(document).ready(function (){
         $(".newBrowseJobs").hide();
         $(".offeredJobs1").hide();
         $(".myJob").show();
         getMyJobs();
-    });
 
     function getMyJobs(){
         const options = {
@@ -228,12 +226,10 @@ function myJobs() { //look at the transitions
 }
 
 function offers() { //look at the transitions
-    $(document).ready(function () {
         $(".newBrowseJobs").hide();
         $(".myJob").hide();
         $(".offeredJobs1").show();
         getMyOffers();
-    });
 
     function getMyOffers(){
         const options = {

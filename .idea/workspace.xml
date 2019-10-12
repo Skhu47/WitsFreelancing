@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/browser.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/browser.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/jobOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/jobOverview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/Javascript/jobOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/jobOverview.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +79,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Browser" type="PhoneGap" factoryName="PhoneGap/Cordova">
-      <option name="myExecutable" value="C:\Users\Mulisa\AppData\Roaming\npm\cordova.cmd" />
+      <option name="myExecutable" value="C:\Users\Mbuso Makitla\AppData\Roaming\npm\cordova.cmd" />
       <option name="myWorkDir" value="$PROJECT_DIR$" />
       <option name="myCommand" value="emulate" />
       <option name="myPassParent" value="true" />
