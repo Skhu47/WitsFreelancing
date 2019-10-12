@@ -161,14 +161,6 @@ function myJobs() { //look at the transitions
                     }
                     view_bidders.innerHTML = "<td id=\"viewBidders\" data-title=\"VIEW_BIDDERS\"><a href=\"assignBidderPage.html\"> View Bidders </a></td>";
                     status.innerHTML = "<button type=\"button\" class=\"btn btn-success\">"+ buttonText + "</button>";
-                    /*sendRating.addEventListener("click", function () {
-                        localStorage.setItem("job_id", jobItem["JOB_ID"]);
-                        postRating(0);
-                    });
-                    $("#sendRateBtn").click(function () {
-                        localStorage.setItem("job_id", jobItem["JOB_ID"]);
-                        postRating(0);
-                    });*/
 
                     view_bidders.addEventListener("click", function () {
                         localStorage.setItem("jobTitle", jobItem["JOB_TITLE"]);
@@ -282,7 +274,7 @@ function offers() { //look at the transitions
                     let job_status = jobItem["JOB_STATUS"];
                     let div = document.getElementById("modalBody");
                     let test = document.createTextNode(jobItem["JOB_CATEGORY"]);
-                    let sendRating = document.getElementById("sendRateBtn");
+                    //let sendRating = document.getElementById("sendRateBtn");
                     div.appendChild(test);
                     //what appears
                     if(job_status === "1"){
@@ -293,10 +285,10 @@ function offers() { //look at the transitions
                             rate.innerHTML = "<td id=\"Rate\" data-title=\"rate\"><a data-toggle=\"modal\" href=\"\" data-target=\"#myModal4\"> Rate </a></td>";
                         }
                     }
-                    sendRating.addEventListener("click", function () { //it seems to be repeating a lot of times
+                    /*sendRating.addEventListener("click", function () { //it seems to be repeating a lot of times
                         localStorage.setItem("job_id", jobItem["JOB_ID"]);
                         postRating(1);
-                    });
+                    });*/
                     complete_btn.addEventListener("click", function () { //complete to database
                         //completed the job
                         let job_id = jobItem["JOB_ID"];

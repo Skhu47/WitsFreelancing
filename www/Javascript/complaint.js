@@ -15,8 +15,16 @@ function postComplaint() {
     cordova.plugin.http.sendRequest(url, options,
         function (response) {
             //success
+
             let results = response.data; //data from server, it's a string, must be converted to an appropriate format
-            alert("Posted complaint successfully");
+            console.log(results);
+            console.log($('#COMPLAINT_MESSAGE').val());
+            if(results === "Message has been sent1"){
+                alert("Posted complaint successfully");
+            }else{
+                alert("Could not send complaint, please try again")
+            }
+
         },
         function (response) { // we get a respo
             //fail

@@ -5,7 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/jobOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/jobOverview.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/jobsOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/jobsOverview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/Javascript/jobOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/jobOverview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/Javascript/complaint.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/complaint.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/html/jobsOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/jobsOverview.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -173,14 +173,7 @@
       <workItem from="1569949390875" duration="10859000" />
       <workItem from="1570123746041" duration="32129000" />
       <workItem from="1570791023549" duration="228000" />
-      <workItem from="1570858928739" duration="4796000" />
-    </task>
-    <task id="LOCAL-00031" summary="fixed the validation bug">
-      <created>1566070210126</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1566070210126</updated>
+      <workItem from="1570858928739" duration="6816000" />
     </task>
     <task id="LOCAL-00032" summary="fixed the validation bug">
       <created>1566115971754</created>
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570190773630</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="rate bug fixed">
+      <created>1570865332153</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1570865332153</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TodoView">
@@ -565,7 +565,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="attempt on travis again and again" />
     <MESSAGE value="implemented jasmine" />
     <MESSAGE value="removed extra lines in the script section" />
     <MESSAGE value="transitions" />
@@ -590,6 +589,7 @@
     <MESSAGE value="transactions showing in my account. modification fixed" />
     <MESSAGE value="updated code" />
     <MESSAGE value="buttons appear as they need to apper and when they need to appear" />
-    <option name="LAST_COMMIT_MESSAGE" value="buttons appear as they need to apper and when they need to appear" />
+    <MESSAGE value="rate bug fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="rate bug fixed" />
   </component>
 </project>
