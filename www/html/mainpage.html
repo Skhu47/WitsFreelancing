@@ -5,8 +5,8 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
-  <script type="text/javascript" src="../cordova.js"></script>
+  <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src	'self' 'unsafe-inline' *; img-src 'self' data: *">
+<!--  <script type="text/javascript" src="../cordova.js"></script>-->
   <script src="../Javascript/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -339,11 +339,11 @@
               <div class="modal-footer">
                 <button type="button" id="postFundbtn" class="btn btn-success" onclick="postF()" >Add</button>
               </div>
-
+            </div>
             </div>
           </div>
         </div>
-
+      </div>
       </div>
     </div>
 
@@ -362,7 +362,6 @@
 <!--Todo:Mbuso check how this works-->
 <!-- Bootstrap core JavaScript -->
 <script src="../vendor/jquery/jquery.min.js"></script>
-<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Menu Toggle Script -->
 <!--Todo:Mbuso check how this works-->
@@ -372,7 +371,5 @@
     $("#wrapper").toggleClass("toggled");
   });
 </script>
-
 </body>
-
 </html>
