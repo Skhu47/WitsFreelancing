@@ -4,32 +4,18 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
-    <script type="text/javascript" src="../cordova.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src	'self' 'unsafe-inline' *; img-src 'self' data: *">
+<!--    <script type="text/javascript" src="../cordova.js"></script>-->
     <script src="../Javascript/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
-    <script src="../Javascript/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="../Javascript/Account.js"></script>
-
-    <link href="../css/floating%20button.css" rel="stylesheet">
-
-    <script src="../Javascript/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="../Javascript/Account.js"></script>
     <link href="../css/floating%20button.css" rel="stylesheet">
-
     <title>Simple Sidebar - Start Bootstrap Template</title>
 
     <!-- Bootstrap core CSS -->
@@ -107,12 +93,15 @@
 <!--            -->
             <br>
 <!--            THis is where bidders will appear-->
-            <h3>Bidders</h3>
-            <div class="card">
-                <div class="card-header" id="bidder_id">Header</div>
-                <div class="card-body" id="bidMessage">Content</div>
-                <div class="card-footer" id="suggested_amt">Footer</div>
+            <div id="biddersSection">
+                <h3>Bidders</h3>
+                <div class="card">
+                    <div class="card-header" id="bidder_id">Header</div>
+                    <div class="card-body" id="bidMessage">Content</div>
+                    <div class="card-footer" id="suggested_amt">Footer</div>
+                </div>
             </div>
+
 
 <!--            <h3 class="text-center"> Place Bid</h3>-->
             <div class="container mt-3">

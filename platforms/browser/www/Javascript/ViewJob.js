@@ -17,7 +17,12 @@ $(document).ready(function () {
     NumBids.innerHTML = "Num of bids: "+localStorage.getItem("NumBids");
 
     //view bids
+    console.log("View bids");
+    $("#biddersSection").hide();
+    
     if(localStorage.getItem("NumBids") !== "0") {
+        console.log("Populating bids");
+
         let bids = JSON.parse(localStorage.getItem("job_bids"));
         //console.log(bids);
         //e.g. json
@@ -78,6 +83,7 @@ function assignJob(job_id, bidder_id) {
             JOB_EMPLOYEE_ID: bidder_id
         }
     };
+
     const url = "http://1627982.ms.wits.ac.za/~student/Job.php";
     cordova.plugin.http.sendRequest(url, options,
         function (response) {

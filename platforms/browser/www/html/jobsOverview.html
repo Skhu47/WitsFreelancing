@@ -5,8 +5,8 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
-    <script type="text/javascript" src="../cordova.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src	'self' 'unsafe-inline' *; img-src 'self' data: *">
+<!--    <script type="text/javascript" src="../cordova.js"></script>-->
     <script src="../Javascript/bid.js"></script>
     <script src="../Javascript/jobOverview.js"></script>
     <script src="../Javascript/Rate.js" ></script>
@@ -31,7 +31,7 @@
 <body>
 
 <nav class="navbar navbar-expand-md bg-dark navbar-darkk fixed-top">
-    <a class="navbar-brand" id="home" onclick="window.location.href = 'mainpage.html'" href="">Home</a>
+    <a class="navbar-brand" id="home" href="#" onclick="home">Home</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -384,7 +384,7 @@
 <!--Todo:Mbuso check how this works-->
 <!-- Bootstrap core JavaScript -->
 <script src="../vendor/jquery/jquery.min.js"></script>
-<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 
 <!-- Menu Toggle Script -->
 <!--Todo:Mbuso check how this works-->
