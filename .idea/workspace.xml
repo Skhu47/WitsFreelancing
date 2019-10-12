@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="" />
+    <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/jobsOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/jobsOverview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/html/jobsOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/jobsOverview.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,13 +178,6 @@
       <workItem from="1570791023549" duration="228000" />
       <workItem from="1570858928739" duration="8206000" />
       <workItem from="1570899894787" duration="1412000" />
-    </task>
-    <task id="LOCAL-00036" summary="getting jobs and showing it">
-      <created>1566242877472</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1566242877472</updated>
     </task>
     <task id="LOCAL-00037" summary="a whole lot of changes">
       <created>1566251208287</created>
@@ -513,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570905991717</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="fixed homePage">
+      <created>1570906589234</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1570906589234</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TodoView">
@@ -560,7 +569,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="populating the lists" />
     <MESSAGE value="complaint working" />
     <MESSAGE value="assign and notifications" />
     <MESSAGE value="start from login" />
@@ -585,6 +593,7 @@
     <MESSAGE value="post complaint working well for both users" />
     <MESSAGE value="post complaint working well for both users, with correct job id" />
     <MESSAGE value="fixed bidders not appearing" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed bidders not appearing" />
+    <MESSAGE value="fixed homePage" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed homePage" />
   </component>
 </project>
