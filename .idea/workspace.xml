@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/browser.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/browser.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/Javascript/ViewJob.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/Javascript/ViewJob.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/jobsOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/jobsOverview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/mainpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/postJob.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/postJob.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/viewJob.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/viewJob.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/viewMyJobs.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/viewMyJobs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/html/viewSpecificJobPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/html/viewSpecificJobPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/browser/www/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/Javascript/ViewJob.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Javascript/ViewJob.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/html/viewSpecificJobPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/html/viewSpecificJobPage.html" afterDir="false" />
-    </list>
+    <list default="true" id="8bbf6e63-e815-4635-85ef-24ac03a13fe9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,20 +169,6 @@
       <workItem from="1570791023549" duration="228000" />
       <workItem from="1570858928739" duration="8206000" />
       <workItem from="1570899894787" duration="1412000" />
-    </task>
-    <task id="LOCAL-00034" summary="removed student number">
-      <created>1566238517617</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1566238517617</updated>
-    </task>
-    <task id="LOCAL-00035" summary="fixed the bug of posting jobs">
-      <created>1566238777132</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1566238777132</updated>
     </task>
     <task id="LOCAL-00036" summary="getting jobs and showing it">
       <created>1566242877472</created>
@@ -529,7 +499,21 @@
       <option name="project" value="LOCAL" />
       <updated>1570870546705</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="post complaint working well for both users, with correct job id">
+      <created>1570905869434</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1570905869434</updated>
+    </task>
+    <task id="LOCAL-00084" summary="fixed bidders not appearing">
+      <created>1570905991717</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1570905991717</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TodoView">
@@ -576,7 +560,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="transitions" />
     <MESSAGE value="populating the lists" />
     <MESSAGE value="complaint working" />
     <MESSAGE value="assign and notifications" />
@@ -601,6 +584,7 @@
     <MESSAGE value="rate bug fixed" />
     <MESSAGE value="post complaint working well for both users" />
     <MESSAGE value="post complaint working well for both users, with correct job id" />
-    <option name="LAST_COMMIT_MESSAGE" value="post complaint working well for both users, with correct job id" />
+    <MESSAGE value="fixed bidders not appearing" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bidders not appearing" />
   </component>
 </project>
