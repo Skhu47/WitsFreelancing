@@ -8,6 +8,8 @@ before_script:
   - npm install -g jasmine
   - jasmine init
   - jasmine examples
+  - npm install -g cordova
   - cordova platform add android
+
 script:
   - jasmine
