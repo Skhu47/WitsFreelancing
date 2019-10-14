@@ -3,7 +3,6 @@ Travis CI [![Build Status](https://travis-ci.com/MbusoMakitla/WitsFreelancing.sv
 
 CodeCov [![codecov](https://codecov.io/gh/PermanentPortionX/WitsFreelancing/branch/master/graph/badge.svg)](https://codecov.io/gh/PermanentPortionX/WitsFreelancing)
  
-Serverside repo can be found here https://github.com/PermanentPortionX/Wits-freelancing-ServerSide
 
 https://img.shields.io/appveyor/ci/MbusoMakitla/WitsFreelancing?style=plastic
 
