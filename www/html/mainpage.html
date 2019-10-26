@@ -18,7 +18,9 @@
   <script src="../Javascript/Account.js"></script>
 
   <link href="../css/floating%20button.css" rel="stylesheet">
-
+<!--  For support-->
+  <link rel="stylesheet" type="text/css" href="../vendor/font-awesome/css/font-awesome.css" />
+  <script type="text/javascript" src="../vendor/bootstrap/js/jquery-1.10.2.min.js"></script>
   <title>Main page</title>
 
   <!-- Bootstrap core CSS -->
@@ -347,29 +349,210 @@
       </div>
     </div>
 
-
-
   </div>
+
+
+    <!--Support page-->
+    <div class="container">
+      <br />
+      <br />
+      <br />
+
+      <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        This section contains information, related to <strong>Wits freelancers</strong> and its users. If you cannot find an answer to your question,
+        make sure to <a href="#">contact us</a>.
+      </div>
+
+      <br />
+    </div>
+      <div class="panel-group" id="accordion">
+        <div class="faqHeader">General questions</div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Who can use the platform?</a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+              Any registered Witsie, can use the the platform.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">I want to start freelancing - what are the steps?</a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+              The steps involved in this process are really simple. All you need to do is:
+              <ul>
+                <li>Use your Wits credentials to login</li>
+                <li>Go to <strong>browse jobs</strong> and search for a project you would like to work on.</li>
+                <li>The next step is to bid, then wait to be assigned the job </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Is the system secure?</a>
+            </h4>
+          </div>
+          <div id="collapseFive" class="panel-collapse collapse">
+            <div class="panel-body">
+              Our system is encrypted back to back and all transactions are secure.
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Why freelance on this site?</a>
+            </h4>
+          </div>
+          <div id="collapseSix" class="panel-collapse collapse">
+            <div class="panel-body">
+              Reasons why yu should freelance on our platform:
+              <ul>
+                <li>Trusted users</li>
+                <li>Fast response/approval times.</li>
+                <li>We are not an exclusive marketplace. </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">What are the payment options?</a>
+            </h4>
+          </div>
+          <div id="collapseEight" class="panel-collapse collapse">
+            <div class="panel-body">
+              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">When do I get paid?</a>
+            </h4>
+          </div>
+          <div id="collapseNine" class="panel-collapse collapse">
+            <div class="panel-body">
+              As soon as the job is completed and there are no complaints.
+            </div>
+          </div>
+        </div>
+
+
+<!--Todo: This should appear when "contact us is chosen"-->
+
+        <section class="mb-4">
+
+          <!--Section heading-->
+          <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+          <!--Section description-->
+          <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+            a matter of hours to help you.</p>
+
+          <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-9 mb-md-0 mb-5">
+              <form id="contact-form" name="contact-form" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form mb-0">
+                      <label for="subject" class="">Subject</label>
+                      <input type="text" id="subject" name="subject" class="form-control">
+
+                    </div>
+                  </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+
+                    <div class="md-form">
+                      <label for="message">Your message</label>
+                      <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+
+                    </div>
+
+                  </div>
+                </div>
+                <!--Grid row-->
+
+              </form>
+
+              <div class="text-center text-md-left">
+                <br><a class="btn btn-primary" onclick="">Send</a>
+              </div>
+              <div class="status"></div>
+            </div>
+          </div>
+
+        </section>
+    <style>
+      .faqHeader {
+        font-size: 27px;
+        margin: 20px;
+      }
+
+      .panel-heading [data-toggle="collapse"]:after {
+        font-family: 'Glyphicons Halflings';
+        content: "\e072"; /* "play" icon */
+        float: right;
+        color: #F58723;
+        font-size: 18px;
+        line-height: 22px;
+        /* rotate "play" icon from > (right arrow) to down arrow */
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+      }
+
+      .panel-title{
+        border-radius: 7px;
+        background-color: #f5f5f5;
+      }
+      .panel-heading [data-toggle="collapse"].collapsed:after {
+        /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        color: #454444;
+      }
+    </style>
+
+    <!-- Bootstrap FAQ - END -->
+
+<!--content ends here-->
+      </div>
 </div>
-
-<!-- /#page-content-wrapper -->
-
-
-
-
-<!-- /#wrapper -->
-
-<!--Todo:Mbuso check how this works-->
-<!-- Bootstrap core JavaScript -->
-<script src="../vendor/jquery/jquery.min.js"></script>
-
-<!-- Menu Toggle Script -->
-<!--Todo:Mbuso check how this works-->
-<script>
-  $("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
-  });
-</script>
+</div>
 </body>
 </html>
