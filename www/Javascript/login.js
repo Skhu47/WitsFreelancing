@@ -1,6 +1,6 @@
 $(document).ready(function(){
+    autoLogin();
     $("#login_btn").on("click", (e) =>{
-
 
 
         let userNameInput = $('#Username');
@@ -41,6 +41,7 @@ $(document).ready(function(){
                         localStorage.setItem("Name", jsonResults["name"]);
                         localStorage.setItem("Surname", jsonResults["surname"]);
                         localStorage.setItem("Stud_No", userNameInput.val());
+                        localStorage.setItem("Password", userPassInput.val());
 
 
                         $("#div1").load("mainpage.html");
@@ -56,4 +57,16 @@ $(document).ready(function(){
             );
         }
     });
+
 });
+function autoLogin() {
+    let userName = localStorage.getItem("Stud_No");
+    let userPass = localStorage.getItem("Password");
+
+    if(userName !== null && userPass !== null){
+        $('#Username').val(userName);
+        $('#Password').val(userPass);
+        $("#div1").load("mainpage.html");
+        // $("#div1").onload("mainpage.html");
+    }
+}
