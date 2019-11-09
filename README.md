@@ -89,9 +89,3 @@ Test the App on an Emulator or Device
 SDKs for mobile platforms often come bundled with emulators that execute a device image, so that you can launch the app from the home screen and see how it interacts with many platform features. Run a command such as the following to rebuild the app and view it within a specific platform's emulator:
 
     $ cordova emulate android
-
-## Running the tests
- Travis CI [![Build Status](https://travis-ci.com/MbusoMakitla/WitsFreelancing.svg?branch=master)](https://travis-ci.com/MbusoMakitla/WitsFreelancing)
- 
- ## code coverage
- [![Coverage Status](https://coveralls.io/repos/github/MbusoMakitla/WitsFreelancing/badge.svg?branch=master)](https://coveralls.io/github/MbusoMakitla/WitsFreelancing?branch=master)
