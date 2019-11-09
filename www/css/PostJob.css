@@ -1,0 +1,173 @@
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.postJob{
+    width: 90%;
+    margin: 10px auto auto;
+}
+
+.postJob label{
+    width: 100%;
+}
+
+.postJob label input{
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.postJob label select{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.postJob label textarea{
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    resize: none;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 19px;
+}
+
+.postJob button{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 45px;
+    background-color: #000000;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: CGL, serif;
+    padding: 5px 10px;
+}
+
+.postJob button:hover{
+    background-color: #696969;
+}
+
+@media screen and (min-width: 768px){
+    .postJob{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding: 0;
+    }
+}
+
+.progressHolder{
+    background-color: white;
+    height: 60px;
+    width: 170px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.serverResponse{
+    background-color: white;
+    border-radius: 10px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 15px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 200px;
+    cursor: context-menu;
+    display: none;
+}
+
+.pleaseWait{
+    float: left;
+    font-family: 'CGLI', cursive,  Helvetica;
+    font-size: 20px;
+    text-align: center;
+}
+
+.loader {
+    border: 10px solid #000000;
+    border-radius: 50%;
+    border-top: 10px solid #d6db10;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    float: right;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.serverResponse p{
+    text-align: center;
+    margin: 15px;
+}
+
+.serverResponse button{
+    background-color: transparent;
+    float: right;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.textDeco{
+    font-family: CGL, serif;
+    font-size: 20px;
+}

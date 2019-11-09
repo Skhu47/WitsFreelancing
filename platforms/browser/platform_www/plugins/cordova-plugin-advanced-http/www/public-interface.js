@@ -1,5 +1,5 @@
-cordova.define("cordova-plugin-advanced-http.public-interface", function(require, exports, module) { module.exports = function init(exec, cookieHandler, urlUtil, helpers, globalConfigs) {
-  const publicInterface = {
+cordova.define("cordova-plugin-advanced-http.public-interface", function(require, exports, module) { module.exports = function init(exec, cookieHandler, urlUtil, helpers, globalConfigs, errorCodes) {
+  var publicInterface = {
     getBasicAuthHeader: getBasicAuthHeader,
     useBasicAuth: useBasicAuth,
     getHeaders: getHeaders,
@@ -28,7 +28,8 @@ cordova.define("cordova-plugin-advanced-http.public-interface", function(require
     delete: del,
     head: head,
     uploadFile: uploadFile,
-    downloadFile: downloadFile
+    downloadFile: downloadFile,
+    ErrorCode: errorCodes
   };
 
   function getBasicAuthHeader(username, password) {
@@ -145,7 +146,7 @@ cordova.define("cordova-plugin-advanced-http.public-interface", function(require
     var headers = helpers.getMergedHeaders(url, options.headers, globalConfigs.headers);
 
     var onFail = helpers.injectCookieHandler(url, failure);
-    var onSuccess = helpers.injectCookieHandler(url, helpers.injectRawResponseHandler(options.responseType, success));
+    var onSuccess = helpers.injectCookieHandler(url, helpers.injectRawResponseHandler(options.responseType, success, failure));
 
     switch (options.method) {
       case 'post':
@@ -154,10 +155,12 @@ cordova.define("cordova-plugin-advanced-http.public-interface", function(require
         var data = helpers.getProcessedData(options.data, options.serializer);
         return exec(onSuccess, onFail, 'CordovaHttpPlugin', options.method, [url, data, options.serializer, headers, options.timeout, options.followRedirect, options.responseType]);
       case 'upload':
-        return exec(onSuccess, onFail, 'CordovaHttpPlugin', 'uploadFile', [url, headers, options.filePath, options.name, options.timeout, options.followRedirect, options.responseType]);
+        var fileOptions = helpers.checkUploadFileOptions(options.filePath, options.name);
+        return exec(onSuccess, onFail, 'CordovaHttpPlugin', 'uploadFiles', [url, headers, fileOptions.filePaths, fileOptions.names, options.timeout, options.followRedirect, options.responseType]);
       case 'download':
+        var filePath = helpers.checkDownloadFilePath(options.filePath);
         var onDownloadSuccess = helpers.injectCookieHandler(url, helpers.injectFileEntryHandler(success));
-        return exec(onDownloadSuccess, onFail, 'CordovaHttpPlugin', 'downloadFile', [url, headers, options.filePath, options.timeout, options.followRedirect]);
+        return exec(onDownloadSuccess, onFail, 'CordovaHttpPlugin', 'downloadFile', [url, headers, filePath, options.timeout, options.followRedirect]);
       default:
         return exec(onSuccess, onFail, 'CordovaHttpPlugin', options.method, [url, headers, options.timeout, options.followRedirect, options.responseType]);
     }

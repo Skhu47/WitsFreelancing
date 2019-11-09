@@ -179,6 +179,11 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "pluginId": "cordova-plugin-advanced-http"
     },
     {
+      "id": "cordova-plugin-advanced-http.error-codes",
+      "file": "plugins/cordova-plugin-advanced-http/www/error-codes.js",
+      "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
       "id": "cordova-plugin-advanced-http.global-configs",
       "file": "plugins/cordova-plugin-advanced-http/www/global-configs.js",
       "pluginId": "cordova-plugin-advanced-http"
@@ -230,11 +235,29 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "cordova.plugin.http"
       ]
+    },
+    {
+      "id": "cordova-plugin-network-information.network",
+      "file": "plugins/cordova-plugin-network-information/www/network.js",
+      "pluginId": "cordova-plugin-network-information",
+      "clobbers": [
+        "navigator.connection",
+        "navigator.network.connection"
+      ]
+    },
+    {
+      "id": "cordova-plugin-network-information.Connection",
+      "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+      "pluginId": "cordova-plugin-network-information",
+      "clobbers": [
+        "Connection"
+      ]
     }
   ];
   module.exports.metadata = {
     "cordova-plugin-file": "6.0.2",
-    "cordova-plugin-advanced-http": "2.1.1",
-    "cordova-plugin-whitelist": "1.3.4"
+    "cordova-plugin-advanced-http": "2.2.0",
+    "cordova-plugin-whitelist": "1.3.4",
+    "cordova-plugin-network-information": "2.0.2"
   };
 });

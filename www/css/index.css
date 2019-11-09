@@ -1,0 +1,209 @@
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(-90deg, #34dbeb, #153bc2);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;/*auto 100%;*/
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+@font-face{
+    font-family: "CGLI";
+    src: url("../fonts/CGLI.ttf") format("ttf");
+    src: url("../fonts/CGLI.woff") format("woff");
+    src: url("../fonts/CGLI.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.mainHolder{
+    position:absolute;
+    left:51%;
+    top:45%;
+    width: 290px;
+    height: 290px;
+    margin-left:-145px; /* -1/2 width */
+    margin-top:-145px; /* -1/2 height */
+}
+
+.inputTextFields{
+    width: 250px;
+    height: 40px;
+    margin: 5px;
+    background: transparent;
+    border-left: none;
+    border-right: none;
+    border-top: 5px;
+    border-bottom: 2px solid white;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+}
+
+.inputTextFields:focus{
+    outline: none;
+}
+
+.inputTextFields::placeholder{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    outline: none;
+}
+
+.logInButton{
+    width: 255px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.logInButton:focus{
+    outline: none;
+}
+
+.head1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: 'CGLI', cursive,  Helvetica;
+    font-size: 70px;
+    margin: 5px;
+}
+
+.guideText{
+    margin-top: 15px;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.guideText::selection{
+    outline:none;
+    background-color: transparent;
+    color: transparent;
+}
+
+.accountText{
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    text-decoration: underline;
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.accountText::selection{
+    outline:none;
+    background-color: transparent;
+    color: transparent;
+}
+
+.pleaseWait{
+    float: left;
+    font-family: 'CGLI', cursive,  Helvetica;
+    font-size: 20px;
+    text-align: center;
+}
+
+.loader {
+    border: 10px solid #000000;
+    border-radius: 50%;
+    border-top: 10px solid #d6db10;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    float: right;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.progressHolder{
+    background-color: white;
+    height: 60px;
+    width: 170px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.serverResponse{
+    background-color: white;
+    border-radius: 10px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 15px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 200px;
+    cursor: context-menu;
+    display: none;
+}
+
+.serverResponse p{
+    text-align: center;
+    margin: 15px;
+}
+
+.serverResponse button{
+    background-color: transparent;
+    float: right;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}

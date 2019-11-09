@@ -14,7 +14,7 @@ This is a fork of [Wymsee's Cordova-HTTP plugin](https://github.com/wymsee/cordo
 
  - Background threading - all requests are done in a background thread.
  - Handling of HTTP code 401 - read more at [Issue CB-2415](https://issues.apache.org/jira/browse/CB-2415).
- - SSL Pinning - read more at [LumberBlog](http://blog.lumberlabs.com/2012/04/why-app-developers-should-care-about.html).
+ - SSL Pinning
 
 ## Updates
 
@@ -108,7 +108,7 @@ cordova.plugin.http.setRequestTimeout(5.0);
 Configure if it should follow redirects automatically. This defaults to true.
 
 ```js
-cordova.plugin.setFollowRedirect(true);
+cordova.plugin.http.setFollowRedirect(true);
 ```
 
 ### getCookieString
@@ -192,8 +192,10 @@ Remove all cookies associated with a given URL.
 cordova.plugin.http.removeCookies(url, callback);
 ```
 
-### sendRequest
-Execute a HTTP request.  Takes a URL and an options object. This is the internally used implementation of the following shorthand functions ([post](#post), [get](#get), [put](#put), [patch](#patch), [delete](#delete), [head](#head), [uploadFile](#uploadFile) and [downloadFile](#downloadFile)). You can use this function, if you want to override global settings for each single request.
+### sendRequest<a name="sendRequest"></a>
+Execute a HTTP request.  Takes a URL and an options object. This is the internally used implementation of the following shorthand functions ([post](#post), [get](#get), [put](#put), [patch](#patch), [delete](#delete), [head](#head), [uploadFile](#uploadFile) and [downloadFile](#downloadFile)). You can use this function, if you want to override global settings for each single request. Check the documentation of the respective shorthand function for details on what is returned on success and failure.
+
+:warning: You need to encode the base URL yourself if it contains special characters like whitespaces. You can use `encodeURI()` for this purpose.
 
 The options object contains following keys:
 
@@ -203,14 +205,15 @@ The options object contains following keys:
 * `params`: query params to be appended to the URL (only applicable on `get`, `head`, `delete`, `upload` or `download` methods)
 * `serializer`: data serializer to be used (only applicable on `post`, `put` or `patch` methods), defaults to global serializer value, see [setDataSerializer](#setDataSerializer) for supported values
 * `responseType`: expected response type, defaults to `text`, needs to be one of the following values:
-  * `text`: data is returned as decoded string, use this for all kinds of string responses (e.g. JSON, XML, HTML, plain text, etc.)
+  * `text`: data is returned as decoded string, use this for all kinds of string responses (e.g. XML, HTML, plain text, etc.)
+  * `json` data is treated as JSON and returned as parsed object
   * `arraybuffer`: data is returned as [ArrayBuffer instance](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer)
   * `blob`: data is returned as [Blob instance](https://developer.mozilla.org/en-US/docs/Web/API/Blob)
 * `timeout`: timeout value for the request in seconds, defaults to global timeout value
 * `followRedirect`: enable or disable automatically following redirects
 * `headers`: headers object (key value pair), will be merged with global values
-* `filePath`: filePath to be used during upload and download see [uploadFile](#uploadFile) and [downloadFile](#downloadFile) for detailed information
-* `name`: name to be used during upload see [uploadFile](#uploadFile) for detailed information
+* `filePath`: file path(s) to be used during upload and download see [uploadFile](#uploadFile) and [downloadFile](#downloadFile) for detailed information
+* `name`: name(s) to be used during upload see [uploadFile](#uploadFile) for detailed information
 
 Here's a quick example:
 
@@ -235,6 +238,18 @@ cordova.plugin.http.sendRequest('https://google.com/', options, function(respons
 
 ### post<a name="post"></a>
 Execute a POST request.  Takes a URL, data, and headers.
+
+```js
+cordova.plugin.http.post('https://google.com/', {
+  test: 'testString'
+}, {
+  Authorization: 'OAuth2: token'
+}, function(response) {
+  console.log(response.status);
+}, function(response) {
+  console.error(response.error);
+});
+```
 
 #### success
 The success function receives a response object with 4 properties: status, data, url, and headers.  **status** is the HTTP response code as numeric value. **data** is the response from the server as a string. **url** is the final URL obtained after any redirects as a string. **headers** is an object with the headers. The keys of the returned object are the header names and the values are the respective header values. All header names are lowercase.
@@ -278,7 +293,7 @@ cordova.plugin.http.post('https://google.com/', {
 ```
 
 #### failure
-The error function receives a response object with 4 properties: status, error, url, and headers (url and headers being optional).  **status** is the HTTP response code as numeric value. **error** is the error response from the server as a string. **url** is the final URL obtained after any redirects as a string. **headers** is an object with the headers. The keys of the returned object are the header names and the values are the respective header values. All header names are lowercase.
+The error function receives a response object with 4 properties: status, error, url, and headers (url and headers being optional).  **status** is a HTTP response code or an internal error code. Positive values are HTTP status codes whereas negative values do represent internal error codes. **error** is the error response from the server as a string or an internal error message. **url** is the final URL obtained after any redirects as a string. **headers** is an object with the headers. The keys of the returned object are the header names and the values are the respective header values. All header names are lowercase.
 
 Here's a quick example:
 
@@ -292,6 +307,8 @@ Here's a quick example:
   }
 }
 ```
+
+:warning: An enumeration style object is exposed as `cordova.plugin.http.ErrorCode`. You can use it to check against internal error codes.
 
 ### get<a name="get"></a>
 Execute a GET request.  Takes a URL, parameters, and headers.  See the [post](#post) documentation for details on what is returned on success and failure.
@@ -320,13 +337,21 @@ Execute a DELETE request.  Takes a URL, parameters, and headers.  See the [post]
 Execute a HEAD request.  Takes a URL, parameters, and headers.  See the [post](#post) documentation for details on what is returned on success and failure.
 
 ### uploadFile<a name="uploadFile"></a>
-Uploads a file saved on the device.  Takes a URL, parameters, headers, filePath, and the name of the parameter to pass the file along as.  See the [post](#post) documentation for details on what is returned on success and failure.
+Uploads one or more file(s) saved on the device.  Takes a URL, parameters, headers, filePath(s), and the name(s) of the parameter to pass the file along as.  See the [post](#post) documentation for details on what is returned on success and failure.
 
 ```js
+// e.g. for single file
+const filePath = 'file:///somepicture.jpg';
+const name = 'picture';
+
+// e.g. for multiple files
+const filePath = ['file:///somepicture.jpg', 'file:///somedocument.doc'];
+const name = ['picture', 'document'];
+
 cordova.plugin.http.uploadFile("https://google.com/", {
     id: '12',
     message: 'test'
-}, { Authorization: 'OAuth2: token' }, 'file:///somepicture.jpg', 'picture', function(response) {
+}, { Authorization: 'OAuth2: token' }, filePath, name, function(response) {
     console.log(response.status);
 }, function(response) {
     console.error(response.error);

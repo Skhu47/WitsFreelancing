@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src	'self' 'unsafe-inline' *; img-src 'self' data: *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="../css/AvailableJobs.css">
+    <link rel="stylesheet" href="../css/MyJobs.css">
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <title>My Jobs</title>
+    <link rel="stylesheet" href="../css/ViewJob.css">
+
+
+</head>
+<body>
+
+<div id="rateBar" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Rate</p>
+        <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+        </div>
+
+        <button class="rateButton" id="rateButton">Rate</button>
+    </div>
+</div>
+
+<div id="snackbar">Some text some message..</div>
+<header>
+    <p class="head1">My Jobs</p>
+</header>
+<section>
+    <ul id="jobsHolder">
+        <!--<li>
+            <div class="card">
+                <p class="title">Job Title</p>
+                <p class="category">Category</p>
+                <p class="payment">Payment Range</p>
+                <p class="deadLine">Deadline</p>
+                <p class="greenTag">Status</p>
+                <button>Pay</button>
+                <button>Rate</button>
+            </div>
+        </li>-->
+    </ul>
+</section>
+
+<script type="text/javascript" src="../cordova.js"></script>
+<script src="../js/MyJobs.js"></script>
+
+</body>
+</html>

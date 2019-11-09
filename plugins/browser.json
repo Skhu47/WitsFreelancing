@@ -7,16 +7,19 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-advanced-http": {
-      "PACKAGE_NAME": "com.qubit3.0"
-    },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.qubit3.0"
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-advanced-http": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.freelancing"
     }
   },
   "dependent_plugins": {
     "cordova-plugin-file": {
-      "PACKAGE_NAME": "com.qubit3.0"
+      "PACKAGE_NAME": "io.cordova.hellocordova"
     }
   }
 }

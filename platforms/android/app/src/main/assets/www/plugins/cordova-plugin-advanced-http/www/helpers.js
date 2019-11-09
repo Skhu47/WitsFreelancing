@@ -1,28 +1,30 @@
 cordova.define("cordova-plugin-advanced-http.helpers", function(require, exports, module) {
-module.exports = function init(jsUtil, cookieHandler, messages, base64) {
+module.exports = function init(jsUtil, cookieHandler, messages, base64, errorCodes) {
   var validSerializers = ['urlencoded', 'json', 'utf8'];
   var validCertModes = ['default', 'nocheck', 'pinned', 'legacy'];
   var validClientAuthModes = ['none', 'systemstore', 'buffer'];
   var validHttpMethods = ['get', 'put', 'post', 'patch', 'head', 'delete', 'upload', 'download'];
-  var validResponseTypes = ['text','arraybuffer', 'blob'];
+  var validResponseTypes = ['text', 'json', 'arraybuffer', 'blob'];
 
   var interface = {
     b64EncodeUnicode: b64EncodeUnicode,
-    checkSerializer: checkSerializer,
-    checkSSLCertMode: checkSSLCertMode,
     checkClientAuthMode: checkClientAuthMode,
     checkClientAuthOptions: checkClientAuthOptions,
+    checkDownloadFilePath: checkDownloadFilePath,
+    checkFollowRedirectValue: checkFollowRedirectValue,
     checkForBlacklistedHeaderKey: checkForBlacklistedHeaderKey,
     checkForInvalidHeaderValue: checkForInvalidHeaderValue,
+    checkSerializer: checkSerializer,
+    checkSSLCertMode: checkSSLCertMode,
     checkTimeoutValue: checkTimeoutValue,
-    checkFollowRedirectValue: checkFollowRedirectValue,
-    injectCookieHandler: injectCookieHandler,
-    injectRawResponseHandler: injectRawResponseHandler,
-    injectFileEntryHandler: injectFileEntryHandler,
+    checkUploadFileOptions: checkUploadFileOptions,
     getMergedHeaders: getMergedHeaders,
     getProcessedData: getProcessedData,
     handleMissingCallbacks: handleMissingCallbacks,
-    handleMissingOptions: handleMissingOptions
+    handleMissingOptions: handleMissingOptions,
+    injectCookieHandler: injectCookieHandler,
+    injectFileEntryHandler: injectFileEntryHandler,
+    injectRawResponseHandler: injectRawResponseHandler,
   };
 
   // expose all functions for testing purposes
@@ -93,6 +95,20 @@ module.exports = function init(jsUtil, cookieHandler, messages, base64) {
     }
 
     return obj;
+  }
+
+  function checkArray(array, allowedDataTypes, onInvalidValueMessage) {
+    if (jsUtil.getTypeOf(array) !== 'Array') {
+      throw new Error(onInvalidValueMessage);
+    }
+
+    for (var i = 0; i < array.length; ++i) {
+      if (allowedDataTypes.indexOf(jsUtil.getTypeOf(array[i])) === -1) {
+        throw new Error(onInvalidValueMessage);
+      }
+    }
+
+    return array;
   }
 
   function checkHttpMethod(method) {
@@ -173,7 +189,7 @@ module.exports = function init(jsUtil, cookieHandler, messages, base64) {
 
   function checkForInvalidHeaderValue(value) {
     if (jsUtil.getTypeOf(value) !== 'String') {
-      throw new Error(messages.INVALID_HEADERS_VALUE);
+      throw new Error(messages.INVALID_HEADER_VALUE);
     }
 
     return value;
@@ -196,11 +212,44 @@ module.exports = function init(jsUtil, cookieHandler, messages, base64) {
   }
 
   function checkHeadersObject(headers) {
-    return checkKeyValuePairObject(headers, ['String'], messages.INVALID_HEADERS_VALUE);
+    return checkKeyValuePairObject(headers, ['String'], messages.TYPE_MISMATCH_HEADERS);
   }
 
   function checkParamsObject(params) {
-    return checkKeyValuePairObject(params, ['String', 'Array'], messages.INVALID_PARAMS_VALUE);
+    return checkKeyValuePairObject(params, ['String', 'Array'], messages.TYPE_MISMATCH_PARAMS);
+  }
+
+  function checkDownloadFilePath(filePath) {
+    if (!filePath || jsUtil.getTypeOf(filePath) !== 'String') {
+      throw new Error(messages.INVALID_DOWNLOAD_FILE_PATH);
+    }
+
+    return filePath;
+  }
+
+  function checkUploadFileOptions(filePaths, names) {
+    if (jsUtil.getTypeOf(filePaths) === 'String') {
+      filePaths = [filePaths];
+    }
+
+    if (jsUtil.getTypeOf(names) === 'String') {
+      names = [names];
+    }
+
+    var opts = {
+      filePaths: checkArray(filePaths, ['String'], messages.TYPE_MISMATCH_FILE_PATHS),
+      names: checkArray(names, ['String'], messages.TYPE_MISMATCH_NAMES)
+    };
+
+    if (!opts.filePaths.length) {
+      throw new Error(messages.EMPTY_FILE_PATHS);
+    }
+
+    if (!opts.names.length) {
+      throw new Error(messages.EMPTY_NAMES);
+    }
+
+    return opts;
   }
 
   function resolveCookieString(headers) {
@@ -235,30 +284,43 @@ module.exports = function init(jsUtil, cookieHandler, messages, base64) {
     }
   }
 
-  function injectRawResponseHandler(responseType, cb) {
+  function injectRawResponseHandler(responseType, success, failure) {
     return function (response) {
       var dataType = jsUtil.getTypeOf(response.data);
 
       // don't need post-processing if it's already binary type (on browser platform)
       if (dataType === 'ArrayBuffer' || dataType === 'Blob') {
-        return cb(response);
+        return success(response);
       }
 
-      // arraybuffer
-      if (responseType === validResponseTypes[1]) {
-        var buffer = base64.toArrayBuffer(response.data);
-        response.data = buffer;
-      }
+      try {
+        // json
+        if (responseType === validResponseTypes[1]) {
+          response.data = JSON.parse(response.data);
+        }
 
-      // blob
-      if (responseType === validResponseTypes[2]) {
-        var buffer = base64.toArrayBuffer(response.data);
-        var type = response.headers['content-type'] || '';
-        var blob = new Blob([ buffer ], { type: type });
-        response.data = blob;
-      }
+        // arraybuffer
+        else if (responseType === validResponseTypes[2]) {
+          response.data = base64.toArrayBuffer(response.data);
+        }
 
-      cb(response);
+        // blob
+        else if (responseType === validResponseTypes[3]) {
+          var buffer = base64.toArrayBuffer(response.data);
+          var type = response.headers['content-type'] || '';
+          var blob = new Blob([ buffer ], { type: type });
+          response.data = blob;
+        }
+
+        success(response);
+      } catch (error) {
+        failure({
+          status: errorCodes.POST_PROCESSING_FAILED,
+          error: messages.POST_PROCESSING_FAILED + ' ' + error.message,
+          url: response.url,
+          headers: response.headers
+        });
+      }
     }
   }
 
@@ -312,7 +374,7 @@ module.exports = function init(jsUtil, cookieHandler, messages, base64) {
     var allowedDataTypes = getAllowedDataTypes(dataSerializer);
 
     if (allowedDataTypes.indexOf(currentDataType) === -1) {
-      throw new Error(messages.DATA_TYPE_MISMATCH + ' ' + allowedDataTypes.join(', '));
+      throw new Error(messages.TYPE_MISMATCH_DATA + ' ' + allowedDataTypes.join(', '));
     }
 
     if (dataSerializer === 'utf8') {
@@ -336,16 +398,16 @@ module.exports = function init(jsUtil, cookieHandler, messages, base64) {
     options = options || {};
 
     return {
+      data: jsUtil.getTypeOf(options.data) === 'Undefined' ? null : options.data,
+      filePath: options.filePath,
+      followRedirect: checkFollowRedirectValue(options.followRedirect || globals.followRedirect),
+      headers: checkHeadersObject(options.headers || {}),
       method: checkHttpMethod(options.method || validHttpMethods[0]),
+      name: options.name,
+      params: checkParamsObject(options.params || {}),
       responseType: checkResponseType(options.responseType || validResponseTypes[0]),
       serializer: checkSerializer(options.serializer || globals.serializer),
       timeout: checkTimeoutValue(options.timeout || globals.timeout),
-      followRedirect: checkFollowRedirectValue(options.followRedirect || globals.followRedirect),
-      headers: checkHeadersObject(options.headers || {}),
-      params: checkParamsObject(options.params || {}),
-      data: jsUtil.getTypeOf(options.data) === 'Undefined' ? null : options.data,
-      filePath: options.filePath || '',
-      name: options.name || ''
     };
   }
 };

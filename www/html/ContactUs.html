@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src	'self' 'unsafe-inline' *; img-src 'self' data: *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="../css/PostJob.css">
+    <link rel="stylesheet" type="text/css" href="../css/MainPage.css">
+    <title>Contact Us</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+
+<div id="overlay">
+    <div id="progressDiv" class="progressHolder">
+        <div id="progress" class="loader"></div>
+        <p id="pleaseWaitText" class="pleaseWait">Please Wait</p>
+    </div>
+
+    <div id="serverResponseDiv" class="serverResponse">
+        <p id="message">Login failed due to incorrect credentials or the server might be down</p>
+        <button id="serverResponseButton">Okay</button>
+    </div>
+</div>
+
+<header>
+    <div class="overLap"><p id="headTitle" class="head1">Contact Us</p></div>
+</header>
+
+<section>
+    <form class="postJob">
+        <label>
+            <span class="textDeco">Subject:</span><br/>
+            <input id="title" type="text" required placeholder="Please Include your student number in Subject">
+        </label><br/>
+
+        <label>
+            <span class="textDeco">Message:</span><br/>
+            <textarea id="description" required></textarea>
+        </label><br/>
+
+        <button id="Send">Send</button>
+    </form>
+</section>
+
+<script type="text/javascript" src="../cordova.js"></script>
+<script type="text/javascript" src="../js/ContactUs.js"></script>
+</body>
+</html>

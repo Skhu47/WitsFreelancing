@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src	'self' 'unsafe-inline' *; img-src 'self' data: *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="../css/Account.css">
+    <title>Account</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+
+    <div id="snackbar">Some text some message..</div>
+
+    <header>
+        <p class="head1">Account</p>
+    </header>
+
+    <section class="card">
+        <p id="amountP" class="amount">AMOUNT HERE</p>
+        <p id="userP" class="user">User Here</p>
+
+        <div class="transactions">
+            <ul id="transactionHolder">
+                <!--<li>
+                    <div class="transactionsItem">
+                        <p class="transactionDateTime">Transaction date time</p>
+                        <p class="transactionReason">Transaction reason</p>
+                        <p class="transactionAmount">Amount</p>
+                    </div>
+                </li>-->
+
+            </ul>
+        </div>
+    </section>
+
+    <img id="depositButton" class="floatingButton" src="../img/add_funds.png" alt="add funds button">
+
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../js/Account.js"></script>
+</body>
+</html>

@@ -185,6 +185,11 @@ module.exports = [
         "pluginId": "cordova-plugin-advanced-http"
     },
     {
+        "file": "plugins/cordova-plugin-advanced-http/www/error-codes.js",
+        "id": "cordova-plugin-advanced-http.error-codes",
+        "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
         "file": "plugins/cordova-plugin-advanced-http/www/global-configs.js",
         "id": "cordova-plugin-advanced-http.global-configs",
         "pluginId": "cordova-plugin-advanced-http"
@@ -242,14 +247,38 @@ module.exports = [
         "id": "cordova-plugin-advanced-http.http-proxy",
         "pluginId": "cordova-plugin-advanced-http",
         "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-network-information/www/network.js",
+        "id": "cordova-plugin-network-information.network",
+        "pluginId": "cordova-plugin-network-information",
+        "clobbers": [
+            "navigator.connection",
+            "navigator.network.connection"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+        "id": "cordova-plugin-network-information.Connection",
+        "pluginId": "cordova-plugin-network-information",
+        "clobbers": [
+            "Connection"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-network-information/src/browser/network.js",
+        "id": "cordova-plugin-network-information.NetworkInfoProxy",
+        "pluginId": "cordova-plugin-network-information",
+        "runs": true
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
+    "cordova-plugin-whitelist": "1.3.4",
     "cordova-plugin-file": "6.0.2",
-    "cordova-plugin-advanced-http": "2.1.1",
-    "cordova-plugin-whitelist": "1.3.4"
+    "cordova-plugin-advanced-http": "2.2.0",
+    "cordova-plugin-network-information": "2.0.2"
 }
 // BOTTOM OF METADATA
 });

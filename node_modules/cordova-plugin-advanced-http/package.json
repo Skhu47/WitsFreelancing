@@ -1,38 +1,35 @@
 {
-  "_args": [
-    [
-      "cordova-plugin-advanced-http@2.1.1",
-      "C:\\Users\\Skhumbuzo\\WebstormProjects\\WitsFreelancing"
-    ]
-  ],
-  "_from": "cordova-plugin-advanced-http@2.1.1",
-  "_id": "cordova-plugin-advanced-http@2.1.1",
+  "_from": "cordova-plugin-advanced-http",
+  "_id": "cordova-plugin-advanced-http@2.2.0",
   "_inBundle": false,
-  "_integrity": "sha512-C8NQ5+PsUOqDCEzlhhTP9pIHizK/O9rVcdNU3+psfU/4mg5heiEVj/E3AS2TSjMo2wef1xw8yempSKETzuRGig==",
+  "_integrity": "sha512-gf/iIEa/RNWc9CBgEk98lRoJxguMHYaE+ANXtS2wPQUq6gBO+3mH2U+nyFoH8y/o+QjALPAJkcWKcXtlOKMxRA==",
   "_location": "/cordova-plugin-advanced-http",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "tag",
     "registry": true,
-    "raw": "cordova-plugin-advanced-http@2.1.1",
+    "raw": "cordova-plugin-advanced-http",
     "name": "cordova-plugin-advanced-http",
     "escapedName": "cordova-plugin-advanced-http",
-    "rawSpec": "2.1.1",
+    "rawSpec": "",
     "saveSpec": null,
-    "fetchSpec": "2.1.1"
+    "fetchSpec": "latest"
   },
   "_requiredBy": [
+    "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-advanced-http/-/cordova-plugin-advanced-http-2.1.1.tgz",
-  "_spec": "2.1.1",
-  "_where": "C:\\Users\\Skhumbuzo\\WebstormProjects\\WitsFreelancing",
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-advanced-http/-/cordova-plugin-advanced-http-2.2.0.tgz",
+  "_shasum": "b3f882b6fe5b695cb5561218089594b0ff3e09d7",
+  "_spec": "cordova-plugin-advanced-http",
+  "_where": "C:\\Users\\Mulisa\\WebstormProjects\\WITS_FREELANCING",
   "author": {
     "name": "Wymsee"
   },
   "bugs": {
     "url": "https://github.com/silkimen/cordova-plugin-advanced-http/issues"
   },
+  "bundleDependencies": false,
   "contributors": [
     {
       "name": "devgeeks"
@@ -69,6 +66,7 @@
       "android"
     ]
   },
+  "deprecated": false,
   "description": "Cordova / Phonegap plugin for communicating with HTTP servers using SSL pinning",
   "devDependencies": {
     "chai": "4.1.2",
@@ -114,5 +112,5 @@
     "testjs": "mocha ./test/js-specs.js",
     "updatecert": "node ./scripts/update-e2e-server-cert.js && node ./scripts/update-e2e-client-cert.js"
   },
-  "version": "2.1.1"
+  "version": "2.2.0"
 }

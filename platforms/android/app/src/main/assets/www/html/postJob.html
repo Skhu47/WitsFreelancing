@@ -2,40 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
-    <title>Post job</title>
-    <script type="text/javascript" src="../cordova.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src	'self' 'unsafe-inline' *; img-src 'self' data: *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="../css/PostJob.css">
+    <link rel="stylesheet" type="text/css" href="../css/MainPage.css">
+    <title>Post Job</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
 
 </head>
 <body>
-<!--//1627982.ms.wits.ac.za/~student/Job.php?ACTION=0&JOB_EMPLOYER_ID=1627982&JOB_TITLE=test&JOB_DESCRIPTION=description_here&
-JOB_AMOUNT_RANGE_LOW=0&JOB_AMOUNT_RANGE_HIGH=100&JOB_DUE_DATE_TIME=10/12/2012_19:20&JOB_LOCATION=location&JOB_CATEGORY=0-->
-<form action="//1627982.ms.wits.ac.za/~student/Job.php?ACTION=0">
 
-    Student number:<input type="text" name="JOB_EMPLOYER_ID" required>
-    Title: <input type="text" name="JOB_TITLE" required><br>
-    Decription: <input type="text"  name="JOB_DESCRIPTION" required><br>
-    Minimum range: <input type="number" name="JOB_AMOUNT_RANGE_LOW" required><br>
-    Maximum range: <input type="number" name="JOB_AMOUNT_RANGE_HIGH" required><br>
-    End date: <input type="date" name="JOB_DUE_DATE_TIME" required><br>
-    Job location: <input type="text" name="JOB_LOCATION"><br>
-    CATEGORY:
-    <select name="JOB_CATEGORY">
-        <option value=1>School</option>
-        <option value=2>Finance</option>
-        <option value=3>Programming</option>
-        <option value=4>Assignments</option>
-    </select><br>
+    <div id="overlay">
+        <div id="progressDiv" class="progressHolder">
+            <div id="progress" class="loader"></div>
+            <p id="pleaseWaitText" class="pleaseWait">Please Wait</p>
+        </div>
 
+        <div id="serverResponseDiv" class="serverResponse">
+            <p id="message">Login failed due to incorrect credentials or the server might be down</p>
+            <button id="serverResponseButton">Okay</button>
+        </div>
+    </div>
 
-    <input type="submit" value="Post Job">
-    <input type=reset>
+    <header>
+        <div class="overLap"><p id="headTitle" class="head1">Post Job</p></div>
+    </header>
 
-</form>
+    <section>
+        <form class="postJob">
+            <label>
+                <span class="textDeco">Title:</span><br/>
+                <input id="title" type="text" required>
+            </label><br/>
 
+            <label>
+                <span class="textDeco">Description:</span><br/>
+                <textarea id="description" required></textarea>
+            </label><br/>
 
+            <label>
+                <span class="textDeco">Minimum Range:</span><br/>
+                <input id="minimumRange" type="number" min="0" required>
+            </label><br/>
 
+            <label>
+                <span class="textDeco">Maximum Range:</span><br/>
+                <input id="maximumRange" type="number" min="0" required>
+            </label><br/>
+
+            <label>
+                <span class="textDeco">End date:</span><br/>
+                <input id="endDate" type="date" required>
+            </label><br/>
+
+            <label>
+                <span class="textDeco">Job Location:</span><br/>
+                <input id="jobLocation" type="text" required>
+            </label><br/>
+
+            <label>
+                <span class="textDeco">Category:</span><br/>
+                <select id="category">
+                    <option value="Tutoring">Tutoring</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Assignments">Assignments</option>
+                    <option value="Cleaning">Cleaning</option>
+                    <option value="Cooking">Cooking</option>
+                    <option value="ArsAndCrafts">Arts and Crafts</option>
+                </select>
+            </label><br/>
+
+            <button id="postJob">Post Job</button>
+        </form>
+    </section>
+
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../js/PostJob.js"></script>
 </body>
 </html>

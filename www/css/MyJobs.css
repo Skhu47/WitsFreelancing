@@ -1,0 +1,43 @@
+.blueTag{
+    height: 20px;
+    width: 120px;
+    background-color: #050462;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+
+.greenTag{
+    height: 20px;
+    width: 120px;
+    background-color: #479a47;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+
+.brownTag{
+    height: 20px;
+    width: 120px;
+    background-color: #8d4f18;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+
+.redTag{
+    height: 20px;
+    width: 120px;
+    background-color: #7a0d1f;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}

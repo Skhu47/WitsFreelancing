@@ -1,38 +1,35 @@
 {
-  "_args": [
-    [
-      "cordova-plugin-file@6.0.2",
-      "C:\\Users\\Skhumbuzo\\WebstormProjects\\WitsFreelancing"
-    ]
-  ],
-  "_from": "cordova-plugin-file@6.0.2",
+  "_from": "cordova-plugin-file@>=2.0.0",
   "_id": "cordova-plugin-file@6.0.2",
   "_inBundle": false,
   "_integrity": "sha512-m7cughw327CjONN/qjzsTpSesLaeybksQh420/gRuSXJX5Zt9NfgsSbqqKDon6jnQ9Mm7h7imgyO2uJ34XMBtA==",
   "_location": "/cordova-plugin-file",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "range",
     "registry": true,
-    "raw": "cordova-plugin-file@6.0.2",
+    "raw": "cordova-plugin-file@>=2.0.0",
     "name": "cordova-plugin-file",
     "escapedName": "cordova-plugin-file",
-    "rawSpec": "6.0.2",
+    "rawSpec": ">=2.0.0",
     "saveSpec": null,
-    "fetchSpec": "6.0.2"
+    "fetchSpec": ">=2.0.0"
   },
   "_requiredBy": [
+    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/cordova-plugin-file/-/cordova-plugin-file-6.0.2.tgz",
-  "_spec": "6.0.2",
-  "_where": "C:\\Users\\Skhumbuzo\\WebstormProjects\\WitsFreelancing",
+  "_shasum": "f3911479f8357e9aacb5576674f8d95b31a1fb20",
+  "_spec": "cordova-plugin-file@>=2.0.0",
+  "_where": "C:\\Users\\Mulisa\\WebstormProjects\\WITS_FREELANCING",
   "author": {
     "name": "Apache Software Foundation"
   },
   "bugs": {
     "url": "https://github.com/apache/cordova-plugin-file/issues"
   },
+  "bundleDependencies": false,
   "cordova": {
     "id": "cordova-plugin-file",
     "platforms": [
@@ -43,6 +40,7 @@
       "windows"
     ]
   },
+  "deprecated": false,
   "description": "Cordova File Plugin",
   "devDependencies": {
     "eslint": "^3.19.0",

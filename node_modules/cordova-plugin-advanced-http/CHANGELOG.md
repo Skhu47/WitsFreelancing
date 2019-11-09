@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.2.0
+
+- Feature #239: add enumeration style object for error codes
+- Feature #253: add support for response type "json"
+- Feature #127: add multiple file upload (thanks SDA SE Open Industry Solutions and nilswitschel)
+
 ## 2.1.1
 
 - Fixed #224: response type "arraybuffer" and "blob" not working on browser platform

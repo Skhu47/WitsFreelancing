@@ -1,11 +1,11 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "HelloCordova",
-  "short_name": "HelloCordova",
-  "version": "com.qubit.WitsFreelancing",
+  "name": "Wits Freelancing",
+  "short_name": "Wits Freelancing",
+  "version": "com.freelancing",
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "author": "Apache Cordova Team",
   "icons": [],
-  "start_url": "/html/index.html"
+  "start_url": "index.html"
 }

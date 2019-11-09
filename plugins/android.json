@@ -9,15 +9,18 @@
   "installed_plugins": {
     "cordova-plugin-advanced-http": {
       "OKHTTP_VERSION": "3.10.0",
-      "PACKAGE_NAME": "com.qubit.WitsFreelancing"
+      "PACKAGE_NAME": "com.freelancing"
     },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.qubit.WitsFreelancing"
+      "PACKAGE_NAME": "com.freelancing"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.freelancing"
     }
   },
   "dependent_plugins": {
     "cordova-plugin-file": {
-      "PACKAGE_NAME": "com.qubit.WitsFreelancing"
+      "PACKAGE_NAME": "com.freelancing"
     }
   }
 }

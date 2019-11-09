@@ -1,0 +1,267 @@
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus{
+    outline: none;
+}
+
+@font-face {
+    font-family: "CGL";
+    src: url("../fonts/CGL.ttf") format("ttf");
+    src: url("../fonts/CGL.woff") format("woff");
+    src: url("../fonts/CGL.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "CGLI";
+    src: url("../fonts/CGLI.ttf") format("ttf");
+    src: url("../fonts/CGLI.woff") format("woff");
+    src: url("../fonts/CGLI.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.left{
+    display: none;
+}
+
+.right{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.right div{
+    margin: auto;
+}
+
+.line1{
+    text-align: center;
+    width: 100%;
+    color: black;
+    font-family: CGL, serif;
+    font-size: 70px;
+}
+
+.line2{
+    text-align: center;
+    width: 100%;
+    color: black;
+    font-family: CGL, serif;
+    font-size: 30px;
+}
+
+.line3{
+    color: black;
+    margin-left: 50px;
+    font-family: CGL, serif;
+    font-size: 20px;
+}
+
+.line4{
+    color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: CGL, serif;
+    font-size: 20px;
+}
+
+.line5{
+    color: black;
+    margin-left: 50px;
+    font-family: CGL, serif;
+    font-size: 20px;
+}
+
+.line6{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.line6 button{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #2e77ff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    height: 45px;
+    color: white;
+    font-family: CGL, serif;
+    padding: 5px 10px;
+}
+
+.line6 button:hover{
+    background-color: #0e6fcc;
+}
+
+header ul{
+    display: none;
+}
+
+.mobileNav{
+    display: block;
+}
+
+@media screen and (min-width: 768px){
+    .left{
+        display: block;
+        width: 50%;
+        height: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .right{
+        display: block;
+        width: 50%;
+        height: 100%;
+        float: right;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobileNav{
+        display: none;
+    }
+
+    header ul{
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    header ul li{
+        display: inline-block;
+        height: 50px;
+    }
+
+    header ul li:hover{
+        color: white;
+        background-color: #696969;
+    }
+
+    header ul li a:hover{
+        color: white;
+    }
+
+    header ul li a{
+        color: #b4b4b4;
+        font-family: CGL, serif;
+        text-decoration: none;
+        height: 50px;
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.image{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    margin-top: -200px;
+    margin-left: -200px;
+}
+
+.overLap{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+}
+
+.head1{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: 'CGLI', cursive, Helvetica;
+    font-size: 30px;
+    margin: auto;
+    padding: 0;
+}
+
+.navButton{
+    height: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    top:50%;
+    margin-top: -10px;
+    margin-left: 10px;
+    position: absolute;
+    color: white;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 0;
+    margin: 0;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: CGL, serif;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
